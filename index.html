@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Bay Area Home Trends Dashboard</title>
 
-  <!-- Load Leaflet (no integrity issues) -->
+  <!-- Load Leaflet (no integrity to avoid GitHub CSP issues) -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
@@ -54,12 +54,13 @@
         const materialSet = new Set();
 
         allFeatures.forEach(f => {
-          if (f.properties.zip_code) zipSet.add(f.properties.zip_code);
-          if (f.properties.Most_Popular_Style && f.properties.Most_Popular_Style !== "N/A") {
-            styleSet.add(f.properties.Most_Popular_Style.trim());
+          const props = f.properties;
+          if (props.ZCTA5CE10) zipSet.add(props.ZCTA5CE10);
+          if (props.Most_Popular_Style && props.Most_Popular_Style !== "N/A") {
+            styleSet.add(props.Most_Popular_Style.trim());
           }
-          if (f.properties.Most_Popular_Material && f.properties.Most_Popular_Material !== "N/A") {
-            materialSet.add(f.properties.Most_Popular_Material.trim());
+          if (props.Most_Popular_Material && props.Most_Popular_Material !== "N/A") {
+            materialSet.add(props.Most_Popular_Material.trim());
           }
         });
 
@@ -88,7 +89,7 @@
 
         function onEachFeature(feature, layer) {
           const props = feature.properties;
-          const label = `<b>ZIP:</b> ${props.zip_code}<br/>
+          const label = `<b>ZIP:</b> ${props.ZCTA5CE10}<br/>
                          <b>Style:</b> ${props.Most_Popular_Style || 'N/A'}<br/>
                          <b>Material:</b> ${props.Most_Popular_Material || 'N/A'}<br/>
                          <b>Furniture:</b> ${props.Most_Popular_Furniture || 'N/A'}`;
@@ -103,9 +104,10 @@
           if (geojsonLayer) geojsonLayer.remove();
 
           const filtered = allFeatures.filter(f => {
-            const zipMatch = !zipVal || f.properties.zip_code === zipVal;
-            const styleMatch = !styleVal || f.properties.Most_Popular_Style?.trim() === styleVal;
-            const materialMatch = !materialVal || f.properties.Most_Popular_Material?.trim() === materialVal;
+            const props = f.properties;
+            const zipMatch = !zipVal || props.ZCTA5CE10 === zipVal;
+            const styleMatch = !styleVal || props.Most_Popular_Style?.trim() === styleVal;
+            const materialMatch = !materialVal || props.Most_Popular_Material?.trim() === materialVal;
             return zipMatch && styleMatch && materialMatch;
           });
 
@@ -115,17 +117,3 @@
           }).addTo(map);
 
           if (filtered.length > 0) {
-            map.fitBounds(geojsonLayer.getBounds());
-          }
-        }
-
-        zipFilter.addEventListener('change', updateMap);
-        styleFilter.addEventListener('change', updateMap);
-        materialFilter.addEventListener('change', updateMap);
-
-        updateMap(); // initial render
-      });
-  </script>
-
-</body>
-</html>
