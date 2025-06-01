@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Bay Area Home Trends Dashboard</title>
 
-  <!-- Leaflet -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
@@ -25,17 +24,17 @@
 <body>
 
   <div id="filters">
-    <label>
-      ZIP Code:
+    <label>ZIP Code:
       <select id="zipFilter"><option value="">View All</option></select>
     </label>
-    <label>
-      Style:
+    <label>Style:
       <select id="styleFilter"><option value="">View All</option></select>
     </label>
-    <label>
-      Material:
+    <label>Material:
       <select id="materialFilter"><option value="">View All</option></select>
+    </label>
+    <label>Color:
+      <select id="colorFilter"><option value="">View All</option></select>
     </label>
   </div>
 
@@ -48,53 +47,56 @@
     }).addTo(map);
 
     let allFeatures = [];
-    let trendLookup = {};
     let geojsonLayer;
 
     const zipFilter = document.getElementById('zipFilter');
     const styleFilter = document.getElementById('styleFilter');
     const materialFilter = document.getElementById('materialFilter');
+    const colorFilter = document.getElementById('colorFilter');
 
     Promise.all([
       fetch('bay_area_zip_trends.geojson').then(res => res.json()),
       fetch('zip_trends.json').then(res => res.json())
     ])
     .then(([geoData, trendData]) => {
-      trendLookup = trendData;
       allFeatures = geoData.features;
 
       const zipSet = new Set();
       const styleSet = new Set();
       const materialSet = new Set();
+      const colorSet = new Set();
 
       allFeatures.forEach(f => {
-        const zip = f.properties.ZCTA5CE10?.toString().trim();
-        const trend = trendLookup[zip];
-
+        const zip = f.properties.zip?.toString().trim();
+        const trend = trendData[zip];
         if (trend) {
           f.properties.Most_Popular_Style = trend.Most_Popular_Style;
           f.properties.Most_Popular_Material = trend.Most_Popular_Material;
+          f.properties.Most_Popular_Color = trend.Most_Popular_Color;
           f.properties.Most_Popular_Furniture = trend.Most_Popular_Furniture;
 
           zipSet.add(zip);
-          if (trend.Most_Popular_Style && trend.Most_Popular_Style !== "N/A") styleSet.add(trend.Most_Popular_Style.trim());
-          if (trend.Most_Popular_Material && trend.Most_Popular_Material !== "N/A") materialSet.add(trend.Most_Popular_Material.trim());
+          if (trend.Most_Popular_Style) styleSet.add(trend.Most_Popular_Style);
+          if (trend.Most_Popular_Material) materialSet.add(trend.Most_Popular_Material);
+          if (trend.Most_Popular_Color) colorSet.add(trend.Most_Popular_Color);
         }
       });
 
       [...zipSet].sort().forEach(z => zipFilter.innerHTML += `<option value="${z}">${z}</option>`);
       [...styleSet].sort().forEach(s => styleFilter.innerHTML += `<option value="${s}">${s}</option>`);
       [...materialSet].sort().forEach(m => materialFilter.innerHTML += `<option value="${m}">${m}</option>`);
+      [...colorSet].sort().forEach(c => colorFilter.innerHTML += `<option value="${c}">${c}</option>`);
 
       zipFilter.addEventListener('change', updateMap);
       styleFilter.addEventListener('change', updateMap);
       materialFilter.addEventListener('change', updateMap);
+      colorFilter.addEventListener('change', updateMap);
 
       updateMap();
     })
     .catch(err => {
-      console.error("❌ Error loading data:", err);
-      alert("Error loading dashboard data. See console.");
+      console.error("Error loading data:", err);
+      alert("Error loading dashboard data.");
     });
 
     function styleFeature(feature) {
@@ -107,9 +109,10 @@
 
     function onEachFeature(feature, layer) {
       const p = feature.properties;
-      const label = `<b>ZIP:</b> ${p.ZCTA5CE10}<br/>
+      const label = `<b>ZIP:</b> ${p.zip}<br/>
                      <b>Style:</b> ${p.Most_Popular_Style || 'N/A'}<br/>
                      <b>Material:</b> ${p.Most_Popular_Material || 'N/A'}<br/>
+                     <b>Color:</b> ${p.Most_Popular_Color || 'N/A'}<br/>
                      <b>Furniture:</b> ${p.Most_Popular_Furniture || 'N/A'}`;
       layer.bindPopup(label);
     }
@@ -118,18 +121,18 @@
       const zipVal = zipFilter.value;
       const styleVal = styleFilter.value.trim();
       const materialVal = materialFilter.value.trim();
+      const colorVal = colorFilter.value.trim();
 
       if (geojsonLayer) geojsonLayer.remove();
 
       const filtered = allFeatures.filter(f => {
         const p = f.properties;
-        const zipMatch = !zipVal || p.ZCTA5CE10?.toString().trim() === zipVal;
-        const styleMatch = !styleVal || p.Most_Popular_Style?.trim() === styleVal;
-        const materialMatch = !materialVal || p.Most_Popular_Material?.trim() === materialVal;
-        return zipMatch && styleMatch && materialMatch;
+        const zipMatch = !zipVal || p.zip === zipVal;
+        const styleMatch = !styleVal || p.Most_Popular_Style === styleVal;
+        const materialMatch = !materialVal || p.Most_Popular_Material === materialVal;
+        const colorMatch = !colorVal || p.Most_Popular_Color === colorVal;
+        return zipMatch && styleMatch && materialMatch && colorMatch;
       });
-
-      console.log("✅ Filtered features:", filtered.length);
 
       geojsonLayer = L.geoJSON(filtered, {
         style: styleFeature,
