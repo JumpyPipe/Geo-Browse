@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Bay Area Home Trends Dashboard</title>
 
-  <!-- ✅ Fixed Leaflet CSS & JS loading (no integrity check) -->
+  <!-- Load Leaflet without integrity to avoid GitHub error -->
   <link
     rel="stylesheet"
     href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -17,7 +17,7 @@
   <style>
     body { margin: 0; font-family: sans-serif; }
     #filters { padding: 1rem; background: #f8f8f8; display: flex; gap: 1rem; flex-wrap: wrap; }
-    #map { height: 80vh; }
+    #map { height: 85vh; }
     select { padding: 0.4rem; }
   </style>
 </head>
@@ -54,15 +54,18 @@
       .then(data => {
         allFeatures = data.features;
 
-        // Populate filters
         const zipSet = new Set();
         const styleSet = new Set();
         const materialSet = new Set();
 
         allFeatures.forEach(f => {
           if (f.properties.zip) zipSet.add(f.properties.zip);
-          if (f.properties.Most_Popular_Style) styleSet.add(f.properties.Most_Popular_Style);
-          if (f.properties.Most_Popular_Material) materialSet.add(f.properties.Most_Popular_Material);
+          if (f.properties.Most_Popular_Style && f.properties.Most_Popular_Style !== "N/A") {
+            styleSet.add(f.properties.Most_Popular_Style.trim());
+          }
+          if (f.properties.Most_Popular_Material && f.properties.Most_Popular_Material !== "N/A") {
+            materialSet.add(f.properties.Most_Popular_Material.trim());
+          }
         });
 
         const zipFilter = document.getElementById('zipFilter');
@@ -98,16 +101,17 @@
         }
 
         function updateMap() {
-          const zipVal = zipFilter.value;
-          const styleVal = styleFilter.value;
-          const materialVal = materialFilter.value;
+          const zipVal = zipFilter.value.trim();
+          const styleVal = styleFilter.value.trim();
+          const materialVal = materialFilter.value.trim();
 
           if (geojsonLayer) geojsonLayer.remove();
 
           const filtered = allFeatures.filter(f => {
-            return (!zipVal || f.properties.zip === zipVal) &&
-                   (!styleVal || f.properties.Most_Popular_Style === styleVal) &&
-                   (!materialVal || f.properties.Most_Popular_Material === materialVal);
+            const zipMatch = !zipVal || f.properties.zip === zipVal;
+            const styleMatch = !styleVal || f.properties.Most_Popular_Style?.trim() === styleVal;
+            const materialMatch = !materialVal || f.properties.Most_Popular_Material?.trim() === materialVal;
+            return zipMatch && styleMatch && materialMatch;
           });
 
           geojsonLayer = L.geoJSON(filtered, {
@@ -120,12 +124,13 @@
           }
         }
 
-        zipFilter.addEventListener('change', updateMap);
-        styleFilter.addEventListener('change', updateMap);
-        materialFilter.addEventListener('change', updateMap);
+        document.getElementById('zipFilter').addEventListener('change', updateMap);
+        document.getElementById('styleFilter').addEventListener('change', updateMap);
+        document.getElementById('materialFilter').addEventListener('change', updateMap);
 
-        updateMap(); // Initial draw
+        updateMap(); // initial draw
       });
   </script>
+
 </body>
 </html>
