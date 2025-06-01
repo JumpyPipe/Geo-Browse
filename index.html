@@ -101,9 +101,10 @@
         }
 
         function updateMap() {
-          const zipVal = zipFilter.value.trim();
+          const zipVal = zipFilter.value;
           const styleVal = styleFilter.value.trim();
           const materialVal = materialFilter.value.trim();
+
 
           if (geojsonLayer) geojsonLayer.remove();
 
