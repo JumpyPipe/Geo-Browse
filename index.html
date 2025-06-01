@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Bay Area Home Trends Dashboard (Diagnostic Mode)</title>
+  <title>Bay Area Home Trends Dashboard</title>
 
   <!-- Leaflet -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
@@ -11,7 +11,13 @@
 
   <style>
     body { margin: 0; font-family: sans-serif; }
-    #filters { padding: 1rem; background: #f8f8f8; display: flex; gap: 1rem; flex-wrap: wrap; }
+    #filters {
+      padding: 1rem;
+      background: #f8f8f8;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
     #map { height: 85vh; }
     select { padding: 0.4rem; }
   </style>
@@ -46,13 +52,17 @@
     let geojsonLayer;
     let allFeatures = [];
 
+    const zipFilter = document.getElementById('zipFilter');
+    const styleFilter = document.getElementById('styleFilter');
+    const materialFilter = document.getElementById('materialFilter');
+
     fetch('bay_area_zip_trends.geojson')
       .then(res => {
         console.log("✅ GeoJSON fetch succeeded");
         return res.json();
       })
       .then(data => {
-        console.log("✅ Parsed GeoJSON:", data);
+        console.log("✅ Parsed GeoJSON");
         allFeatures = data.features;
 
         const zipSet = new Set();
@@ -70,77 +80,71 @@
           }
         });
 
-        const zipFilter = document.getElementById('zipFilter');
         [...zipSet].sort().forEach(z => {
           zipFilter.innerHTML += `<option value="${z}">${z}</option>`;
         });
-
-        const styleFilter = document.getElementById('styleFilter');
         [...styleSet].sort().forEach(s => {
           styleFilter.innerHTML += `<option value="${s}">${s}</option>`;
         });
-
-        const materialFilter = document.getElementById('materialFilter');
         [...materialSet].sort().forEach(m => {
           materialFilter.innerHTML += `<option value="${m}">${m}</option>`;
         });
-
-        function styleFeature(feature) {
-          return {
-            color: "#3388ff",
-            weight: 1,
-            fillOpacity: 0.4
-          };
-        }
-
-        function onEachFeature(feature, layer) {
-          const props = feature.properties;
-          const label = `<b>ZIP:</b> ${props.ZCTA5CE10}<br/>
-                         <b>Style:</b> ${props.Most_Popular_Style || 'N/A'}<br/>
-                         <b>Material:</b> ${props.Most_Popular_Material || 'N/A'}<br/>
-                         <b>Furniture:</b> ${props.Most_Popular_Furniture || 'N/A'}`;
-          layer.bindPopup(label);
-        }
-
-        function updateMap() {
-          const zipVal = zipFilter.value;
-          const styleVal = styleFilter.value.trim();
-          const materialVal = materialFilter.value.trim();
-
-          console.log("🔄 Filters applied:", { zipVal, styleVal, materialVal });
-
-          if (geojsonLayer) geojsonLayer.remove();
-
-          const filtered = allFeatures.filter(f => {
-            const props = f.properties;
-            const zipMatch = !zipVal || props.ZCTA5CE10?.toString().trim() === zipVal;
-            const styleMatch = !styleVal || props.Most_Popular_Style?.trim() === styleVal;
-            const materialMatch = !materialVal || props.Most_Popular_Material?.trim() === materialVal;
-            return zipMatch && styleMatch && materialMatch;
-          });
-
-          console.log(`🧠 Filtered ${filtered.length} features`);
-
-          geojsonLayer = L.geoJSON(filtered, {
-            style: styleFeature,
-            onEachFeature: onEachFeature
-          }).addTo(map);
-
-          if (filtered.length > 0) {
-            map.fitBounds(geojsonLayer.getBounds());
-          }
-        }
 
         zipFilter.addEventListener('change', updateMap);
         styleFilter.addEventListener('change', updateMap);
         materialFilter.addEventListener('change', updateMap);
 
-        updateMap(); // initial render
+        updateMap(); // draw map once initially
       })
       .catch(err => {
         console.error("❌ Error loading or parsing GeoJSON:", err);
         alert("Error loading data. Check browser console for details.");
       });
+
+    function styleFeature(feature) {
+      return {
+        color: "#3388ff",
+        weight: 1,
+        fillOpacity: 0.4
+      };
+    }
+
+    function onEachFeature(feature, layer) {
+      const props = feature.properties;
+      const label = `<b>ZIP:</b> ${props.ZCTA5CE10}<br/>
+                     <b>Style:</b> ${props.Most_Popular_Style || 'N/A'}<br/>
+                     <b>Material:</b> ${props.Most_Popular_Material || 'N/A'}<br/>
+                     <b>Furniture:</b> ${props.Most_Popular_Furniture || 'N/A'}`;
+      layer.bindPopup(label);
+    }
+
+    function updateMap() {
+      const zipVal = zipFilter.value;
+      const styleVal = styleFilter.value.trim();
+      const materialVal = materialFilter.value.trim();
+
+      if (geojsonLayer) geojsonLayer.remove();
+
+      const filtered = allFeatures.filter(f => {
+        const props = f.properties;
+        const zipMatch = !zipVal || props.ZCTA5CE10?.toString().trim() === zipVal;
+        const styleMatch = !styleVal || props.Most_Popular_Style?.trim() === styleVal;
+        const materialMatch = !materialVal || props.Most_Popular_Material?.trim() === materialVal;
+        return zipMatch && styleMatch && materialMatch;
+      });
+
+      console.log("🔍 Filters applied:", { zipVal, styleVal, materialVal });
+      console.log("✅ Filtered", filtered.length, "features");
+
+      geojsonLayer = L.geoJSON(filtered, {
+        style: styleFeature,
+        onEachFeature: onEachFeature
+      }).addTo(map);
+
+      if (filtered.length > 0) {
+        map.fitBounds(geojsonLayer.getBounds());
+      }
+    }
   </script>
 
 </body>
