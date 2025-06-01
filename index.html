@@ -1,1 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bay Area ZIP Trend Dashboard</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+  <style>
+    #map { height: 90vh; width: 100%; }
+    body { font-family: sans-serif; margin: 0; padding: 0; }
+    .controls { padding: 10px; background: #f9f9f9; display: flex; flex-wrap: wrap; gap: 1em; }
+    label { font-weight: bold; }
+    select { padding: 5px; }
+  </style>
 
+  <script id="zipdata" type="application/json">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bay Area Home Trends Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css"/>
+  <style>
+    body { margin: 0; font-family: sans-serif; }
+    #filters { padding: 1rem; background: #f8f8f8; display: flex; gap: 1rem; flex-wrap: wrap; }
+    #map { height: 80vh; }
+    select { padding: 0.4rem; }
+  </style>
+</head>
+<body>
+
+  <div id="filters">
+    <label>
+      ZIP Code:
+      <select id="zipFilter"><option value="">View All</option></select>
+    </label>
+    <label>
+      Style:
+      <select id="styleFilter"><option value="">View All</option></select>
+    </label>
+    <label>
+      Material:
+      <select id="materialFilter"><option value="">View All</option></select>
+    </label>
+  </div>
+
+  <div id="map"></div>
+
+  <script>
+    const map = L.map('map').setView([37.7749, -122.4194], 9);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+
+    let geojsonLayer;
+    let allFeatures = [];
+
+    fetch('bay_area_zip_trends.geojson')
+      .then(res => res.json())
+      .then(data => {
+        allFeatures = data.features;
+
+        // Populate filters
+        const zipSet = new Set();
+        const styleSet = new Set();
+        const materialSet = new Set();
+
+        allFeatures.forEach(f => {
+          if (f.properties.zip) zipSet.add(f.properties.zip);
+          if (f.properties.Most_Popular_Style) styleSet.add(f.properties.Most_Popular_Style);
+          if (f.properties.Most_Popular_Material) materialSet.add(f.properties.Most_Popular_Material);
+        });
+
+        const zipFilter = document.getElementById('zipFilter');
+        [...zipSet].sort().forEach(z => {
+          zipFilter.innerHTML += `<option value="${z}">${z}</option>`;
+        });
+
+        const styleFilter = document.getElementById('styleFilter');
+        [...styleSet].sort().forEach(s => {
+          styleFilter.innerHTML += `<option value="${s}">${s}</option>`;
+        });
+
+        const materialFilter = document.getElementById('materialFilter');
+        [...materialSet].sort().forEach(m => {
+          materialFilter.innerHTML += `<option value="${m}">${m}</option>`;
+        });
+
+        function styleFeature(feature) {
+          return {
+            color: "#3388ff",
+            weight: 1,
+            fillOpacity: 0.4
+          };
+        }
+
+        function onEachFeature(feature, layer) {
+          const props = feature.properties;
+          const label = `<b>ZIP:</b> ${props.zip}<br/>
+                         <b>Style:</b> ${props.Most_Popular_Style || 'N/A'}<br/>
+                         <b>Material:</b> ${props.Most_Popular_Material || 'N/A'}<br/>
+                         <b>Furniture:</b> ${props.Most_Popular_Furniture || 'N/A'}`;
+          layer.bindPopup(label);
+        }
+
+        function updateMap() {
+          const zipVal = zipFilter.value;
+          const styleVal = styleFilter.value;
+          const materialVal = materialFilter.value;
+
+          if (geojsonLayer) geojsonLayer.remove();
+
+          const filtered = allFeatures.filter(f => {
+            return (!zipVal || f.properties.zip === zipVal) &&
+                   (!styleVal || f.properties.Most_Popular_Style === styleVal) &&
+                   (!materialVal || f.properties.Most_Popular_Material === materialVal);
+          });
+
+          geojsonLayer = L.geoJSON(filtered, {
+            style: styleFeature,
+            onEachFeature: onEachFeature
+          }).addTo(map);
+
+          if (filtered.length > 0) {
+            map.fitBounds(geojsonLayer.getBounds());
+          }
+        }
+
+        zipFilter.addEventListener('change', updateMap);
+        styleFilter.addEventListener('change', updateMap);
+        materialFilter.addEventListener('change', updateMap);
+
+        updateMap(); // Initial draw
+      });
+  </script>
+</body>
+</html>
