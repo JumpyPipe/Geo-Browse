@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Bay Area Home Trends Dashboard</title>
+  <title>Bay Area Home Trends Dashboard (Diagnostic Mode)</title>
 
-  <!-- Load Leaflet (no integrity to avoid GitHub CSP issues) -->
+  <!-- Leaflet -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
@@ -36,6 +36,8 @@
   <div id="map"></div>
 
   <script>
+    console.log("✅ Script started loading");
+
     const map = L.map('map').setView([37.7749, -122.4194], 9);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '© OpenStreetMap contributors'
@@ -45,8 +47,12 @@
     let allFeatures = [];
 
     fetch('bay_area_zip_trends.geojson')
-      .then(res => res.json())
+      .then(res => {
+        console.log("✅ GeoJSON fetch succeeded");
+        return res.json();
+      })
       .then(data => {
+        console.log("✅ Parsed GeoJSON:", data);
         allFeatures = data.features;
 
         const zipSet = new Set();
@@ -55,7 +61,7 @@
 
         allFeatures.forEach(f => {
           const props = f.properties;
-          if (props.ZCTA5CE10) zipSet.add(props.ZCTA5CE10);
+          if (props.ZCTA5CE10) zipSet.add(props.ZCTA5CE10.toString().trim());
           if (props.Most_Popular_Style && props.Most_Popular_Style !== "N/A") {
             styleSet.add(props.Most_Popular_Style.trim());
           }
@@ -101,15 +107,19 @@
           const styleVal = styleFilter.value.trim();
           const materialVal = materialFilter.value.trim();
 
+          console.log("🔄 Filters applied:", { zipVal, styleVal, materialVal });
+
           if (geojsonLayer) geojsonLayer.remove();
 
           const filtered = allFeatures.filter(f => {
             const props = f.properties;
-            const zipMatch = !zipVal || props.ZCTA5CE10 === zipVal;
+            const zipMatch = !zipVal || props.ZCTA5CE10?.toString().trim() === zipVal;
             const styleMatch = !styleVal || props.Most_Popular_Style?.trim() === styleVal;
             const materialMatch = !materialVal || props.Most_Popular_Material?.trim() === materialVal;
             return zipMatch && styleMatch && materialMatch;
           });
+
+          console.log(`🧠 Filtered ${filtered.length} features`);
 
           geojsonLayer = L.geoJSON(filtered, {
             style: styleFeature,
@@ -117,3 +127,21 @@
           }).addTo(map);
 
           if (filtered.length > 0) {
+            map.fitBounds(geojsonLayer.getBounds());
+          }
+        }
+
+        zipFilter.addEventListener('change', updateMap);
+        styleFilter.addEventListener('change', updateMap);
+        materialFilter.addEventListener('change', updateMap);
+
+        updateMap(); // initial render
+      })
+      .catch(err => {
+        console.error("❌ Error loading or parsing GeoJSON:", err);
+        alert("Error loading data. Check browser console for details.");
+      });
+  </script>
+
+</body>
+</html>
