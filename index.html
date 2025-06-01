@@ -69,6 +69,7 @@
       allFeatures.forEach(f => {
         const zip = f.properties.zip?.toString().trim();
         const trend = trendData[zip];
+
         if (trend) {
           f.properties.Most_Popular_Style = trend.Most_Popular_Style;
           f.properties.Most_Popular_Material = trend.Most_Popular_Material;
@@ -95,8 +96,8 @@
       updateMap();
     })
     .catch(err => {
-      console.error("Error loading data:", err);
-      alert("Error loading dashboard data.");
+      console.error("❌ Error loading data:", err);
+      alert("Error loading dashboard data. See console.");
     });
 
     function styleFeature(feature) {
@@ -118,7 +119,7 @@
     }
 
     function updateMap() {
-      const zipVal = zipFilter.value;
+      const zipVal = zipFilter.value.trim();
       const styleVal = styleFilter.value.trim();
       const materialVal = materialFilter.value.trim();
       const colorVal = colorFilter.value.trim();
