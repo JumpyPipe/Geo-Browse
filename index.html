@@ -1,1 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bay Area ZIP Trend Dashboard</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+  <style>
+    #map { height: 90vh; width: 100%; }
+    body { font-family: sans-serif; margin: 0; padding: 0; }
+    .controls { padding: 10px; background: #f9f9f9; display: flex; flex-wrap: wrap; gap: 1em; }
+    label { font-weight: bold; }
+    select { padding: 5px; }
+  </style>
+</head>
+<body>
+  <div class="controls">
+    <label>ZIP Code:
+      <select id="zipSelect"><option>Loading...</option></select>
+    </label>
+    <label>Style:
+      <select id="styleSelect"><option>View All</option></select>
+    </label>
+    <label>Material:
+      <select id="materialSelect"><option>View All</option></select>
+    </label>
+  </div>
+  <div id="map"></div>
+
+  <!-- Inline GeoJSON embedded here -->
+  <script id="zipdata" type="application/json">
+    <!-- GEOJSON GOES HERE — REPLACE THIS COMMENT WITH YOUR GEOJSON FILE CONTENT -->
+  </script>
+
+  <!-- Load Leaflet -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+  <!-- Main JS -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const geojson = JSON.parse(document.getElementById("zipdata").textContent);
+      console.log("GeoJSON loaded with", geojson.features.length, "features");
+
+      const map = L.map("map").setView([37.7, -122.3], 9);
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution: '&copy; OpenStreetMap contributors',
+      }).addTo(map);
+
+      let layer;
+      const zipDropdown = document.getElementById("zipSelect");
+      const styleDropdown = document.getElementById("styleSelect");
+      const materialDropdown = document.getElementById("materialSelect");
+
+      const styles = new Set();
+      const materials = new Set();
+
+      geojson.features.forEach(f => {
+        styles.add(f.properties.style);
+        materials.add(f.properties.material);
+      });
+
+      [...styles].sort().forEach(style =>
+        styleDropdown.add(new Option(style, style))
+      );
+      [...materials].sort().forEach(material =>
+        materialDropdown.add(new Option(material, material))
+      );
+
+      function renderMap() {
+        if (layer) map.removeLayer(layer);
+
+        const zipVal = zipDropdown.value;
+        const styleVal = styleDropdown.value;
+        const materialVal = materialDropdown.value;
+
+        const filtered = geojson.features.filter(f => {
+          const m = f.properties;
+          return (zipVal === "View All" || m.ZCTA5CE10 === zipVal) &&
+                 (styleVal === "View All" || m.style === styleVal) &&
+                 (materialVal === "View All" || m.material === materialVal);
+        });
+
+        layer = L.geoJSON({ type: "FeatureCollection", features: filtered }, {
+          style: feature => ({
+            color: "#0074D9",
+            weight: 1.5,
+            fillOpacity: zipVal === "View All" ? 0.3 : 0.8
+          })
+        }).addTo(map);
+
+        if (zipVal !== "View All" && filtered.length > 0) {
+          const bounds = layer.getBounds();
+          map.fitBounds(bounds);
+        }
+      }
+
+      // Populate ZIP dropdown
+      const zipSet = new Set(geojson.features.map(f => f.properties.ZCTA5CE10));
+      ["View All", ...Array.from(zipSet).sort()].forEach(zip =>
+        zipDropdown.add(new Option(zip, zip))
+      );
+
+      zipDropdown.addEventListener("change", renderMap);
+      styleDropdown.addEventListener("change", renderMap);
+      materialDropdown.addEventListener("change", renderMap);
+
+      renderMap();
+    });
+  </script>
+</body>
+</html>
 
