@@ -1,4 +1,4 @@
-# Bay Area ZIP Trend Dashboard
+# Bay Area Trends Dashboard
 
 This project visualizes home furnishing trends by ZIP code across the Bay Area using an interactive web map.
 
