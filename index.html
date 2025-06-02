@@ -75,6 +75,7 @@
           f.properties.Most_Popular_Material = trend.Most_Popular_Material;
           f.properties.Most_Popular_Color = trend.Most_Popular_Color;
           f.properties.Most_Popular_Furniture = trend.Most_Popular_Furniture;
+          f.properties.Rationale = trend.Rationale;
 
           zipSet.add(zip);
           if (trend.Most_Popular_Style) styleSet.add(trend.Most_Popular_Style);
@@ -114,7 +115,8 @@
                      <b>Style:</b> ${p.Most_Popular_Style || 'N/A'}<br/>
                      <b>Material:</b> ${p.Most_Popular_Material || 'N/A'}<br/>
                      <b>Color:</b> ${p.Most_Popular_Color || 'N/A'}<br/>
-                     <b>Furniture:</b> ${p.Most_Popular_Furniture || 'N/A'}`;
+                     <b>Furniture:</b> ${p.Most_Popular_Furniture || 'N/A'}<br/><br/>
+                     <i>${p.Rationale || 'No rationale available.'}</i>`;
       layer.bindPopup(label);
     }
 
