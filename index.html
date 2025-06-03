@@ -55,7 +55,7 @@
   <div id="map"></div>
 
   <script>
-    const map = L.map('map').setView([37.7749, -122.4194], 6);
+    const map = L.map('map').setView([37.5, -112], 6);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '© OpenStreetMap contributors'
     }).addTo(map);
@@ -71,9 +71,8 @@
     let geojsonLayer;
 
     async function getWeatherData(zip) {
-      const apiKey = 'YOUR_API_KEY_HERE'; // Replace with your OpenWeatherMap API key
+      const apiKey = 'YOUR_OPENWEATHERMAP_API_KEY'; // Replace with your key
       const url = `https://api.openweathermap.org/data/2.5/weather?zip=${zip},US&appid=${apiKey}&units=imperial`;
-
       try {
         const res = await fetch(url);
         const data = await res.json();
@@ -122,16 +121,15 @@
           <b>Race:</b> ${demo.Racial_Composition || 'N/A'}<br/>
           <b>Education:</b> ${demo.Education || 'N/A'}<br/>
           <hr><b>Housing</b><br/>
-          <b>Home Type:</b> ${house.Most_Common_Home_Type || 'N/A'}<br/>
-          <b>Avg Sq Ft:</b> ${house.Average_Square_Footage || 'N/A'}<br/>
-          <b>Age of Home:</b> ${house.Average_Year_Built || 'N/A'}<br/>
+          <b>Home Type:</b> ${house.Dominant_Home_Type || 'N/A'}<br/>
+          <b>Avg Sq Ft:</b> ${house.Average_Home_Size_SqFt || 'N/A'}<br/>
+          <b>Age of Home:</b> ${house.Median_Year_Built || 'N/A'}<br/>
           <b>Architectural Style:</b> ${house.Architectural_Style || 'N/A'}<br/>
           <hr><b>Current Weather</b><br/>
           <b>Temp:</b> ${weather ? `${weather.tempF}°F / ${weather.tempC}°C` : 'N/A'}<br/>
           <b>Precipitation:</b> ${weather ? weather.precipitation : 'N/A'}<br/>
           <br/><i>${p.Rationale || ''}</i>
         `;
-
         layer.bindPopup(label);
         loadingSpinner.style.display = 'none';
       });
@@ -168,11 +166,12 @@
     Promise.all([
       fetch('bay_area_zip_trends.geojson').then(res => res.json()),
       fetch('utah_zip_codes.geojson').then(res => res.json()),
+      fetch('arizona_zip_codes.geojson').then(res => res.json()),
       fetch('trends.json').then(res => res.json()),
       fetch('demographics.json').then(res => res.json()),
       fetch('housing.json').then(res => res.json())
-    ]).then(([bayAreaGeo, utahGeo, trendData, demoData, houseData]) => {
-      allFeatures = [...bayAreaGeo.features, ...utahGeo.features];
+    ]).then(([bayAreaData, utahData, arizonaData, trendData, demoData, houseData]) => {
+      allFeatures = [...bayAreaData.features, ...utahData.features, ...arizonaData.features];
 
       const zipSet = new Set();
       const styleSet = new Set();
@@ -181,21 +180,18 @@
       const furnitureSet = new Set();
 
       allFeatures.forEach(f => {
-        const zip = f.properties.zip || f.properties.ZCTA5CE10 || f.properties.ZIP || f.properties.ZIPCODE;
-        if (!zip) return;
+        const zip = f.properties.zip?.toString().trim();
+        const trend = trendData[zip] || {};
+        const demo = demoData[zip] || {};
+        const house = houseData[zip] || {};
 
-        f.properties.zip = zip.toString().trim();
-        const trend = trendData[zip];
-        const demo = demoData[zip];
-        const housing = houseData[zip];
-
-        f.properties = { ...f.properties, ...trend, Demographics: demo, Housing: housing };
+        f.properties = { zip, ...trend, Demographics: demo, Housing: house };
 
         zipSet.add(zip);
-        if (trend?.Style) styleSet.add(trend.Style);
-        if (trend?.Primary_Material) materialSet.add(trend.Primary_Material);
-        if (trend?.Color) colorSet.add(trend.Color);
-        if (trend?.Furniture_Type) furnitureSet.add(trend.Furniture_Type);
+        if (trend.Style) styleSet.add(trend.Style);
+        if (trend.Primary_Material) materialSet.add(trend.Primary_Material);
+        if (trend.Color) colorSet.add(trend.Color);
+        if (trend.Furniture_Type) furnitureSet.add(trend.Furniture_Type);
       });
 
       [...zipSet].sort().forEach(z => zipFilter.innerHTML += `<option value="${z}">${z}</option>`);
@@ -211,9 +207,6 @@
       furnitureFilter.addEventListener('change', updateMap);
 
       updateMap();
-    }).catch(err => {
-      console.error("❌ Error loading data:", err);
-      alert("Error loading dashboard data. See console.");
     });
   </script>
 </body>
