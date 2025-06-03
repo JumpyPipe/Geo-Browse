@@ -113,32 +113,36 @@
     }
 
     function onEachFeature(feature, layer) {
-      const p = feature.properties;
-      const demo = p.Demographics || {};
-      const house = p.Housing || {};
+  const p = feature.properties;
+  const demo = p.Demographics || {};
+  const house = p.Housing || {};
 
-      const label = `
-        <b>ZIP:</b> ${p.zip}<br/>
-        <b>Style:</b> ${p.Style || 'N/A'}<br/>
-        <b>Material:</b> ${p.Primary_Material || 'N/A'}<br/>
-        <b>Color:</b> ${p.Color || 'N/A'}<br/>
-        <b>Pattern:</b> ${p.Pattern || 'N/A'}<br/>
-        <b>Furniture:</b> ${p.Furniture_Type || 'N/A'}<br/>
-        <b>Price Point:</b> ${p.Price_Point || 'N/A'}<br/><br/>
+  const label = `
+    <b>ZIP:</b> ${p.zip}<br/><br/>
 
-        <b><u>Demographics</u></b><br/>
-        <b>Median Income:</b> $${demo.Median_Household_Income?.toLocaleString() || 'N/A'}<br/>
-        <b>Median Age:</b> ${demo.Median_Age || 'N/A'}<br/>
-        <b>Avg HH Size:</b> ${demo.Average_Household_Size || 'N/A'}<br/><br/>
+    <b><u>Furniture Preference</u></b><br/>
+    <b>Type:</b> ${p.Furniture_Type || 'N/A'}<br/>
+    <b>Style:</b> ${p.Style || 'N/A'}<br/>
+    <b>Material:</b> ${p.Primary_Material || 'N/A'}<br/>
+    <b>Color:</b> ${p.Color || 'N/A'}<br/>
+    <b>Pattern:</b> ${p.Pattern || 'N/A'}<br/>
+    <b>Price Point:</b> ${p.Price_Point || 'N/A'}<br/><br/>
 
-        <b><u>Housing</u></b><br/>
-        <b>Type:</b> ${house.Dominant_Home_Type || 'N/A'}<br/>
-        <b>Sq Ft:</b> ${house.Average_Home_Size_SqFt || 'N/A'}<br/>
-        <b>Price:</b> $${house.Median_Home_Price?.toLocaleString() || 'N/A'}<br/>
-        <b>Style:</b> ${house.Architectural_Style || 'N/A'}
-      `;
-      layer.bindPopup(label);
-    }
+    <b><u>Demographics</u></b><br/>
+    <b>Median Income:</b> $${demo.Median_Household_Income?.toLocaleString() || 'N/A'}<br/>
+    <b>Median Age:</b> ${demo.Median_Age || 'N/A'}<br/>
+    <b>Avg HH Size:</b> ${demo.Average_Household_Size || 'N/A'}<br/><br/>
+
+    <b><u>Housing</u></b><br/>
+    <b>Type:</b> ${house.Dominant_Home_Type || 'N/A'}<br/>
+    <b>Sq Ft:</b> ${house.Average_Home_Size_SqFt || 'N/A'}<br/>
+    <b>Price:</b> $${house.Median_Home_Price?.toLocaleString() || 'N/A'}<br/>
+    <b>Style:</b> ${house.Architectural_Style || 'N/A'}<br/><br/>
+
+    <i>${p.Rationale || ''}</i>
+  `;
+  layer.bindPopup(label);
+}
 
     function updateMap() {
       const zipVal = zipFilter.value.trim();
