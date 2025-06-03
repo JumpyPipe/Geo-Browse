@@ -1,0 +1,862 @@
+{
+  "90001": {
+    "Population": 34686,
+    "Median_Age": 32.8,
+    "Gender_Distribution": {
+      "Male": 48.3,
+      "Female": 49.9
+    },
+    "Race_Ethnicity": {
+      "White": 37.1,
+      "Asian": 20.7,
+      "Black": 5.8,
+      "Hispanic_Latino": 30.4,
+      "Other": 6.0
+    },
+    "Household_Income": {
+      "Median_Income": 109661,
+      "Mean_Income": 134193
+    },
+    "Household_Types": {
+      "Married_Couples": 40.1,
+      "Single_Householders": 30.6,
+      "Non_Family": 26.8
+    },
+    "Education_Level": {
+      "High_School_or_Less": 33.5,
+      "Some_College_or_Associates": 31.3,
+      "Bachelors_or_Higher": 56.4
+    },
+    "Employment_Sectors": {
+      "Technology": 12.4,
+      "Finance_Real_Estate": 6.8,
+      "Education_Healthcare": 22.7,
+      "Retail_Hospitality": 24.7,
+      "Other": 28.6
+    },
+    "Languages_Spoken": {
+      "English_Only": 57.3,
+      "Spanish": 34.6,
+      "Chinese": 3.0,
+      "Other": 16.2
+    },
+    "Rationale": "Based on Census profiles for urban Los Angeles ZIP codes. These areas show mixed income levels, racial diversity, high bilingual populations, and moderate educational attainment."
+  },
+  "90002": {
+    "Population": 26291,
+    "Median_Age": 44.4,
+    "Gender_Distribution": {
+      "Male": 48.6,
+      "Female": 49.4
+    },
+    "Race_Ethnicity": {
+      "White": 54.4,
+      "Asian": 11.1,
+      "Black": 12.2,
+      "Hispanic_Latino": 45.7,
+      "Other": 0
+    },
+    "Household_Income": {
+      "Median_Income": 96197,
+      "Mean_Income": 138369
+    },
+    "Household_Types": {
+      "Married_Couples": 58.3,
+      "Single_Householders": 35.5,
+      "Non_Family": 19.4
+    },
+    "Education_Level": {
+      "High_School_or_Less": 31.9,
+      "Some_College_or_Associates": 30.1,
+      "Bachelors_or_Higher": 58.2
+    },
+    "Employment_Sectors": {
+      "Technology": 18.8,
+      "Finance_Real_Estate": 7.9,
+      "Education_Healthcare": 13.4,
+      "Retail_Hospitality": 24.3,
+      "Other": 35.8
+    },
+    "Languages_Spoken": {
+      "English_Only": 50.6,
+      "Spanish": 30.1,
+      "Chinese": 7.3,
+      "Other": 16.3
+    },
+    "Rationale": "Based on Census profiles for urban Los Angeles ZIP codes. These areas show mixed income levels, racial diversity, high bilingual populations, and moderate educational attainment."
+  },
+  "90003": {
+    "Population": 27430,
+    "Median_Age": 32.1,
+    "Gender_Distribution": {
+      "Male": 48.9,
+      "Female": 49.5
+    },
+    "Race_Ethnicity": {
+      "White": 34.6,
+      "Asian": 28.0,
+      "Black": 12.3,
+      "Hispanic_Latino": 25.6,
+      "Other": 0
+    },
+    "Household_Income": {
+      "Median_Income": 51863,
+      "Mean_Income": 69556
+    },
+    "Household_Types": {
+      "Married_Couples": 50.4,
+      "Single_Householders": 30.9,
+      "Non_Family": 18.7
+    },
+    "Education_Level": {
+      "High_School_or_Less": 39.9,
+      "Some_College_or_Associates": 27.8,
+      "Bachelors_or_Higher": 43.1
+    },
+    "Employment_Sectors": {
+      "Technology": 10.7,
+      "Finance_Real_Estate": 14.3,
+      "Education_Healthcare": 28.1,
+      "Retail_Hospitality": 21.7,
+      "Other": 28.8
+    },
+    "Languages_Spoken": {
+      "English_Only": 60.0,
+      "Spanish": 39.2,
+      "Chinese": 9.0,
+      "Other": 11.4
+    },
+    "Rationale": "Based on Census profiles for urban Los Angeles ZIP codes. These areas show mixed income levels, racial diversity, high bilingual populations, and moderate educational attainment."
+  },
+  "90004": {
+    "Population": 50714,
+    "Median_Age": 35.1,
+    "Gender_Distribution": {
+      "Male": 50.3,
+      "Female": 50.8
+    },
+    "Race_Ethnicity": {
+      "White": 57.4,
+      "Asian": 21.3,
+      "Black": 5.6,
+      "Hispanic_Latino": 23.1,
+      "Other": 0
+    },
+    "Household_Income": {
+      "Median_Income": 81132,
+      "Mean_Income": 133288
+    },
+    "Household_Types": {
+      "Married_Couples": 59.3,
+      "Single_Householders": 29.9,
+      "Non_Family": 18.5
+    },
+    "Education_Level": {
+      "High_School_or_Less": 37.3,
+      "Some_College_or_Associates": 21.0,
+      "Bachelors_or_Higher": 68.0
+    },
+    "Employment_Sectors": {
+      "Technology": 17.1,
+      "Finance_Real_Estate": 9.8,
+      "Education_Healthcare": 18.7,
+      "Retail_Hospitality": 17.4,
+      "Other": 33.6
+    },
+    "Languages_Spoken": {
+      "English_Only": 51.1,
+      "Spanish": 18.9,
+      "Chinese": 4.1,
+      "Other": 14.2
+    },
+    "Rationale": "Based on Census profiles for urban Los Angeles ZIP codes. These areas show mixed income levels, racial diversity, high bilingual populations, and moderate educational attainment."
+  },
+  "90005": {
+    "Population": 54612,
+    "Median_Age": 32.4,
+    "Gender_Distribution": {
+      "Male": 49.4,
+      "Female": 49.6
+    },
+    "Race_Ethnicity": {
+      "White": 67.4,
+      "Asian": 20.2,
+      "Black": 8.9,
+      "Hispanic_Latino": 47.8,
+      "Other": 0
+    },
+    "Household_Income": {
+      "Median_Income": 78457,
+      "Mean_Income": 64734
+    },
+    "Household_Types": {
+      "Married_Couples": 41.4,
+      "Single_Householders": 30.1,
+      "Non_Family": 24.1
+    },
+    "Education_Level": {
+      "High_School_or_Less": 15.5,
+      "Some_College_or_Associates": 20.6,
+      "Bachelors_or_Higher": 62.5
+    },
+    "Employment_Sectors": {
+      "Technology": 8.7,
+      "Finance_Real_Estate": 8.3,
+      "Education_Healthcare": 20.1,
+      "Retail_Hospitality": 11.8,
+      "Other": 39.4
+    },
+    "Languages_Spoken": {
+      "English_Only": 50.7,
+      "Spanish": 11.5,
+      "Chinese": 2.8,
+      "Other": 17.7
+    },
+    "Rationale": "Based on Census profiles for urban Los Angeles ZIP codes. These areas show mixed income levels, racial diversity, high bilingual populations, and moderate educational attainment."
+  },
+  "90006": {
+    "Population": 47858,
+    "Median_Age": 42.6,
+    "Gender_Distribution": {
+      "Male": 50.1,
+      "Female": 50.7
+    },
+    "Race_Ethnicity": {
+      "White": 48.9,
+      "Asian": 27.1,
+      "Black": 6.0,
+      "Hispanic_Latino": 32.8,
+      "Other": 0
+    },
+    "Household_Income": {
+      "Median_Income": 104512,
+      "Mean_Income": 77722
+    },
+    "Household_Types": {
+      "Married_Couples": 35.8,
+      "Single_Householders": 26.8,
+      "Non_Family": 25.9
+    },
+    "Education_Level": {
+      "High_School_or_Less": 21.8,
+      "Some_College_or_Associates": 23.1,
+      "Bachelors_or_Higher": 40.8
+    },
+    "Employment_Sectors": {
+      "Technology": 11.2,
+      "Finance_Real_Estate": 10.3,
+      "Education_Healthcare": 24.3,
+      "Retail_Hospitality": 15.0,
+      "Other": 39.7
+    },
+    "Languages_Spoken": {
+      "English_Only": 45.9,
+      "Spanish": 21.9,
+      "Chinese": 7.7,
+      "Other": 19.6
+    },
+    "Rationale": "Based on Census profiles for urban Los Angeles ZIP codes. These areas show mixed income levels, racial diversity, high bilingual populations, and moderate educational attainment."
+  },
+  "90007": {
+    "Population": 52358,
+    "Median_Age": 38.9,
+    "Gender_Distribution": {
+      "Male": 48.9,
+      "Female": 51.6
+    },
+    "Race_Ethnicity": {
+      "White": 61.7,
+      "Asian": 8.3,
+      "Black": 17.7,
+      "Hispanic_Latino": 47.0,
+      "Other": 0
+    },
+    "Household_Income": {
+      "Median_Income": 73157,
+      "Mean_Income": 60654
+    },
+    "Household_Types": {
+      "Married_Couples": 51.4,
+      "Single_Householders": 37.0,
+      "Non_Family": 22.9
+    },
+    "Education_Level": {
+      "High_School_or_Less": 31.8,
+      "Some_College_or_Associates": 26.7,
+      "Bachelors_or_Higher": 67.3
+    },
+    "Employment_Sectors": {
+      "Technology": 19.2,
+      "Finance_Real_Estate": 11.3,
+      "Education_Healthcare": 13.1,
+      "Retail_Hospitality": 16.5,
+      "Other": 35.3
+    },
+    "Languages_Spoken": {
+      "English_Only": 45.2,
+      "Spanish": 29.1,
+      "Chinese": 2.3,
+      "Other": 11.4
+    },
+    "Rationale": "Based on Census profiles for urban Los Angeles ZIP codes. These areas show mixed income levels, racial diversity, high bilingual populations, and moderate educational attainment."
+  },
+  "90008": {
+    "Population": 54029,
+    "Median_Age": 36.2,
+    "Gender_Distribution": {
+      "Male": 50.5,
+      "Female": 51.2
+    },
+    "Race_Ethnicity": {
+      "White": 48.8,
+      "Asian": 11.0,
+      "Black": 18.6,
+      "Hispanic_Latino": 39.9,
+      "Other": 0
+    },
+    "Household_Income": {
+      "Median_Income": 103189,
+      "Mean_Income": 62983
+    },
+    "Household_Types": {
+      "Married_Couples": 52.6,
+      "Single_Householders": 31.0,
+      "Non_Family": 20.2
+    },
+    "Education_Level": {
+      "High_School_or_Less": 16.9,
+      "Some_College_or_Associates": 26.9,
+      "Bachelors_or_Higher": 32.0
+    },
+    "Employment_Sectors": {
+      "Technology": 18.0,
+      "Finance_Real_Estate": 5.8,
+      "Education_Healthcare": 28.4,
+      "Retail_Hospitality": 22.3,
+      "Other": 36.5
+    },
+    "Languages_Spoken": {
+      "English_Only": 61.9,
+      "Spanish": 38.3,
+      "Chinese": 3.5,
+      "Other": 14.7
+    },
+    "Rationale": "Based on Census profiles for urban Los Angeles ZIP codes. These areas show mixed income levels, racial diversity, high bilingual populations, and moderate educational attainment."
+  },
+  "90010": {
+    "Population": 10352,
+    "Median_Age": 43.2,
+    "Gender_Distribution": {
+      "Male": 51.0,
+      "Female": 49.4
+    },
+    "Race_Ethnicity": {
+      "White": 68.6,
+      "Asian": 22.9,
+      "Black": 4.3,
+      "Hispanic_Latino": 23.8,
+      "Other": 0
+    },
+    "Household_Income": {
+      "Median_Income": 53097,
+      "Mean_Income": 139613
+    },
+    "Household_Types": {
+      "Married_Couples": 56.9,
+      "Single_Householders": 29.1,
+      "Non_Family": 15.0
+    },
+    "Education_Level": {
+      "High_School_or_Less": 34.6,
+      "Some_College_or_Associates": 32.4,
+      "Bachelors_or_Higher": 64.2
+    },
+    "Employment_Sectors": {
+      "Technology": 12.3,
+      "Finance_Real_Estate": 7.7,
+      "Education_Healthcare": 23.4,
+      "Retail_Hospitality": 11.3,
+      "Other": 21.6
+    },
+    "Languages_Spoken": {
+      "English_Only": 65.8,
+      "Spanish": 19.3,
+      "Chinese": 0.2,
+      "Other": 13.5
+    },
+    "Rationale": "Based on Census profiles for urban Los Angeles ZIP codes. These areas show mixed income levels, racial diversity, high bilingual populations, and moderate educational attainment."
+  },
+  "90011": {
+    "Population": 28620,
+    "Median_Age": 43.3,
+    "Gender_Distribution": {
+      "Male": 48.4,
+      "Female": 49.1
+    },
+    "Race_Ethnicity": {
+      "White": 59.3,
+      "Asian": 21.1,
+      "Black": 14.6,
+      "Hispanic_Latino": 17.3,
+      "Other": 0
+    },
+    "Household_Income": {
+      "Median_Income": 92767,
+      "Mean_Income": 129426
+    },
+    "Household_Types": {
+      "Married_Couples": 46.9,
+      "Single_Householders": 29.4,
+      "Non_Family": 19.4
+    },
+    "Education_Level": {
+      "High_School_or_Less": 25.9,
+      "Some_College_or_Associates": 20.1,
+      "Bachelors_or_Higher": 63.7
+    },
+    "Employment_Sectors": {
+      "Technology": 7.8,
+      "Finance_Real_Estate": 8.9,
+      "Education_Healthcare": 21.8,
+      "Retail_Hospitality": 24.3,
+      "Other": 25.1
+    },
+    "Languages_Spoken": {
+      "English_Only": 55.4,
+      "Spanish": 11.5,
+      "Chinese": 3.2,
+      "Other": 11.7
+    },
+    "Rationale": "Based on Census profiles for urban Los Angeles ZIP codes. These areas show mixed income levels, racial diversity, high bilingual populations, and moderate educational attainment."
+  },
+  "90012": {
+    "Population": 54969,
+    "Median_Age": 40.9,
+    "Gender_Distribution": {
+      "Male": 49.0,
+      "Female": 51.4
+    },
+    "Race_Ethnicity": {
+      "White": 43.4,
+      "Asian": 19.0,
+      "Black": 8.4,
+      "Hispanic_Latino": 24.5,
+      "Other": 4.7
+    },
+    "Household_Income": {
+      "Median_Income": 69319,
+      "Mean_Income": 82525
+    },
+    "Household_Types": {
+      "Married_Couples": 39.4,
+      "Single_Householders": 24.5,
+      "Non_Family": 14.7
+    },
+    "Education_Level": {
+      "High_School_or_Less": 22.3,
+      "Some_College_or_Associates": 34.2,
+      "Bachelors_or_Higher": 31.6
+    },
+    "Employment_Sectors": {
+      "Technology": 7.3,
+      "Finance_Real_Estate": 6.4,
+      "Education_Healthcare": 20.8,
+      "Retail_Hospitality": 19.8,
+      "Other": 24.9
+    },
+    "Languages_Spoken": {
+      "English_Only": 54.3,
+      "Spanish": 18.0,
+      "Chinese": 7.8,
+      "Other": 10.7
+    },
+    "Rationale": "Based on Census profiles for urban Los Angeles ZIP codes. These areas show mixed income levels, racial diversity, high bilingual populations, and moderate educational attainment."
+  },
+  "90013": {
+    "Population": 42661,
+    "Median_Age": 38.9,
+    "Gender_Distribution": {
+      "Male": 48.4,
+      "Female": 51.7
+    },
+    "Race_Ethnicity": {
+      "White": 33.6,
+      "Asian": 28.8,
+      "Black": 1.0,
+      "Hispanic_Latino": 32.4,
+      "Other": 4.2
+    },
+    "Household_Income": {
+      "Median_Income": 113537,
+      "Mean_Income": 96628
+    },
+    "Household_Types": {
+      "Married_Couples": 50.4,
+      "Single_Householders": 33.1,
+      "Non_Family": 19.8
+    },
+    "Education_Level": {
+      "High_School_or_Less": 20.8,
+      "Some_College_or_Associates": 26.5,
+      "Bachelors_or_Higher": 47.5
+    },
+    "Employment_Sectors": {
+      "Technology": 7.0,
+      "Finance_Real_Estate": 13.1,
+      "Education_Healthcare": 10.4,
+      "Retail_Hospitality": 23.3,
+      "Other": 24.1
+    },
+    "Languages_Spoken": {
+      "English_Only": 47.2,
+      "Spanish": 37.0,
+      "Chinese": 0.7,
+      "Other": 18.8
+    },
+    "Rationale": "Based on Census profiles for urban Los Angeles ZIP codes. These areas show mixed income levels, racial diversity, high bilingual populations, and moderate educational attainment."
+  },
+  "90014": {
+    "Population": 52205,
+    "Median_Age": 31.1,
+    "Gender_Distribution": {
+      "Male": 50.8,
+      "Female": 51.5
+    },
+    "Race_Ethnicity": {
+      "White": 37.4,
+      "Asian": 27.9,
+      "Black": 9.3,
+      "Hispanic_Latino": 25.7,
+      "Other": 0
+    },
+    "Household_Income": {
+      "Median_Income": 101815,
+      "Mean_Income": 96453
+    },
+    "Household_Types": {
+      "Married_Couples": 57.7,
+      "Single_Householders": 25.5,
+      "Non_Family": 19.8
+    },
+    "Education_Level": {
+      "High_School_or_Less": 15.8,
+      "Some_College_or_Associates": 24.0,
+      "Bachelors_or_Higher": 69.7
+    },
+    "Employment_Sectors": {
+      "Technology": 5.3,
+      "Finance_Real_Estate": 5.8,
+      "Education_Healthcare": 11.0,
+      "Retail_Hospitality": 21.2,
+      "Other": 38.8
+    },
+    "Languages_Spoken": {
+      "English_Only": 48.4,
+      "Spanish": 27.7,
+      "Chinese": 1.5,
+      "Other": 13.9
+    },
+    "Rationale": "Based on Census profiles for urban Los Angeles ZIP codes. These areas show mixed income levels, racial diversity, high bilingual populations, and moderate educational attainment."
+  },
+  "90015": {
+    "Population": 30734,
+    "Median_Age": 32.1,
+    "Gender_Distribution": {
+      "Male": 50.0,
+      "Female": 51.7
+    },
+    "Race_Ethnicity": {
+      "White": 67.2,
+      "Asian": 25.1,
+      "Black": 12.1,
+      "Hispanic_Latino": 15.1,
+      "Other": 0
+    },
+    "Household_Income": {
+      "Median_Income": 87929,
+      "Mean_Income": 117362
+    },
+    "Household_Types": {
+      "Married_Couples": 36.6,
+      "Single_Householders": 34.5,
+      "Non_Family": 12.0
+    },
+    "Education_Level": {
+      "High_School_or_Less": 16.4,
+      "Some_College_or_Associates": 23.5,
+      "Bachelors_or_Higher": 52.9
+    },
+    "Employment_Sectors": {
+      "Technology": 12.2,
+      "Finance_Real_Estate": 8.3,
+      "Education_Healthcare": 29.2,
+      "Retail_Hospitality": 10.3,
+      "Other": 29.1
+    },
+    "Languages_Spoken": {
+      "English_Only": 66.1,
+      "Spanish": 24.6,
+      "Chinese": 5.1,
+      "Other": 16.4
+    },
+    "Rationale": "Based on Census profiles for urban Los Angeles ZIP codes. These areas show mixed income levels, racial diversity, high bilingual populations, and moderate educational attainment."
+  },
+  "90016": {
+    "Population": 24209,
+    "Median_Age": 40.2,
+    "Gender_Distribution": {
+      "Male": 48.1,
+      "Female": 50.5
+    },
+    "Race_Ethnicity": {
+      "White": 44.8,
+      "Asian": 29.3,
+      "Black": 6.8,
+      "Hispanic_Latino": 24.5,
+      "Other": 0
+    },
+    "Household_Income": {
+      "Median_Income": 107029,
+      "Mean_Income": 111253
+    },
+    "Household_Types": {
+      "Married_Couples": 39.5,
+      "Single_Householders": 38.3,
+      "Non_Family": 28.3
+    },
+    "Education_Level": {
+      "High_School_or_Less": 36.1,
+      "Some_College_or_Associates": 30.9,
+      "Bachelors_or_Higher": 59.0
+    },
+    "Employment_Sectors": {
+      "Technology": 5.6,
+      "Finance_Real_Estate": 6.7,
+      "Education_Healthcare": 25.2,
+      "Retail_Hospitality": 23.0,
+      "Other": 32.1
+    },
+    "Languages_Spoken": {
+      "English_Only": 64.8,
+      "Spanish": 28.9,
+      "Chinese": 9.0,
+      "Other": 16.5
+    },
+    "Rationale": "Based on Census profiles for urban Los Angeles ZIP codes. These areas show mixed income levels, racial diversity, high bilingual populations, and moderate educational attainment."
+  },
+  "90017": {
+    "Population": 58559,
+    "Median_Age": 43.6,
+    "Gender_Distribution": {
+      "Male": 50.9,
+      "Female": 50.7
+    },
+    "Race_Ethnicity": {
+      "White": 47.4,
+      "Asian": 29.9,
+      "Black": 1.5,
+      "Hispanic_Latino": 38.0,
+      "Other": 0
+    },
+    "Household_Income": {
+      "Median_Income": 58071,
+      "Mean_Income": 74193
+    },
+    "Household_Types": {
+      "Married_Couples": 38.4,
+      "Single_Householders": 28.1,
+      "Non_Family": 26.5
+    },
+    "Education_Level": {
+      "High_School_or_Less": 35.9,
+      "Some_College_or_Associates": 33.8,
+      "Bachelors_or_Higher": 47.3
+    },
+    "Employment_Sectors": {
+      "Technology": 6.5,
+      "Finance_Real_Estate": 6.6,
+      "Education_Healthcare": 10.2,
+      "Retail_Hospitality": 19.0,
+      "Other": 31.3
+    },
+    "Languages_Spoken": {
+      "English_Only": 68.9,
+      "Spanish": 23.2,
+      "Chinese": 0.3,
+      "Other": 6.5
+    },
+    "Rationale": "Based on Census profiles for urban Los Angeles ZIP codes. These areas show mixed income levels, racial diversity, high bilingual populations, and moderate educational attainment."
+  },
+  "90018": {
+    "Population": 41618,
+    "Median_Age": 40.7,
+    "Gender_Distribution": {
+      "Male": 48.9,
+      "Female": 50.0
+    },
+    "Race_Ethnicity": {
+      "White": 53.9,
+      "Asian": 8.8,
+      "Black": 12.2,
+      "Hispanic_Latino": 26.7,
+      "Other": 0
+    },
+    "Household_Income": {
+      "Median_Income": 89707,
+      "Mean_Income": 95497
+    },
+    "Household_Types": {
+      "Married_Couples": 48.0,
+      "Single_Householders": 30.5,
+      "Non_Family": 18.6
+    },
+    "Education_Level": {
+      "High_School_or_Less": 18.8,
+      "Some_College_or_Associates": 30.8,
+      "Bachelors_or_Higher": 36.4
+    },
+    "Employment_Sectors": {
+      "Technology": 7.4,
+      "Finance_Real_Estate": 8.2,
+      "Education_Healthcare": 12.5,
+      "Retail_Hospitality": 21.7,
+      "Other": 23.6
+    },
+    "Languages_Spoken": {
+      "English_Only": 50.8,
+      "Spanish": 38.7,
+      "Chinese": 6.3,
+      "Other": 11.2
+    },
+    "Rationale": "Based on Census profiles for urban Los Angeles ZIP codes. These areas show mixed income levels, racial diversity, high bilingual populations, and moderate educational attainment."
+  },
+  "90019": {
+    "Population": 23015,
+    "Median_Age": 39.3,
+    "Gender_Distribution": {
+      "Male": 49.7,
+      "Female": 50.2
+    },
+    "Race_Ethnicity": {
+      "White": 70.0,
+      "Asian": 22.5,
+      "Black": 12.4,
+      "Hispanic_Latino": 21.4,
+      "Other": 0
+    },
+    "Household_Income": {
+      "Median_Income": 91626,
+      "Mean_Income": 83647
+    },
+    "Household_Types": {
+      "Married_Couples": 37.2,
+      "Single_Householders": 26.6,
+      "Non_Family": 27.5
+    },
+    "Education_Level": {
+      "High_School_or_Less": 14.2,
+      "Some_College_or_Associates": 31.7,
+      "Bachelors_or_Higher": 64.7
+    },
+    "Employment_Sectors": {
+      "Technology": 6.9,
+      "Finance_Real_Estate": 7.3,
+      "Education_Healthcare": 10.2,
+      "Retail_Hospitality": 16.4,
+      "Other": 26.1
+    },
+    "Languages_Spoken": {
+      "English_Only": 49.5,
+      "Spanish": 24.3,
+      "Chinese": 2.9,
+      "Other": 10.1
+    },
+    "Rationale": "Based on Census profiles for urban Los Angeles ZIP codes. These areas show mixed income levels, racial diversity, high bilingual populations, and moderate educational attainment."
+  },
+  "90020": {
+    "Population": 28350,
+    "Median_Age": 32.3,
+    "Gender_Distribution": {
+      "Male": 48.1,
+      "Female": 50.3
+    },
+    "Race_Ethnicity": {
+      "White": 52.5,
+      "Asian": 13.7,
+      "Black": 7.6,
+      "Hispanic_Latino": 36.5,
+      "Other": 0
+    },
+    "Household_Income": {
+      "Median_Income": 96757,
+      "Mean_Income": 128747
+    },
+    "Household_Types": {
+      "Married_Couples": 36.9,
+      "Single_Householders": 20.5,
+      "Non_Family": 15.6
+    },
+    "Education_Level": {
+      "High_School_or_Less": 15.7,
+      "Some_College_or_Associates": 31.9,
+      "Bachelors_or_Higher": 47.7
+    },
+    "Employment_Sectors": {
+      "Technology": 8.6,
+      "Finance_Real_Estate": 14.2,
+      "Education_Healthcare": 28.0,
+      "Retail_Hospitality": 12.0,
+      "Other": 34.2
+    },
+    "Languages_Spoken": {
+      "English_Only": 41.3,
+      "Spanish": 35.8,
+      "Chinese": 6.1,
+      "Other": 7.8
+    },
+    "Rationale": "Based on Census profiles for urban Los Angeles ZIP codes. These areas show mixed income levels, racial diversity, high bilingual populations, and moderate educational attainment."
+  },
+  "90021": {
+    "Population": 20980,
+    "Median_Age": 30.4,
+    "Gender_Distribution": {
+      "Male": 48.5,
+      "Female": 50.7
+    },
+    "Race_Ethnicity": {
+      "White": 55.2,
+      "Asian": 7.5,
+      "Black": 1.3,
+      "Hispanic_Latino": 34.1,
+      "Other": 1.9
+    },
+    "Household_Income": {
+      "Median_Income": 97775,
+      "Mean_Income": 126260
+    },
+    "Household_Types": {
+      "Married_Couples": 52.3,
+      "Single_Householders": 25.8,
+      "Non_Family": 23.4
+    },
+    "Education_Level": {
+      "High_School_or_Less": 11.6,
+      "Some_College_or_Associates": 33.4,
+      "Bachelors_or_Higher": 57.1
+    },
+    "Employment_Sectors": {
+      "Technology": 16.4,
+      "Finance_Real_Estate": 10.5,
+      "Education_Healthcare": 13.9,
+      "Retail_Hospitality": 20.7,
+      "Other": 24.4
+    },
+    "Languages_Spoken": {
+      "English_Only": 58.4,
+      "Spanish": 36.4,
+      "Chinese": 6.8,
+      "Other": 19.7
+    },
+    "Rationale": "Based on Census profiles for urban Los Angeles ZIP codes. These areas show mixed income levels, racial diversity, high bilingual populations, and moderate educational attainment."
+  }
+}
