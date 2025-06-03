@@ -71,7 +71,7 @@
     let geojsonLayer;
 
     async function getWeatherData(zip) {
-      const apiKey = 'e651e5dac91818a1c4453466a4641e7c'; // Replace with your OpenWeatherMap API key
+      const apiKey = 'YOUR_API_KEY'; // Replace with your OpenWeatherMap API key
       const url = `https://api.openweathermap.org/data/2.5/weather?zip=${zip},US&appid=${apiKey}&units=imperial`;
 
       try {
@@ -126,7 +126,7 @@
           <b>Avg Sq Ft:</b> ${house.Average_Square_Footage || 'N/A'}<br/>
           <b>Age of Home:</b> ${house.Average_Year_Built || 'N/A'}<br/>
           <b>Architectural Style:</b> ${house.Architectural_Style || 'N/A'}<br/>
-          <hr><b>Weather</b><br/>
+          <hr><b>Current Weather</b><br/>
           <b>Temp:</b> ${weather ? `${weather.tempF}°F / ${weather.tempC}°C` : 'N/A'}<br/>
           <b>Precipitation:</b> ${weather ? weather.precipitation : 'N/A'}<br/>
           <br/><i>${p.Rationale || ''}</i>
