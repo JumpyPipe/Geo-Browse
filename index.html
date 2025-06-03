@@ -19,6 +19,16 @@
     }
     #map { height: 85vh; }
     select { padding: 0.4rem; }
+    #loadingSpinner {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: rgba(255,255,255,0.9);
+      padding: 6px 12px;
+      border-radius: 4px;
+      font-weight: bold;
+      display: none;
+    }
   </style>
 </head>
 <body>
@@ -36,11 +46,12 @@
     <label>Color:
       <select id="colorFilter"><option value="">View All</option></select>
     </label>
-    <label>Furniture:
+    <label>Furniture Type:
       <select id="furnitureFilter"><option value="">View All</option></select>
     </label>
   </div>
 
+  <div id="loadingSpinner">Loading Weather...</div>
   <div id="map"></div>
 
   <script>
@@ -49,22 +60,115 @@
       attribution: '© OpenStreetMap contributors'
     }).addTo(map);
 
-    let allFeatures = [];
-    let geojsonLayer;
-
     const zipFilter = document.getElementById('zipFilter');
     const styleFilter = document.getElementById('styleFilter');
     const materialFilter = document.getElementById('materialFilter');
     const colorFilter = document.getElementById('colorFilter');
     const furnitureFilter = document.getElementById('furnitureFilter');
+    const loadingSpinner = document.getElementById('loadingSpinner');
+
+    let allFeatures = [];
+    let geojsonLayer;
+
+    async function getWeatherData(zip) {
+      const apiKey = 'e651e5dac91818a1c4453466a4641e7c'; // Replace with your OpenWeatherMap API key
+      const url = `https://api.openweathermap.org/data/2.5/weather?zip=${zip},US&appid=${apiKey}&units=imperial`;
+
+      try {
+        const res = await fetch(url);
+        const data = await res.json();
+        if (data.cod === 200) {
+          return {
+            tempF: data.main.temp,
+            tempC: ((data.main.temp - 32) * 5 / 9).toFixed(1),
+            precipitation: data.weather[0].main.includes("Rain") ? "Yes" : "No"
+          };
+        }
+      } catch (error) {
+        console.error(`Weather fetch failed for ${zip}:`, error);
+      }
+      return null;
+    }
+
+    function styleFeature(feature) {
+      return {
+        color: "#3388ff",
+        weight: 1,
+        fillOpacity: 0.4
+      };
+    }
+
+    function onEachFeature(feature, layer) {
+      const p = feature.properties;
+      const demo = p.Demographics || {};
+      const house = p.Housing || {};
+
+      loadingSpinner.style.display = 'block';
+
+      getWeatherData(p.zip).then(weather => {
+        const label = `
+          <b>ZIP:</b> ${p.zip}<br/>
+          <hr><b>Furniture Preference</b><br/>
+          <b>Furniture:</b> ${p.Furniture_Type || 'N/A'}<br/>
+          <b>Style:</b> ${p.Style || 'N/A'}<br/>
+          <b>Material:</b> ${p.Primary_Material || 'N/A'}<br/>
+          <b>Color:</b> ${p.Color || 'N/A'}<br/>
+          <b>Price Point:</b> ${p.Price_Point || 'N/A'}<br/>
+          <b>Pattern:</b> ${p.Pattern || 'N/A'}<br/>
+          <hr><b>Demographics</b><br/>
+          <b>Median Income:</b> $${demo.Median_Household_Income?.toLocaleString() || 'N/A'}<br/>
+          <b>Median Home Value:</b> $${demo.Median_Home_Value?.toLocaleString() || 'N/A'}<br/>
+          <b>Median Age:</b> ${demo.Median_Age || 'N/A'}<br/>
+          <b>Race:</b> ${demo.Racial_Composition || 'N/A'}<br/>
+          <b>Education:</b> ${demo.Education || 'N/A'}<br/>
+          <hr><b>Housing</b><br/>
+          <b>Home Type:</b> ${house.Most_Common_Home_Type || 'N/A'}<br/>
+          <b>Avg Sq Ft:</b> ${house.Average_Square_Footage || 'N/A'}<br/>
+          <b>Age of Home:</b> ${house.Average_Year_Built || 'N/A'}<br/>
+          <b>Architectural Style:</b> ${house.Architectural_Style || 'N/A'}<br/>
+          <hr><b>Weather</b><br/>
+          <b>Temp:</b> ${weather ? `${weather.tempF}°F / ${weather.tempC}°C` : 'N/A'}<br/>
+          <b>Precipitation:</b> ${weather ? weather.precipitation : 'N/A'}<br/>
+          <br/><i>${p.Rationale || ''}</i>
+        `;
+
+        layer.bindPopup(label);
+        loadingSpinner.style.display = 'none';
+      });
+    }
+
+    function updateMap() {
+      const zipVal = zipFilter.value.trim();
+      const styleVal = styleFilter.value.trim();
+      const materialVal = materialFilter.value.trim();
+      const colorVal = colorFilter.value.trim();
+      const furnitureVal = furnitureFilter.value.trim();
+
+      if (geojsonLayer) geojsonLayer.remove();
+
+      const filtered = allFeatures.filter(f => {
+        const p = f.properties;
+        return (!zipVal || p.zip === zipVal)
+          && (!styleVal || p.Style === styleVal)
+          && (!materialVal || p.Primary_Material === materialVal)
+          && (!colorVal || p.Color === colorVal)
+          && (!furnitureVal || p.Furniture_Type === furnitureVal);
+      });
+
+      geojsonLayer = L.geoJSON(filtered, {
+        style: styleFeature,
+        onEachFeature: onEachFeature
+      }).addTo(map);
+
+      if (filtered.length > 0) {
+        map.fitBounds(geojsonLayer.getBounds());
+      }
+    }
 
     Promise.all([
       fetch('bay_area_zip_trends.geojson').then(res => res.json()),
-      fetch('demographics.json').then(res => res.json()),
-      fetch('housing.json').then(res => res.json()),
       fetch('trends.json').then(res => res.json())
-    ])
-    .then(([geoData, demographics, housing, trends]) => {
+    ]).then(([geoData, trendData]) => {
       allFeatures = geoData.features;
 
       const zipSet = new Set();
@@ -75,22 +179,15 @@
 
       allFeatures.forEach(f => {
         const zip = f.properties.zip?.toString().trim();
-        const trend = trends[zip] || {};
-        const demo = demographics[zip] || {};
-        const home = housing[zip] || {};
-
-        f.properties = {
-          ...f.properties,
-          ...trend,
-          Demographics: demo,
-          Housing: home
-        };
-
-        zipSet.add(zip);
-        if (trend.Style) styleSet.add(trend.Style);
-        if (trend.Primary_Material) materialSet.add(trend.Primary_Material);
-        if (trend.Color) colorSet.add(trend.Color);
-        if (trend.Furniture_Type) furnitureSet.add(trend.Furniture_Type);
+        const trend = trendData[zip];
+        if (trend) {
+          f.properties = { ...f.properties, ...trend };
+          zipSet.add(zip);
+          if (trend.Style) styleSet.add(trend.Style);
+          if (trend.Primary_Material) materialSet.add(trend.Primary_Material);
+          if (trend.Color) colorSet.add(trend.Color);
+          if (trend.Furniture_Type) furnitureSet.add(trend.Furniture_Type);
+        }
       });
 
       [...zipSet].sort().forEach(z => zipFilter.innerHTML += `<option value="${z}">${z}</option>`);
@@ -106,79 +203,7 @@
       furnitureFilter.addEventListener('change', updateMap);
 
       updateMap();
-    })
-    .catch(err => {
-      console.error("❌ Error loading data:", err);
-      alert("Error loading dashboard data. See console.");
     });
-
-    function styleFeature(feature) {
-      return {
-        color: "#3388ff",
-        weight: 1,
-        fillOpacity: 0.4
-      };
-    }
-
-    function onEachFeature(feature, layer) {
-      const p = feature.properties;
-      const demo = p.Demographics || {};
-      const house = p.Housing || {};
-
-      const label = `
-        <b>ZIP:</b> ${p.zip}<br/>
-        <hr><b>Furniture Preference</b><br/>
-        <b>Furniture:</b> ${p.Furniture_Type || 'N/A'}<br/>
-        <b>Style:</b> ${p.Style || 'N/A'}<br/>
-        <b>Material:</b> ${p.Primary_Material || 'N/A'}<br/>
-        <b>Color:</b> ${p.Color || 'N/A'}<br/>
-        <b>Price Point:</b> ${p.Price_Point || 'N/A'}<br/>
-        <b>Pattern:</b> ${p.Pattern || 'N/A'}<br/>
-        <hr><b>Demographics</b><br/>
-        <b>Median Income:</b> $${demo.Median_Household_Income?.toLocaleString() || 'N/A'}<br/>
-        <b>Median Home Value:</b> $${demo.Median_Home_Value?.toLocaleString() || 'N/A'}<br/>
-        <b>Median Age:</b> ${demo.Median_Age || 'N/A'}<br/>
-        <b>Race:</b> ${demo.Racial_Composition || 'N/A'}<br/>
-        <b>Education:</b> ${demo.Education || 'N/A'}<br/>
-        <hr><b>Housing</b><br/>
-        <b>Home Type:</b> ${house.Most_Common_Home_Type || 'N/A'}<br/>
-        <b>Avg Sq Ft:</b> ${house.Average_Square_Footage || 'N/A'}<br/>
-        <b>Age of Home:</b> ${house.Average_Year_Built || 'N/A'}<br/>
-        <b>Architectural Style:</b> ${house.Architectural_Style || 'N/A'}<br/><br/>
-        <i>${p.Rationale || ''}</i>
-      `;
-
-      layer.bindPopup(label);
-    }
-
-    function updateMap() {
-      const zipVal = zipFilter.value.trim();
-      const styleVal = styleFilter.value.trim();
-      const materialVal = materialFilter.value.trim();
-      const colorVal = colorFilter.value.trim();
-      const furnitureVal = furnitureFilter.value.trim();
-
-      if (geojsonLayer) geojsonLayer.remove();
-
-      const filtered = allFeatures.filter(f => {
-        const p = f.properties;
-        const zipMatch = !zipVal || p.zip === zipVal;
-        const styleMatch = !styleVal || p.Style === styleVal;
-        const materialMatch = !materialVal || p.Primary_Material === materialVal;
-        const colorMatch = !colorVal || p.Color === colorVal;
-        const furnitureMatch = !furnitureVal || p.Furniture_Type === furnitureVal;
-        return zipMatch && styleMatch && materialMatch && colorMatch && furnitureMatch;
-      });
-
-      geojsonLayer = L.geoJSON(filtered, {
-        style: styleFeature,
-        onEachFeature: onEachFeature
-      }).addTo(map);
-
-      if (filtered.length > 0) {
-        map.fitBounds(geojsonLayer.getBounds());
-      }
-    }
   </script>
 </body>
 </html>
