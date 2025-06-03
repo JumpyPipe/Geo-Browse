@@ -56,7 +56,7 @@
 
     Promise.all([
       fetch('bay_area_zip_trends.geojson').then(res => res.json()),
-      fetch('zip_trends_california.json').then(res => res.json())
+      fetch('zip_trends.json').then(res => res.json())
     ])
     .then(([geoData, trendData]) => {
       allFeatures = geoData.features;
