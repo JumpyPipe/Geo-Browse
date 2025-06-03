@@ -1,0 +1,4930 @@
+{
+  "90010": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Traditional",
+    "Primary_Material": "Glass",
+    "Color": "Beige",
+    "Pattern": "Solid"
+  },
+  "90020": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Farmhouse",
+    "Primary_Material": "Velvet",
+    "Color": "Navy",
+    "Pattern": "Floral"
+  },
+  "90030": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Traditional",
+    "Primary_Material": "Rattan",
+    "Color": "Navy",
+    "Pattern": "Geometric"
+  },
+  "90040": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Farmhouse",
+    "Primary_Material": "Glass",
+    "Color": "Navy",
+    "Pattern": "Plaid"
+  },
+  "90050": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Farmhouse",
+    "Primary_Material": "Glass",
+    "Color": "Navy",
+    "Pattern": "Solid"
+  },
+  "90060": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Modern",
+    "Primary_Material": "Wood",
+    "Color": "Beige",
+    "Pattern": "Plaid"
+  },
+  "90070": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Farmhouse",
+    "Primary_Material": "Metal",
+    "Color": "Gray",
+    "Pattern": "Striped"
+  },
+  "90080": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Farmhouse",
+    "Primary_Material": "Rattan",
+    "Color": "Navy",
+    "Pattern": "Floral"
+  },
+  "90090": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Mid-Century",
+    "Primary_Material": "Rattan",
+    "Color": "Gray",
+    "Pattern": "Striped"
+  },
+  "90100": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Farmhouse",
+    "Primary_Material": "Velvet",
+    "Color": "Beige",
+    "Pattern": "Striped"
+  },
+  "90110": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Farmhouse",
+    "Primary_Material": "Wood",
+    "Color": "Emerald",
+    "Pattern": "Geometric"
+  },
+  "90120": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Traditional",
+    "Primary_Material": "Glass",
+    "Color": "Navy",
+    "Pattern": "Floral"
+  },
+  "90130": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Traditional",
+    "Primary_Material": "Wood",
+    "Color": "White",
+    "Pattern": "Solid"
+  },
+  "90140": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Farmhouse",
+    "Primary_Material": "Linen",
+    "Color": "Gray",
+    "Pattern": "Geometric"
+  },
+  "90150": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Industrial",
+    "Primary_Material": "Wood",
+    "Color": "Gray",
+    "Pattern": "Geometric"
+  },
+  "90160": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Industrial",
+    "Primary_Material": "Wood",
+    "Color": "Navy",
+    "Pattern": "Geometric"
+  },
+  "90170": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Mid-Century",
+    "Primary_Material": "Metal",
+    "Color": "Navy",
+    "Pattern": "Geometric"
+  },
+  "90180": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Scandinavian",
+    "Primary_Material": "Velvet",
+    "Color": "Gray",
+    "Pattern": "Solid"
+  },
+  "90190": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Farmhouse",
+    "Primary_Material": "Glass",
+    "Color": "Emerald",
+    "Pattern": "Plaid"
+  },
+  "90200": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Modern",
+    "Primary_Material": "Linen",
+    "Color": "Beige",
+    "Pattern": "Plaid"
+  },
+  "90210": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Farmhouse",
+    "Primary_Material": "Linen",
+    "Color": "Black",
+    "Pattern": "Plaid"
+  },
+  "90220": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Mid-Century",
+    "Primary_Material": "Velvet",
+    "Color": "Navy",
+    "Pattern": "Geometric"
+  },
+  "90230": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Mid-Century",
+    "Primary_Material": "Wood",
+    "Color": "Gray",
+    "Pattern": "Geometric"
+  },
+  "90240": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Industrial",
+    "Primary_Material": "Glass",
+    "Color": "Gray",
+    "Pattern": "Floral"
+  },
+  "90250": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Farmhouse",
+    "Primary_Material": "Linen",
+    "Color": "Black",
+    "Pattern": "Floral"
+  },
+  "90260": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Industrial",
+    "Primary_Material": "Metal",
+    "Color": "Black",
+    "Pattern": "Striped"
+  },
+  "90270": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Mid-Century",
+    "Primary_Material": "Glass",
+    "Color": "Black",
+    "Pattern": "Geometric"
+  },
+  "90280": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Mid-Century",
+    "Primary_Material": "Glass",
+    "Color": "Black",
+    "Pattern": "Striped"
+  },
+  "90290": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Industrial",
+    "Primary_Material": "Wood",
+    "Color": "Navy",
+    "Pattern": "Striped"
+  },
+  "90300": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Industrial",
+    "Primary_Material": "Wood",
+    "Color": "Navy",
+    "Pattern": "Floral"
+  },
+  "90310": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Scandinavian",
+    "Primary_Material": "Wood",
+    "Color": "White",
+    "Pattern": "Solid"
+  },
+  "90320": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Modern",
+    "Primary_Material": "Wood",
+    "Color": "Navy",
+    "Pattern": "Striped"
+  },
+  "90330": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Mid-Century",
+    "Primary_Material": "Velvet",
+    "Color": "Emerald",
+    "Pattern": "Plaid"
+  },
+  "90340": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Modern",
+    "Primary_Material": "Velvet",
+    "Color": "Gray",
+    "Pattern": "Floral"
+  },
+  "90350": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Scandinavian",
+    "Primary_Material": "Wood",
+    "Color": "Navy",
+    "Pattern": "Geometric"
+  },
+  "90360": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Farmhouse",
+    "Primary_Material": "Metal",
+    "Color": "Navy",
+    "Pattern": "Floral"
+  },
+  "90370": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Farmhouse",
+    "Primary_Material": "Rattan",
+    "Color": "Black",
+    "Pattern": "Striped"
+  },
+  "90380": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Mid-Century",
+    "Primary_Material": "Metal",
+    "Color": "Gray",
+    "Pattern": "Plaid"
+  },
+  "90390": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Modern",
+    "Primary_Material": "Wood",
+    "Color": "Black",
+    "Pattern": "Geometric"
+  },
+  "90400": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Industrial",
+    "Primary_Material": "Rattan",
+    "Color": "Beige",
+    "Pattern": "Floral"
+  },
+  "90410": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Traditional",
+    "Primary_Material": "Glass",
+    "Color": "Emerald",
+    "Pattern": "Geometric"
+  },
+  "90420": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Industrial",
+    "Primary_Material": "Metal",
+    "Color": "Emerald",
+    "Pattern": "Floral"
+  },
+  "90430": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Industrial",
+    "Primary_Material": "Rattan",
+    "Color": "Gray",
+    "Pattern": "Floral"
+  },
+  "90440": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Scandinavian",
+    "Primary_Material": "Rattan",
+    "Color": "Gray",
+    "Pattern": "Floral"
+  },
+  "90450": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Modern",
+    "Primary_Material": "Metal",
+    "Color": "Beige",
+    "Pattern": "Striped"
+  },
+  "90460": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Traditional",
+    "Primary_Material": "Glass",
+    "Color": "Beige",
+    "Pattern": "Floral"
+  },
+  "90470": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Industrial",
+    "Primary_Material": "Glass",
+    "Color": "White",
+    "Pattern": "Geometric"
+  },
+  "90480": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Traditional",
+    "Primary_Material": "Wood",
+    "Color": "Gray",
+    "Pattern": "Geometric"
+  },
+  "90490": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Traditional",
+    "Primary_Material": "Velvet",
+    "Color": "Gray",
+    "Pattern": "Plaid"
+  },
+  "90500": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Farmhouse",
+    "Primary_Material": "Glass",
+    "Color": "Black",
+    "Pattern": "Striped"
+  },
+  "90510": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Traditional",
+    "Primary_Material": "Linen",
+    "Color": "White",
+    "Pattern": "Floral"
+  },
+  "90520": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Traditional",
+    "Primary_Material": "Wood",
+    "Color": "Emerald",
+    "Pattern": "Solid"
+  },
+  "90530": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Industrial",
+    "Primary_Material": "Metal",
+    "Color": "Black",
+    "Pattern": "Plaid"
+  },
+  "90540": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Industrial",
+    "Primary_Material": "Velvet",
+    "Color": "Gray",
+    "Pattern": "Geometric"
+  },
+  "90550": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Scandinavian",
+    "Primary_Material": "Velvet",
+    "Color": "Navy",
+    "Pattern": "Geometric"
+  },
+  "90560": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Modern",
+    "Primary_Material": "Rattan",
+    "Color": "Black",
+    "Pattern": "Floral"
+  },
+  "90570": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Modern",
+    "Primary_Material": "Velvet",
+    "Color": "Gray",
+    "Pattern": "Plaid"
+  },
+  "90580": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Modern",
+    "Primary_Material": "Metal",
+    "Color": "Gray",
+    "Pattern": "Solid"
+  },
+  "90590": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Farmhouse",
+    "Primary_Material": "Wood",
+    "Color": "Emerald",
+    "Pattern": "Striped"
+  },
+  "90600": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Farmhouse",
+    "Primary_Material": "Glass",
+    "Color": "Gray",
+    "Pattern": "Floral"
+  },
+  "90610": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Modern",
+    "Primary_Material": "Glass",
+    "Color": "Navy",
+    "Pattern": "Plaid"
+  },
+  "90620": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Scandinavian",
+    "Primary_Material": "Wood",
+    "Color": "Navy",
+    "Pattern": "Solid"
+  },
+  "90630": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Scandinavian",
+    "Primary_Material": "Wood",
+    "Color": "Navy",
+    "Pattern": "Floral"
+  },
+  "90640": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Scandinavian",
+    "Primary_Material": "Glass",
+    "Color": "Gray",
+    "Pattern": "Solid"
+  },
+  "90650": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Farmhouse",
+    "Primary_Material": "Linen",
+    "Color": "White",
+    "Pattern": "Floral"
+  },
+  "90660": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Mid-Century",
+    "Primary_Material": "Metal",
+    "Color": "White",
+    "Pattern": "Geometric"
+  },
+  "90670": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Farmhouse",
+    "Primary_Material": "Metal",
+    "Color": "White",
+    "Pattern": "Floral"
+  },
+  "90680": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Modern",
+    "Primary_Material": "Linen",
+    "Color": "Emerald",
+    "Pattern": "Floral"
+  },
+  "90690": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Farmhouse",
+    "Primary_Material": "Rattan",
+    "Color": "Gray",
+    "Pattern": "Floral"
+  },
+  "90700": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Scandinavian",
+    "Primary_Material": "Rattan",
+    "Color": "Beige",
+    "Pattern": "Floral"
+  },
+  "90710": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Industrial",
+    "Primary_Material": "Rattan",
+    "Color": "Black",
+    "Pattern": "Floral"
+  },
+  "90720": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Traditional",
+    "Primary_Material": "Metal",
+    "Color": "White",
+    "Pattern": "Floral"
+  },
+  "90730": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Traditional",
+    "Primary_Material": "Glass",
+    "Color": "Gray",
+    "Pattern": "Solid"
+  },
+  "90740": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Farmhouse",
+    "Primary_Material": "Glass",
+    "Color": "White",
+    "Pattern": "Floral"
+  },
+  "90750": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Mid-Century",
+    "Primary_Material": "Wood",
+    "Color": "Emerald",
+    "Pattern": "Solid"
+  },
+  "90760": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Farmhouse",
+    "Primary_Material": "Velvet",
+    "Color": "Beige",
+    "Pattern": "Floral"
+  },
+  "90770": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Traditional",
+    "Primary_Material": "Wood",
+    "Color": "Beige",
+    "Pattern": "Plaid"
+  },
+  "90780": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Modern",
+    "Primary_Material": "Velvet",
+    "Color": "Emerald",
+    "Pattern": "Floral"
+  },
+  "90790": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Scandinavian",
+    "Primary_Material": "Rattan",
+    "Color": "White",
+    "Pattern": "Solid"
+  },
+  "90800": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Industrial",
+    "Primary_Material": "Velvet",
+    "Color": "Black",
+    "Pattern": "Solid"
+  },
+  "90810": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Mid-Century",
+    "Primary_Material": "Glass",
+    "Color": "Navy",
+    "Pattern": "Striped"
+  },
+  "90820": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Industrial",
+    "Primary_Material": "Glass",
+    "Color": "Emerald",
+    "Pattern": "Floral"
+  },
+  "90830": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Traditional",
+    "Primary_Material": "Linen",
+    "Color": "Navy",
+    "Pattern": "Solid"
+  },
+  "90840": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Traditional",
+    "Primary_Material": "Velvet",
+    "Color": "White",
+    "Pattern": "Striped"
+  },
+  "90850": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Modern",
+    "Primary_Material": "Velvet",
+    "Color": "Black",
+    "Pattern": "Plaid"
+  },
+  "90860": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Farmhouse",
+    "Primary_Material": "Glass",
+    "Color": "Gray",
+    "Pattern": "Striped"
+  },
+  "90870": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Farmhouse",
+    "Primary_Material": "Glass",
+    "Color": "Emerald",
+    "Pattern": "Solid"
+  },
+  "90880": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Scandinavian",
+    "Primary_Material": "Linen",
+    "Color": "Navy",
+    "Pattern": "Striped"
+  },
+  "90890": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Industrial",
+    "Primary_Material": "Glass",
+    "Color": "Navy",
+    "Pattern": "Striped"
+  },
+  "90900": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Scandinavian",
+    "Primary_Material": "Metal",
+    "Color": "Beige",
+    "Pattern": "Floral"
+  },
+  "90910": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Modern",
+    "Primary_Material": "Rattan",
+    "Color": "White",
+    "Pattern": "Solid"
+  },
+  "90920": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Industrial",
+    "Primary_Material": "Rattan",
+    "Color": "Emerald",
+    "Pattern": "Plaid"
+  },
+  "90930": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Traditional",
+    "Primary_Material": "Linen",
+    "Color": "Beige",
+    "Pattern": "Geometric"
+  },
+  "90940": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Mid-Century",
+    "Primary_Material": "Rattan",
+    "Color": "Navy",
+    "Pattern": "Geometric"
+  },
+  "90950": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Traditional",
+    "Primary_Material": "Linen",
+    "Color": "Emerald",
+    "Pattern": "Geometric"
+  },
+  "90960": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Industrial",
+    "Primary_Material": "Wood",
+    "Color": "Emerald",
+    "Pattern": "Solid"
+  },
+  "90970": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Mid-Century",
+    "Primary_Material": "Wood",
+    "Color": "White",
+    "Pattern": "Geometric"
+  },
+  "90980": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Scandinavian",
+    "Primary_Material": "Velvet",
+    "Color": "Beige",
+    "Pattern": "Striped"
+  },
+  "90990": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Mid-Century",
+    "Primary_Material": "Linen",
+    "Color": "Emerald",
+    "Pattern": "Solid"
+  },
+  "91000": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Traditional",
+    "Primary_Material": "Velvet",
+    "Color": "Navy",
+    "Pattern": "Plaid"
+  },
+  "91010": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Scandinavian",
+    "Primary_Material": "Linen",
+    "Color": "Beige",
+    "Pattern": "Striped"
+  },
+  "91020": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Scandinavian",
+    "Primary_Material": "Linen",
+    "Color": "Black",
+    "Pattern": "Striped"
+  },
+  "91030": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Mid-Century",
+    "Primary_Material": "Linen",
+    "Color": "Beige",
+    "Pattern": "Floral"
+  },
+  "91040": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Scandinavian",
+    "Primary_Material": "Wood",
+    "Color": "White",
+    "Pattern": "Plaid"
+  },
+  "91050": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Traditional",
+    "Primary_Material": "Metal",
+    "Color": "Beige",
+    "Pattern": "Solid"
+  },
+  "91060": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Farmhouse",
+    "Primary_Material": "Metal",
+    "Color": "Emerald",
+    "Pattern": "Floral"
+  },
+  "91070": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Industrial",
+    "Primary_Material": "Glass",
+    "Color": "Navy",
+    "Pattern": "Striped"
+  },
+  "91080": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Mid-Century",
+    "Primary_Material": "Velvet",
+    "Color": "Black",
+    "Pattern": "Striped"
+  },
+  "91090": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Traditional",
+    "Primary_Material": "Velvet",
+    "Color": "Gray",
+    "Pattern": "Geometric"
+  },
+  "91100": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Mid-Century",
+    "Primary_Material": "Wood",
+    "Color": "Gray",
+    "Pattern": "Striped"
+  },
+  "91110": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Mid-Century",
+    "Primary_Material": "Linen",
+    "Color": "Gray",
+    "Pattern": "Geometric"
+  },
+  "91120": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Farmhouse",
+    "Primary_Material": "Rattan",
+    "Color": "Black",
+    "Pattern": "Solid"
+  },
+  "91130": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Traditional",
+    "Primary_Material": "Velvet",
+    "Color": "Beige",
+    "Pattern": "Solid"
+  },
+  "91140": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Traditional",
+    "Primary_Material": "Velvet",
+    "Color": "Gray",
+    "Pattern": "Floral"
+  },
+  "91150": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Scandinavian",
+    "Primary_Material": "Glass",
+    "Color": "Gray",
+    "Pattern": "Striped"
+  },
+  "91160": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Traditional",
+    "Primary_Material": "Wood",
+    "Color": "Black",
+    "Pattern": "Striped"
+  },
+  "91170": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Industrial",
+    "Primary_Material": "Metal",
+    "Color": "Black",
+    "Pattern": "Striped"
+  },
+  "91180": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Scandinavian",
+    "Primary_Material": "Wood",
+    "Color": "Emerald",
+    "Pattern": "Solid"
+  },
+  "91190": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Modern",
+    "Primary_Material": "Rattan",
+    "Color": "Emerald",
+    "Pattern": "Floral"
+  },
+  "91200": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Traditional",
+    "Primary_Material": "Linen",
+    "Color": "Black",
+    "Pattern": "Geometric"
+  },
+  "91210": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Industrial",
+    "Primary_Material": "Wood",
+    "Color": "Emerald",
+    "Pattern": "Solid"
+  },
+  "91220": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Mid-Century",
+    "Primary_Material": "Wood",
+    "Color": "Gray",
+    "Pattern": "Striped"
+  },
+  "91230": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Traditional",
+    "Primary_Material": "Velvet",
+    "Color": "Beige",
+    "Pattern": "Floral"
+  },
+  "91240": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Scandinavian",
+    "Primary_Material": "Rattan",
+    "Color": "Beige",
+    "Pattern": "Floral"
+  },
+  "91250": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Farmhouse",
+    "Primary_Material": "Velvet",
+    "Color": "Navy",
+    "Pattern": "Striped"
+  },
+  "91260": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Mid-Century",
+    "Primary_Material": "Velvet",
+    "Color": "White",
+    "Pattern": "Solid"
+  },
+  "91270": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Scandinavian",
+    "Primary_Material": "Linen",
+    "Color": "Emerald",
+    "Pattern": "Solid"
+  },
+  "91280": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Mid-Century",
+    "Primary_Material": "Linen",
+    "Color": "Emerald",
+    "Pattern": "Floral"
+  },
+  "91290": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Traditional",
+    "Primary_Material": "Metal",
+    "Color": "Beige",
+    "Pattern": "Plaid"
+  },
+  "91300": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Scandinavian",
+    "Primary_Material": "Metal",
+    "Color": "Black",
+    "Pattern": "Striped"
+  },
+  "91310": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Traditional",
+    "Primary_Material": "Metal",
+    "Color": "White",
+    "Pattern": "Geometric"
+  },
+  "91320": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Mid-Century",
+    "Primary_Material": "Metal",
+    "Color": "Gray",
+    "Pattern": "Geometric"
+  },
+  "91330": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Industrial",
+    "Primary_Material": "Metal",
+    "Color": "Beige",
+    "Pattern": "Solid"
+  },
+  "91340": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Mid-Century",
+    "Primary_Material": "Wood",
+    "Color": "Black",
+    "Pattern": "Striped"
+  },
+  "91350": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Traditional",
+    "Primary_Material": "Linen",
+    "Color": "Emerald",
+    "Pattern": "Solid"
+  },
+  "91360": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Mid-Century",
+    "Primary_Material": "Rattan",
+    "Color": "Black",
+    "Pattern": "Plaid"
+  },
+  "91370": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Modern",
+    "Primary_Material": "Rattan",
+    "Color": "Gray",
+    "Pattern": "Floral"
+  },
+  "91380": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Farmhouse",
+    "Primary_Material": "Velvet",
+    "Color": "White",
+    "Pattern": "Solid"
+  },
+  "91390": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Modern",
+    "Primary_Material": "Metal",
+    "Color": "Black",
+    "Pattern": "Geometric"
+  },
+  "91400": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Farmhouse",
+    "Primary_Material": "Linen",
+    "Color": "Beige",
+    "Pattern": "Solid"
+  },
+  "91410": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Farmhouse",
+    "Primary_Material": "Rattan",
+    "Color": "Black",
+    "Pattern": "Geometric"
+  },
+  "91420": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Industrial",
+    "Primary_Material": "Velvet",
+    "Color": "Black",
+    "Pattern": "Solid"
+  },
+  "91430": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Industrial",
+    "Primary_Material": "Linen",
+    "Color": "Gray",
+    "Pattern": "Solid"
+  },
+  "91440": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Mid-Century",
+    "Primary_Material": "Velvet",
+    "Color": "Gray",
+    "Pattern": "Plaid"
+  },
+  "91450": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Modern",
+    "Primary_Material": "Metal",
+    "Color": "Gray",
+    "Pattern": "Floral"
+  },
+  "91460": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Traditional",
+    "Primary_Material": "Wood",
+    "Color": "Gray",
+    "Pattern": "Geometric"
+  },
+  "91470": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Industrial",
+    "Primary_Material": "Wood",
+    "Color": "White",
+    "Pattern": "Striped"
+  },
+  "91480": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Farmhouse",
+    "Primary_Material": "Wood",
+    "Color": "White",
+    "Pattern": "Solid"
+  },
+  "91490": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Modern",
+    "Primary_Material": "Rattan",
+    "Color": "Emerald",
+    "Pattern": "Plaid"
+  },
+  "91500": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Mid-Century",
+    "Primary_Material": "Metal",
+    "Color": "Beige",
+    "Pattern": "Solid"
+  },
+  "91510": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Traditional",
+    "Primary_Material": "Wood",
+    "Color": "Emerald",
+    "Pattern": "Floral"
+  },
+  "91520": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Industrial",
+    "Primary_Material": "Glass",
+    "Color": "Emerald",
+    "Pattern": "Geometric"
+  },
+  "91530": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Mid-Century",
+    "Primary_Material": "Linen",
+    "Color": "Navy",
+    "Pattern": "Plaid"
+  },
+  "91540": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Industrial",
+    "Primary_Material": "Linen",
+    "Color": "Beige",
+    "Pattern": "Plaid"
+  },
+  "91550": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Modern",
+    "Primary_Material": "Metal",
+    "Color": "Beige",
+    "Pattern": "Striped"
+  },
+  "91560": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Mid-Century",
+    "Primary_Material": "Linen",
+    "Color": "White",
+    "Pattern": "Floral"
+  },
+  "91570": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Traditional",
+    "Primary_Material": "Velvet",
+    "Color": "Beige",
+    "Pattern": "Striped"
+  },
+  "91580": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Traditional",
+    "Primary_Material": "Velvet",
+    "Color": "Gray",
+    "Pattern": "Geometric"
+  },
+  "91590": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Farmhouse",
+    "Primary_Material": "Velvet",
+    "Color": "White",
+    "Pattern": "Plaid"
+  },
+  "91600": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Mid-Century",
+    "Primary_Material": "Metal",
+    "Color": "Black",
+    "Pattern": "Floral"
+  },
+  "91610": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Modern",
+    "Primary_Material": "Wood",
+    "Color": "Gray",
+    "Pattern": "Geometric"
+  },
+  "91620": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Farmhouse",
+    "Primary_Material": "Rattan",
+    "Color": "Beige",
+    "Pattern": "Floral"
+  },
+  "91630": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Industrial",
+    "Primary_Material": "Rattan",
+    "Color": "Gray",
+    "Pattern": "Striped"
+  },
+  "91640": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Scandinavian",
+    "Primary_Material": "Wood",
+    "Color": "Gray",
+    "Pattern": "Plaid"
+  },
+  "91650": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Farmhouse",
+    "Primary_Material": "Wood",
+    "Color": "Black",
+    "Pattern": "Plaid"
+  },
+  "91660": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Farmhouse",
+    "Primary_Material": "Linen",
+    "Color": "Black",
+    "Pattern": "Geometric"
+  },
+  "91670": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Modern",
+    "Primary_Material": "Linen",
+    "Color": "Gray",
+    "Pattern": "Solid"
+  },
+  "91680": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Mid-Century",
+    "Primary_Material": "Linen",
+    "Color": "Beige",
+    "Pattern": "Striped"
+  },
+  "91690": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Modern",
+    "Primary_Material": "Wood",
+    "Color": "Emerald",
+    "Pattern": "Striped"
+  },
+  "91700": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Modern",
+    "Primary_Material": "Velvet",
+    "Color": "Black",
+    "Pattern": "Geometric"
+  },
+  "91710": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Modern",
+    "Primary_Material": "Linen",
+    "Color": "Gray",
+    "Pattern": "Solid"
+  },
+  "91720": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Industrial",
+    "Primary_Material": "Rattan",
+    "Color": "Gray",
+    "Pattern": "Floral"
+  },
+  "91730": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Mid-Century",
+    "Primary_Material": "Velvet",
+    "Color": "Navy",
+    "Pattern": "Floral"
+  },
+  "91740": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Industrial",
+    "Primary_Material": "Wood",
+    "Color": "Black",
+    "Pattern": "Plaid"
+  },
+  "91750": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Traditional",
+    "Primary_Material": "Velvet",
+    "Color": "Emerald",
+    "Pattern": "Floral"
+  },
+  "91760": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Scandinavian",
+    "Primary_Material": "Velvet",
+    "Color": "Gray",
+    "Pattern": "Striped"
+  },
+  "91770": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Farmhouse",
+    "Primary_Material": "Velvet",
+    "Color": "Beige",
+    "Pattern": "Solid"
+  },
+  "91780": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Traditional",
+    "Primary_Material": "Linen",
+    "Color": "Navy",
+    "Pattern": "Geometric"
+  },
+  "91790": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Mid-Century",
+    "Primary_Material": "Glass",
+    "Color": "Navy",
+    "Pattern": "Striped"
+  },
+  "91800": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Scandinavian",
+    "Primary_Material": "Linen",
+    "Color": "Beige",
+    "Pattern": "Geometric"
+  },
+  "91810": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Farmhouse",
+    "Primary_Material": "Velvet",
+    "Color": "Beige",
+    "Pattern": "Plaid"
+  },
+  "91820": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Scandinavian",
+    "Primary_Material": "Wood",
+    "Color": "Emerald",
+    "Pattern": "Floral"
+  },
+  "91830": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Modern",
+    "Primary_Material": "Velvet",
+    "Color": "Beige",
+    "Pattern": "Floral"
+  },
+  "91840": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Scandinavian",
+    "Primary_Material": "Glass",
+    "Color": "Beige",
+    "Pattern": "Geometric"
+  },
+  "91850": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Industrial",
+    "Primary_Material": "Wood",
+    "Color": "Beige",
+    "Pattern": "Striped"
+  },
+  "91860": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Industrial",
+    "Primary_Material": "Glass",
+    "Color": "Emerald",
+    "Pattern": "Striped"
+  },
+  "91870": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Traditional",
+    "Primary_Material": "Wood",
+    "Color": "Beige",
+    "Pattern": "Solid"
+  },
+  "91880": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Mid-Century",
+    "Primary_Material": "Glass",
+    "Color": "Black",
+    "Pattern": "Floral"
+  },
+  "91890": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Scandinavian",
+    "Primary_Material": "Velvet",
+    "Color": "Navy",
+    "Pattern": "Striped"
+  },
+  "91900": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Farmhouse",
+    "Primary_Material": "Wood",
+    "Color": "White",
+    "Pattern": "Solid"
+  },
+  "91910": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Traditional",
+    "Primary_Material": "Velvet",
+    "Color": "Navy",
+    "Pattern": "Plaid"
+  },
+  "91920": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Mid-Century",
+    "Primary_Material": "Rattan",
+    "Color": "Navy",
+    "Pattern": "Solid"
+  },
+  "91930": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Traditional",
+    "Primary_Material": "Linen",
+    "Color": "White",
+    "Pattern": "Plaid"
+  },
+  "91940": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Scandinavian",
+    "Primary_Material": "Glass",
+    "Color": "Navy",
+    "Pattern": "Striped"
+  },
+  "91950": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Scandinavian",
+    "Primary_Material": "Velvet",
+    "Color": "Beige",
+    "Pattern": "Floral"
+  },
+  "91960": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Farmhouse",
+    "Primary_Material": "Wood",
+    "Color": "Beige",
+    "Pattern": "Plaid"
+  },
+  "91970": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Mid-Century",
+    "Primary_Material": "Linen",
+    "Color": "Navy",
+    "Pattern": "Striped"
+  },
+  "91980": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Modern",
+    "Primary_Material": "Rattan",
+    "Color": "Gray",
+    "Pattern": "Plaid"
+  },
+  "91990": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Modern",
+    "Primary_Material": "Velvet",
+    "Color": "Navy",
+    "Pattern": "Geometric"
+  },
+  "92000": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Modern",
+    "Primary_Material": "Velvet",
+    "Color": "Beige",
+    "Pattern": "Plaid"
+  },
+  "92010": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Traditional",
+    "Primary_Material": "Metal",
+    "Color": "Navy",
+    "Pattern": "Floral"
+  },
+  "92020": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Scandinavian",
+    "Primary_Material": "Linen",
+    "Color": "Black",
+    "Pattern": "Plaid"
+  },
+  "92030": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Farmhouse",
+    "Primary_Material": "Glass",
+    "Color": "Navy",
+    "Pattern": "Geometric"
+  },
+  "92040": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Industrial",
+    "Primary_Material": "Linen",
+    "Color": "Black",
+    "Pattern": "Floral"
+  },
+  "92050": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Scandinavian",
+    "Primary_Material": "Wood",
+    "Color": "Black",
+    "Pattern": "Floral"
+  },
+  "92060": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Scandinavian",
+    "Primary_Material": "Metal",
+    "Color": "Emerald",
+    "Pattern": "Plaid"
+  },
+  "92070": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Modern",
+    "Primary_Material": "Linen",
+    "Color": "Navy",
+    "Pattern": "Geometric"
+  },
+  "92080": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Scandinavian",
+    "Primary_Material": "Velvet",
+    "Color": "Beige",
+    "Pattern": "Striped"
+  },
+  "92090": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Industrial",
+    "Primary_Material": "Linen",
+    "Color": "Black",
+    "Pattern": "Solid"
+  },
+  "92100": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Industrial",
+    "Primary_Material": "Rattan",
+    "Color": "Gray",
+    "Pattern": "Plaid"
+  },
+  "92110": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Industrial",
+    "Primary_Material": "Wood",
+    "Color": "Navy",
+    "Pattern": "Solid"
+  },
+  "92120": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Modern",
+    "Primary_Material": "Velvet",
+    "Color": "Gray",
+    "Pattern": "Geometric"
+  },
+  "92130": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Farmhouse",
+    "Primary_Material": "Velvet",
+    "Color": "Gray",
+    "Pattern": "Striped"
+  },
+  "92140": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Mid-Century",
+    "Primary_Material": "Rattan",
+    "Color": "Black",
+    "Pattern": "Striped"
+  },
+  "92150": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Industrial",
+    "Primary_Material": "Linen",
+    "Color": "Emerald",
+    "Pattern": "Solid"
+  },
+  "92160": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Modern",
+    "Primary_Material": "Glass",
+    "Color": "Gray",
+    "Pattern": "Solid"
+  },
+  "92170": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Scandinavian",
+    "Primary_Material": "Linen",
+    "Color": "Black",
+    "Pattern": "Plaid"
+  },
+  "92180": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Traditional",
+    "Primary_Material": "Metal",
+    "Color": "Beige",
+    "Pattern": "Geometric"
+  },
+  "92190": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Mid-Century",
+    "Primary_Material": "Rattan",
+    "Color": "Black",
+    "Pattern": "Geometric"
+  },
+  "92200": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Farmhouse",
+    "Primary_Material": "Linen",
+    "Color": "Black",
+    "Pattern": "Solid"
+  },
+  "92210": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Scandinavian",
+    "Primary_Material": "Rattan",
+    "Color": "Black",
+    "Pattern": "Floral"
+  },
+  "92220": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Industrial",
+    "Primary_Material": "Wood",
+    "Color": "White",
+    "Pattern": "Floral"
+  },
+  "92230": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Farmhouse",
+    "Primary_Material": "Velvet",
+    "Color": "Navy",
+    "Pattern": "Solid"
+  },
+  "92240": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Scandinavian",
+    "Primary_Material": "Rattan",
+    "Color": "Gray",
+    "Pattern": "Geometric"
+  },
+  "92250": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Modern",
+    "Primary_Material": "Metal",
+    "Color": "Navy",
+    "Pattern": "Solid"
+  },
+  "92260": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Industrial",
+    "Primary_Material": "Glass",
+    "Color": "Beige",
+    "Pattern": "Geometric"
+  },
+  "92270": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Mid-Century",
+    "Primary_Material": "Rattan",
+    "Color": "Navy",
+    "Pattern": "Striped"
+  },
+  "92280": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Scandinavian",
+    "Primary_Material": "Metal",
+    "Color": "Black",
+    "Pattern": "Floral"
+  },
+  "92290": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Industrial",
+    "Primary_Material": "Wood",
+    "Color": "Gray",
+    "Pattern": "Geometric"
+  },
+  "92300": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Mid-Century",
+    "Primary_Material": "Rattan",
+    "Color": "Emerald",
+    "Pattern": "Striped"
+  },
+  "92310": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Traditional",
+    "Primary_Material": "Glass",
+    "Color": "Emerald",
+    "Pattern": "Solid"
+  },
+  "92320": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Scandinavian",
+    "Primary_Material": "Velvet",
+    "Color": "Navy",
+    "Pattern": "Striped"
+  },
+  "92330": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Traditional",
+    "Primary_Material": "Wood",
+    "Color": "Emerald",
+    "Pattern": "Plaid"
+  },
+  "92340": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Traditional",
+    "Primary_Material": "Metal",
+    "Color": "Emerald",
+    "Pattern": "Striped"
+  },
+  "92350": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Scandinavian",
+    "Primary_Material": "Rattan",
+    "Color": "Beige",
+    "Pattern": "Geometric"
+  },
+  "92360": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Mid-Century",
+    "Primary_Material": "Wood",
+    "Color": "Black",
+    "Pattern": "Striped"
+  },
+  "92370": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Scandinavian",
+    "Primary_Material": "Linen",
+    "Color": "Black",
+    "Pattern": "Geometric"
+  },
+  "92380": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Modern",
+    "Primary_Material": "Velvet",
+    "Color": "Navy",
+    "Pattern": "Striped"
+  },
+  "92390": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Farmhouse",
+    "Primary_Material": "Linen",
+    "Color": "Navy",
+    "Pattern": "Geometric"
+  },
+  "92400": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Mid-Century",
+    "Primary_Material": "Glass",
+    "Color": "Gray",
+    "Pattern": "Plaid"
+  },
+  "92410": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Mid-Century",
+    "Primary_Material": "Metal",
+    "Color": "Emerald",
+    "Pattern": "Solid"
+  },
+  "92420": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Modern",
+    "Primary_Material": "Velvet",
+    "Color": "Emerald",
+    "Pattern": "Floral"
+  },
+  "92430": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Industrial",
+    "Primary_Material": "Glass",
+    "Color": "Gray",
+    "Pattern": "Solid"
+  },
+  "92440": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Scandinavian",
+    "Primary_Material": "Velvet",
+    "Color": "Gray",
+    "Pattern": "Floral"
+  },
+  "92450": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Scandinavian",
+    "Primary_Material": "Velvet",
+    "Color": "Emerald",
+    "Pattern": "Floral"
+  },
+  "92460": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Farmhouse",
+    "Primary_Material": "Wood",
+    "Color": "Navy",
+    "Pattern": "Striped"
+  },
+  "92470": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Industrial",
+    "Primary_Material": "Glass",
+    "Color": "Emerald",
+    "Pattern": "Striped"
+  },
+  "92480": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Mid-Century",
+    "Primary_Material": "Linen",
+    "Color": "Black",
+    "Pattern": "Geometric"
+  },
+  "92490": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Mid-Century",
+    "Primary_Material": "Linen",
+    "Color": "Emerald",
+    "Pattern": "Striped"
+  },
+  "92500": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Scandinavian",
+    "Primary_Material": "Velvet",
+    "Color": "Black",
+    "Pattern": "Floral"
+  },
+  "92510": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Farmhouse",
+    "Primary_Material": "Metal",
+    "Color": "Beige",
+    "Pattern": "Floral"
+  },
+  "92520": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Scandinavian",
+    "Primary_Material": "Velvet",
+    "Color": "Black",
+    "Pattern": "Striped"
+  },
+  "92530": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Mid-Century",
+    "Primary_Material": "Metal",
+    "Color": "White",
+    "Pattern": "Plaid"
+  },
+  "92540": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Scandinavian",
+    "Primary_Material": "Velvet",
+    "Color": "Beige",
+    "Pattern": "Striped"
+  },
+  "92550": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Scandinavian",
+    "Primary_Material": "Wood",
+    "Color": "Black",
+    "Pattern": "Striped"
+  },
+  "92560": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Farmhouse",
+    "Primary_Material": "Linen",
+    "Color": "Beige",
+    "Pattern": "Plaid"
+  },
+  "92570": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Farmhouse",
+    "Primary_Material": "Wood",
+    "Color": "Gray",
+    "Pattern": "Floral"
+  },
+  "92580": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Farmhouse",
+    "Primary_Material": "Velvet",
+    "Color": "Beige",
+    "Pattern": "Plaid"
+  },
+  "92590": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Farmhouse",
+    "Primary_Material": "Wood",
+    "Color": "Emerald",
+    "Pattern": "Striped"
+  },
+  "92600": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Traditional",
+    "Primary_Material": "Glass",
+    "Color": "Navy",
+    "Pattern": "Solid"
+  },
+  "92610": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Modern",
+    "Primary_Material": "Metal",
+    "Color": "Gray",
+    "Pattern": "Floral"
+  },
+  "92620": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Modern",
+    "Primary_Material": "Glass",
+    "Color": "Emerald",
+    "Pattern": "Floral"
+  },
+  "92630": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Farmhouse",
+    "Primary_Material": "Glass",
+    "Color": "Navy",
+    "Pattern": "Solid"
+  },
+  "92640": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Traditional",
+    "Primary_Material": "Glass",
+    "Color": "Gray",
+    "Pattern": "Floral"
+  },
+  "92650": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Traditional",
+    "Primary_Material": "Rattan",
+    "Color": "Black",
+    "Pattern": "Striped"
+  },
+  "92660": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Traditional",
+    "Primary_Material": "Linen",
+    "Color": "Gray",
+    "Pattern": "Geometric"
+  },
+  "92670": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Mid-Century",
+    "Primary_Material": "Glass",
+    "Color": "Gray",
+    "Pattern": "Solid"
+  },
+  "92680": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Traditional",
+    "Primary_Material": "Linen",
+    "Color": "Navy",
+    "Pattern": "Solid"
+  },
+  "92690": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Mid-Century",
+    "Primary_Material": "Metal",
+    "Color": "White",
+    "Pattern": "Striped"
+  },
+  "92700": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Mid-Century",
+    "Primary_Material": "Wood",
+    "Color": "White",
+    "Pattern": "Plaid"
+  },
+  "92710": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Mid-Century",
+    "Primary_Material": "Metal",
+    "Color": "Gray",
+    "Pattern": "Geometric"
+  },
+  "92720": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Modern",
+    "Primary_Material": "Wood",
+    "Color": "Gray",
+    "Pattern": "Solid"
+  },
+  "92730": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Modern",
+    "Primary_Material": "Rattan",
+    "Color": "Emerald",
+    "Pattern": "Striped"
+  },
+  "92740": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Farmhouse",
+    "Primary_Material": "Rattan",
+    "Color": "Beige",
+    "Pattern": "Floral"
+  },
+  "92750": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Scandinavian",
+    "Primary_Material": "Linen",
+    "Color": "Beige",
+    "Pattern": "Floral"
+  },
+  "92760": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Farmhouse",
+    "Primary_Material": "Velvet",
+    "Color": "Black",
+    "Pattern": "Floral"
+  },
+  "92770": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Modern",
+    "Primary_Material": "Glass",
+    "Color": "Black",
+    "Pattern": "Floral"
+  },
+  "92780": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Mid-Century",
+    "Primary_Material": "Wood",
+    "Color": "Beige",
+    "Pattern": "Solid"
+  },
+  "92790": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Traditional",
+    "Primary_Material": "Rattan",
+    "Color": "Gray",
+    "Pattern": "Striped"
+  },
+  "92800": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Farmhouse",
+    "Primary_Material": "Glass",
+    "Color": "White",
+    "Pattern": "Geometric"
+  },
+  "92810": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Modern",
+    "Primary_Material": "Metal",
+    "Color": "White",
+    "Pattern": "Geometric"
+  },
+  "92820": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Farmhouse",
+    "Primary_Material": "Linen",
+    "Color": "Emerald",
+    "Pattern": "Striped"
+  },
+  "92830": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Mid-Century",
+    "Primary_Material": "Metal",
+    "Color": "Gray",
+    "Pattern": "Floral"
+  },
+  "92840": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Scandinavian",
+    "Primary_Material": "Rattan",
+    "Color": "Navy",
+    "Pattern": "Striped"
+  },
+  "92850": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Traditional",
+    "Primary_Material": "Linen",
+    "Color": "Black",
+    "Pattern": "Solid"
+  },
+  "92860": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Traditional",
+    "Primary_Material": "Velvet",
+    "Color": "Black",
+    "Pattern": "Floral"
+  },
+  "92870": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Industrial",
+    "Primary_Material": "Glass",
+    "Color": "Beige",
+    "Pattern": "Geometric"
+  },
+  "92880": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Modern",
+    "Primary_Material": "Wood",
+    "Color": "White",
+    "Pattern": "Plaid"
+  },
+  "92890": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Farmhouse",
+    "Primary_Material": "Rattan",
+    "Color": "White",
+    "Pattern": "Striped"
+  },
+  "92900": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Scandinavian",
+    "Primary_Material": "Metal",
+    "Color": "Navy",
+    "Pattern": "Geometric"
+  },
+  "92910": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Industrial",
+    "Primary_Material": "Velvet",
+    "Color": "Beige",
+    "Pattern": "Solid"
+  },
+  "92920": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Mid-Century",
+    "Primary_Material": "Velvet",
+    "Color": "Beige",
+    "Pattern": "Solid"
+  },
+  "92930": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Modern",
+    "Primary_Material": "Rattan",
+    "Color": "White",
+    "Pattern": "Floral"
+  },
+  "92940": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Farmhouse",
+    "Primary_Material": "Rattan",
+    "Color": "Beige",
+    "Pattern": "Striped"
+  },
+  "92950": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Traditional",
+    "Primary_Material": "Rattan",
+    "Color": "White",
+    "Pattern": "Plaid"
+  },
+  "92960": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Industrial",
+    "Primary_Material": "Wood",
+    "Color": "Emerald",
+    "Pattern": "Plaid"
+  },
+  "92970": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Industrial",
+    "Primary_Material": "Rattan",
+    "Color": "Beige",
+    "Pattern": "Floral"
+  },
+  "92980": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Scandinavian",
+    "Primary_Material": "Wood",
+    "Color": "Black",
+    "Pattern": "Geometric"
+  },
+  "92990": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Mid-Century",
+    "Primary_Material": "Glass",
+    "Color": "Emerald",
+    "Pattern": "Plaid"
+  },
+  "93000": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Farmhouse",
+    "Primary_Material": "Velvet",
+    "Color": "Navy",
+    "Pattern": "Plaid"
+  },
+  "93010": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Traditional",
+    "Primary_Material": "Linen",
+    "Color": "Gray",
+    "Pattern": "Floral"
+  },
+  "93020": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Mid-Century",
+    "Primary_Material": "Linen",
+    "Color": "Gray",
+    "Pattern": "Solid"
+  },
+  "93030": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Industrial",
+    "Primary_Material": "Metal",
+    "Color": "Beige",
+    "Pattern": "Geometric"
+  },
+  "93040": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Industrial",
+    "Primary_Material": "Velvet",
+    "Color": "Gray",
+    "Pattern": "Geometric"
+  },
+  "93050": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Farmhouse",
+    "Primary_Material": "Velvet",
+    "Color": "White",
+    "Pattern": "Striped"
+  },
+  "93060": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Mid-Century",
+    "Primary_Material": "Metal",
+    "Color": "Black",
+    "Pattern": "Geometric"
+  },
+  "93070": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Mid-Century",
+    "Primary_Material": "Linen",
+    "Color": "Black",
+    "Pattern": "Geometric"
+  },
+  "93080": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Farmhouse",
+    "Primary_Material": "Linen",
+    "Color": "Gray",
+    "Pattern": "Striped"
+  },
+  "93090": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Scandinavian",
+    "Primary_Material": "Velvet",
+    "Color": "Black",
+    "Pattern": "Plaid"
+  },
+  "93100": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Traditional",
+    "Primary_Material": "Wood",
+    "Color": "Beige",
+    "Pattern": "Plaid"
+  },
+  "93110": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Farmhouse",
+    "Primary_Material": "Glass",
+    "Color": "Navy",
+    "Pattern": "Geometric"
+  },
+  "93120": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Scandinavian",
+    "Primary_Material": "Velvet",
+    "Color": "White",
+    "Pattern": "Plaid"
+  },
+  "93130": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Farmhouse",
+    "Primary_Material": "Wood",
+    "Color": "Emerald",
+    "Pattern": "Geometric"
+  },
+  "93140": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Modern",
+    "Primary_Material": "Glass",
+    "Color": "Beige",
+    "Pattern": "Geometric"
+  },
+  "93150": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Traditional",
+    "Primary_Material": "Rattan",
+    "Color": "Navy",
+    "Pattern": "Plaid"
+  },
+  "93160": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Industrial",
+    "Primary_Material": "Glass",
+    "Color": "White",
+    "Pattern": "Geometric"
+  },
+  "93170": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Industrial",
+    "Primary_Material": "Rattan",
+    "Color": "Black",
+    "Pattern": "Geometric"
+  },
+  "93180": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Industrial",
+    "Primary_Material": "Glass",
+    "Color": "Navy",
+    "Pattern": "Striped"
+  },
+  "93190": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Industrial",
+    "Primary_Material": "Rattan",
+    "Color": "Beige",
+    "Pattern": "Plaid"
+  },
+  "93200": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Traditional",
+    "Primary_Material": "Wood",
+    "Color": "Beige",
+    "Pattern": "Striped"
+  },
+  "93210": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Modern",
+    "Primary_Material": "Linen",
+    "Color": "White",
+    "Pattern": "Solid"
+  },
+  "93220": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Farmhouse",
+    "Primary_Material": "Rattan",
+    "Color": "White",
+    "Pattern": "Geometric"
+  },
+  "93230": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Farmhouse",
+    "Primary_Material": "Metal",
+    "Color": "Black",
+    "Pattern": "Striped"
+  },
+  "93240": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Farmhouse",
+    "Primary_Material": "Glass",
+    "Color": "Gray",
+    "Pattern": "Geometric"
+  },
+  "93250": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Traditional",
+    "Primary_Material": "Glass",
+    "Color": "Gray",
+    "Pattern": "Geometric"
+  },
+  "93260": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Mid-Century",
+    "Primary_Material": "Rattan",
+    "Color": "Gray",
+    "Pattern": "Geometric"
+  },
+  "93270": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Modern",
+    "Primary_Material": "Metal",
+    "Color": "Emerald",
+    "Pattern": "Solid"
+  },
+  "93280": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Farmhouse",
+    "Primary_Material": "Wood",
+    "Color": "Black",
+    "Pattern": "Striped"
+  },
+  "93290": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Farmhouse",
+    "Primary_Material": "Rattan",
+    "Color": "Black",
+    "Pattern": "Striped"
+  },
+  "93300": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Mid-Century",
+    "Primary_Material": "Wood",
+    "Color": "White",
+    "Pattern": "Geometric"
+  },
+  "93310": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Farmhouse",
+    "Primary_Material": "Metal",
+    "Color": "Black",
+    "Pattern": "Floral"
+  },
+  "93320": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Farmhouse",
+    "Primary_Material": "Velvet",
+    "Color": "Emerald",
+    "Pattern": "Solid"
+  },
+  "93330": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Mid-Century",
+    "Primary_Material": "Wood",
+    "Color": "Gray",
+    "Pattern": "Floral"
+  },
+  "93340": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Scandinavian",
+    "Primary_Material": "Rattan",
+    "Color": "Beige",
+    "Pattern": "Striped"
+  },
+  "93350": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Industrial",
+    "Primary_Material": "Rattan",
+    "Color": "Beige",
+    "Pattern": "Plaid"
+  },
+  "93360": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Scandinavian",
+    "Primary_Material": "Linen",
+    "Color": "Beige",
+    "Pattern": "Floral"
+  },
+  "93370": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Farmhouse",
+    "Primary_Material": "Rattan",
+    "Color": "Black",
+    "Pattern": "Floral"
+  },
+  "93380": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Modern",
+    "Primary_Material": "Wood",
+    "Color": "Black",
+    "Pattern": "Striped"
+  },
+  "93390": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Mid-Century",
+    "Primary_Material": "Linen",
+    "Color": "Black",
+    "Pattern": "Plaid"
+  },
+  "93400": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Scandinavian",
+    "Primary_Material": "Metal",
+    "Color": "Emerald",
+    "Pattern": "Plaid"
+  },
+  "93410": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Mid-Century",
+    "Primary_Material": "Glass",
+    "Color": "White",
+    "Pattern": "Striped"
+  },
+  "93420": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Traditional",
+    "Primary_Material": "Linen",
+    "Color": "Beige",
+    "Pattern": "Plaid"
+  },
+  "93430": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Scandinavian",
+    "Primary_Material": "Velvet",
+    "Color": "White",
+    "Pattern": "Striped"
+  },
+  "93440": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Farmhouse",
+    "Primary_Material": "Linen",
+    "Color": "White",
+    "Pattern": "Solid"
+  },
+  "93450": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Industrial",
+    "Primary_Material": "Rattan",
+    "Color": "Black",
+    "Pattern": "Geometric"
+  },
+  "93460": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Industrial",
+    "Primary_Material": "Rattan",
+    "Color": "Gray",
+    "Pattern": "Floral"
+  },
+  "93470": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Industrial",
+    "Primary_Material": "Linen",
+    "Color": "Navy",
+    "Pattern": "Solid"
+  },
+  "93480": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Traditional",
+    "Primary_Material": "Metal",
+    "Color": "Emerald",
+    "Pattern": "Striped"
+  },
+  "93490": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Farmhouse",
+    "Primary_Material": "Linen",
+    "Color": "White",
+    "Pattern": "Plaid"
+  },
+  "93500": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Modern",
+    "Primary_Material": "Glass",
+    "Color": "Emerald",
+    "Pattern": "Floral"
+  },
+  "93510": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Modern",
+    "Primary_Material": "Linen",
+    "Color": "Black",
+    "Pattern": "Floral"
+  },
+  "93520": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Mid-Century",
+    "Primary_Material": "Glass",
+    "Color": "Navy",
+    "Pattern": "Striped"
+  },
+  "93530": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Traditional",
+    "Primary_Material": "Glass",
+    "Color": "Navy",
+    "Pattern": "Striped"
+  },
+  "93540": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Traditional",
+    "Primary_Material": "Wood",
+    "Color": "Beige",
+    "Pattern": "Striped"
+  },
+  "93550": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Scandinavian",
+    "Primary_Material": "Glass",
+    "Color": "Beige",
+    "Pattern": "Striped"
+  },
+  "93560": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Traditional",
+    "Primary_Material": "Rattan",
+    "Color": "Emerald",
+    "Pattern": "Floral"
+  },
+  "93570": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Industrial",
+    "Primary_Material": "Metal",
+    "Color": "White",
+    "Pattern": "Geometric"
+  },
+  "93580": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Farmhouse",
+    "Primary_Material": "Velvet",
+    "Color": "Black",
+    "Pattern": "Striped"
+  },
+  "93590": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Modern",
+    "Primary_Material": "Velvet",
+    "Color": "Gray",
+    "Pattern": "Plaid"
+  },
+  "93600": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Farmhouse",
+    "Primary_Material": "Rattan",
+    "Color": "Beige",
+    "Pattern": "Plaid"
+  },
+  "93610": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Industrial",
+    "Primary_Material": "Rattan",
+    "Color": "White",
+    "Pattern": "Geometric"
+  },
+  "93620": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Farmhouse",
+    "Primary_Material": "Glass",
+    "Color": "Black",
+    "Pattern": "Geometric"
+  },
+  "93630": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Scandinavian",
+    "Primary_Material": "Velvet",
+    "Color": "Beige",
+    "Pattern": "Plaid"
+  },
+  "93640": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Scandinavian",
+    "Primary_Material": "Velvet",
+    "Color": "Black",
+    "Pattern": "Floral"
+  },
+  "93650": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Industrial",
+    "Primary_Material": "Glass",
+    "Color": "Emerald",
+    "Pattern": "Floral"
+  },
+  "93660": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Traditional",
+    "Primary_Material": "Wood",
+    "Color": "Emerald",
+    "Pattern": "Striped"
+  },
+  "93670": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Modern",
+    "Primary_Material": "Velvet",
+    "Color": "Emerald",
+    "Pattern": "Floral"
+  },
+  "93680": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Mid-Century",
+    "Primary_Material": "Glass",
+    "Color": "Emerald",
+    "Pattern": "Geometric"
+  },
+  "93690": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Modern",
+    "Primary_Material": "Wood",
+    "Color": "Beige",
+    "Pattern": "Floral"
+  },
+  "93700": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Farmhouse",
+    "Primary_Material": "Glass",
+    "Color": "Emerald",
+    "Pattern": "Striped"
+  },
+  "93710": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Scandinavian",
+    "Primary_Material": "Linen",
+    "Color": "Emerald",
+    "Pattern": "Solid"
+  },
+  "93720": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Modern",
+    "Primary_Material": "Glass",
+    "Color": "White",
+    "Pattern": "Geometric"
+  },
+  "93730": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Industrial",
+    "Primary_Material": "Velvet",
+    "Color": "Navy",
+    "Pattern": "Striped"
+  },
+  "93740": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Farmhouse",
+    "Primary_Material": "Rattan",
+    "Color": "Emerald",
+    "Pattern": "Plaid"
+  },
+  "93750": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Farmhouse",
+    "Primary_Material": "Glass",
+    "Color": "Beige",
+    "Pattern": "Plaid"
+  },
+  "93760": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Scandinavian",
+    "Primary_Material": "Linen",
+    "Color": "Black",
+    "Pattern": "Striped"
+  },
+  "93770": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Traditional",
+    "Primary_Material": "Glass",
+    "Color": "Navy",
+    "Pattern": "Geometric"
+  },
+  "93780": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Mid-Century",
+    "Primary_Material": "Rattan",
+    "Color": "White",
+    "Pattern": "Plaid"
+  },
+  "93790": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Industrial",
+    "Primary_Material": "Metal",
+    "Color": "Black",
+    "Pattern": "Striped"
+  },
+  "93800": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Farmhouse",
+    "Primary_Material": "Rattan",
+    "Color": "Beige",
+    "Pattern": "Striped"
+  },
+  "93810": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Modern",
+    "Primary_Material": "Wood",
+    "Color": "Emerald",
+    "Pattern": "Solid"
+  },
+  "93820": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Modern",
+    "Primary_Material": "Glass",
+    "Color": "Navy",
+    "Pattern": "Plaid"
+  },
+  "93830": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Mid-Century",
+    "Primary_Material": "Glass",
+    "Color": "Beige",
+    "Pattern": "Solid"
+  },
+  "93840": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Industrial",
+    "Primary_Material": "Glass",
+    "Color": "Black",
+    "Pattern": "Plaid"
+  },
+  "93850": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Modern",
+    "Primary_Material": "Rattan",
+    "Color": "Gray",
+    "Pattern": "Geometric"
+  },
+  "93860": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Industrial",
+    "Primary_Material": "Glass",
+    "Color": "Emerald",
+    "Pattern": "Floral"
+  },
+  "93870": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Farmhouse",
+    "Primary_Material": "Glass",
+    "Color": "Navy",
+    "Pattern": "Solid"
+  },
+  "93880": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Traditional",
+    "Primary_Material": "Velvet",
+    "Color": "White",
+    "Pattern": "Plaid"
+  },
+  "93890": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Scandinavian",
+    "Primary_Material": "Velvet",
+    "Color": "Gray",
+    "Pattern": "Striped"
+  },
+  "93900": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Scandinavian",
+    "Primary_Material": "Linen",
+    "Color": "White",
+    "Pattern": "Floral"
+  },
+  "93910": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Scandinavian",
+    "Primary_Material": "Glass",
+    "Color": "Black",
+    "Pattern": "Geometric"
+  },
+  "93920": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Scandinavian",
+    "Primary_Material": "Glass",
+    "Color": "Beige",
+    "Pattern": "Geometric"
+  },
+  "93930": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Industrial",
+    "Primary_Material": "Metal",
+    "Color": "Navy",
+    "Pattern": "Striped"
+  },
+  "93940": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Mid-Century",
+    "Primary_Material": "Linen",
+    "Color": "Emerald",
+    "Pattern": "Floral"
+  },
+  "93950": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Mid-Century",
+    "Primary_Material": "Rattan",
+    "Color": "Navy",
+    "Pattern": "Striped"
+  },
+  "93960": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Industrial",
+    "Primary_Material": "Glass",
+    "Color": "Navy",
+    "Pattern": "Plaid"
+  },
+  "93970": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Mid-Century",
+    "Primary_Material": "Linen",
+    "Color": "Black",
+    "Pattern": "Floral"
+  },
+  "93980": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Mid-Century",
+    "Primary_Material": "Glass",
+    "Color": "Beige",
+    "Pattern": "Solid"
+  },
+  "93990": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Scandinavian",
+    "Primary_Material": "Glass",
+    "Color": "Beige",
+    "Pattern": "Striped"
+  },
+  "94000": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Traditional",
+    "Primary_Material": "Metal",
+    "Color": "Black",
+    "Pattern": "Geometric"
+  },
+  "94010": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Farmhouse",
+    "Primary_Material": "Rattan",
+    "Color": "Navy",
+    "Pattern": "Striped"
+  },
+  "94020": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Industrial",
+    "Primary_Material": "Wood",
+    "Color": "Gray",
+    "Pattern": "Solid"
+  },
+  "94030": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Industrial",
+    "Primary_Material": "Glass",
+    "Color": "Beige",
+    "Pattern": "Striped"
+  },
+  "94040": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Farmhouse",
+    "Primary_Material": "Glass",
+    "Color": "Black",
+    "Pattern": "Solid"
+  },
+  "94050": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Farmhouse",
+    "Primary_Material": "Glass",
+    "Color": "Beige",
+    "Pattern": "Striped"
+  },
+  "94060": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Industrial",
+    "Primary_Material": "Rattan",
+    "Color": "Navy",
+    "Pattern": "Plaid"
+  },
+  "94070": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Traditional",
+    "Primary_Material": "Velvet",
+    "Color": "White",
+    "Pattern": "Solid"
+  },
+  "94080": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Traditional",
+    "Primary_Material": "Rattan",
+    "Color": "Gray",
+    "Pattern": "Solid"
+  },
+  "94090": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Farmhouse",
+    "Primary_Material": "Velvet",
+    "Color": "Black",
+    "Pattern": "Solid"
+  },
+  "94100": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Modern",
+    "Primary_Material": "Rattan",
+    "Color": "Beige",
+    "Pattern": "Solid"
+  },
+  "94110": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Industrial",
+    "Primary_Material": "Rattan",
+    "Color": "White",
+    "Pattern": "Plaid"
+  },
+  "94120": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Scandinavian",
+    "Primary_Material": "Glass",
+    "Color": "Emerald",
+    "Pattern": "Solid"
+  },
+  "94130": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Farmhouse",
+    "Primary_Material": "Glass",
+    "Color": "White",
+    "Pattern": "Plaid"
+  },
+  "94140": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Modern",
+    "Primary_Material": "Rattan",
+    "Color": "Black",
+    "Pattern": "Plaid"
+  },
+  "94150": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Industrial",
+    "Primary_Material": "Wood",
+    "Color": "Navy",
+    "Pattern": "Floral"
+  },
+  "94160": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Mid-Century",
+    "Primary_Material": "Wood",
+    "Color": "White",
+    "Pattern": "Striped"
+  },
+  "94170": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Farmhouse",
+    "Primary_Material": "Velvet",
+    "Color": "Gray",
+    "Pattern": "Plaid"
+  },
+  "94180": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Industrial",
+    "Primary_Material": "Linen",
+    "Color": "Gray",
+    "Pattern": "Floral"
+  },
+  "94190": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Industrial",
+    "Primary_Material": "Metal",
+    "Color": "White",
+    "Pattern": "Plaid"
+  },
+  "94200": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Modern",
+    "Primary_Material": "Velvet",
+    "Color": "Beige",
+    "Pattern": "Geometric"
+  },
+  "94210": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Mid-Century",
+    "Primary_Material": "Rattan",
+    "Color": "Black",
+    "Pattern": "Geometric"
+  },
+  "94220": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Industrial",
+    "Primary_Material": "Metal",
+    "Color": "Beige",
+    "Pattern": "Striped"
+  },
+  "94230": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Industrial",
+    "Primary_Material": "Velvet",
+    "Color": "Beige",
+    "Pattern": "Solid"
+  },
+  "94240": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Scandinavian",
+    "Primary_Material": "Glass",
+    "Color": "Gray",
+    "Pattern": "Striped"
+  },
+  "94250": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Traditional",
+    "Primary_Material": "Wood",
+    "Color": "Black",
+    "Pattern": "Floral"
+  },
+  "94260": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Scandinavian",
+    "Primary_Material": "Glass",
+    "Color": "Beige",
+    "Pattern": "Geometric"
+  },
+  "94270": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Scandinavian",
+    "Primary_Material": "Metal",
+    "Color": "Black",
+    "Pattern": "Plaid"
+  },
+  "94280": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Mid-Century",
+    "Primary_Material": "Glass",
+    "Color": "Beige",
+    "Pattern": "Striped"
+  },
+  "94290": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Traditional",
+    "Primary_Material": "Velvet",
+    "Color": "Navy",
+    "Pattern": "Floral"
+  },
+  "94300": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Industrial",
+    "Primary_Material": "Velvet",
+    "Color": "White",
+    "Pattern": "Geometric"
+  },
+  "94310": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Industrial",
+    "Primary_Material": "Rattan",
+    "Color": "Black",
+    "Pattern": "Floral"
+  },
+  "94320": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Farmhouse",
+    "Primary_Material": "Wood",
+    "Color": "Beige",
+    "Pattern": "Floral"
+  },
+  "94330": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Modern",
+    "Primary_Material": "Velvet",
+    "Color": "Beige",
+    "Pattern": "Geometric"
+  },
+  "94340": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Farmhouse",
+    "Primary_Material": "Metal",
+    "Color": "Black",
+    "Pattern": "Geometric"
+  },
+  "94350": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Mid-Century",
+    "Primary_Material": "Glass",
+    "Color": "Navy",
+    "Pattern": "Striped"
+  },
+  "94360": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Industrial",
+    "Primary_Material": "Glass",
+    "Color": "Beige",
+    "Pattern": "Floral"
+  },
+  "94370": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Modern",
+    "Primary_Material": "Velvet",
+    "Color": "Beige",
+    "Pattern": "Striped"
+  },
+  "94380": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Mid-Century",
+    "Primary_Material": "Rattan",
+    "Color": "White",
+    "Pattern": "Striped"
+  },
+  "94390": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Industrial",
+    "Primary_Material": "Rattan",
+    "Color": "Navy",
+    "Pattern": "Geometric"
+  },
+  "94400": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Industrial",
+    "Primary_Material": "Wood",
+    "Color": "Navy",
+    "Pattern": "Plaid"
+  },
+  "94410": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Scandinavian",
+    "Primary_Material": "Glass",
+    "Color": "Black",
+    "Pattern": "Solid"
+  },
+  "94420": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Modern",
+    "Primary_Material": "Rattan",
+    "Color": "Emerald",
+    "Pattern": "Solid"
+  },
+  "94430": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Scandinavian",
+    "Primary_Material": "Glass",
+    "Color": "Beige",
+    "Pattern": "Geometric"
+  },
+  "94440": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Modern",
+    "Primary_Material": "Linen",
+    "Color": "Emerald",
+    "Pattern": "Geometric"
+  },
+  "94450": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Scandinavian",
+    "Primary_Material": "Wood",
+    "Color": "Emerald",
+    "Pattern": "Solid"
+  },
+  "94460": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Scandinavian",
+    "Primary_Material": "Rattan",
+    "Color": "Beige",
+    "Pattern": "Floral"
+  },
+  "94470": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Scandinavian",
+    "Primary_Material": "Metal",
+    "Color": "Black",
+    "Pattern": "Plaid"
+  },
+  "94480": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Modern",
+    "Primary_Material": "Linen",
+    "Color": "White",
+    "Pattern": "Plaid"
+  },
+  "94490": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Farmhouse",
+    "Primary_Material": "Glass",
+    "Color": "White",
+    "Pattern": "Striped"
+  },
+  "94500": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Mid-Century",
+    "Primary_Material": "Rattan",
+    "Color": "White",
+    "Pattern": "Solid"
+  },
+  "94510": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Farmhouse",
+    "Primary_Material": "Wood",
+    "Color": "White",
+    "Pattern": "Plaid"
+  },
+  "94520": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Industrial",
+    "Primary_Material": "Glass",
+    "Color": "Navy",
+    "Pattern": "Floral"
+  },
+  "94530": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Farmhouse",
+    "Primary_Material": "Glass",
+    "Color": "Black",
+    "Pattern": "Plaid"
+  },
+  "94540": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Farmhouse",
+    "Primary_Material": "Glass",
+    "Color": "Navy",
+    "Pattern": "Plaid"
+  },
+  "94550": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Industrial",
+    "Primary_Material": "Linen",
+    "Color": "Black",
+    "Pattern": "Plaid"
+  },
+  "94560": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Scandinavian",
+    "Primary_Material": "Linen",
+    "Color": "Gray",
+    "Pattern": "Striped"
+  },
+  "94570": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Mid-Century",
+    "Primary_Material": "Wood",
+    "Color": "Gray",
+    "Pattern": "Geometric"
+  },
+  "94580": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Mid-Century",
+    "Primary_Material": "Metal",
+    "Color": "Navy",
+    "Pattern": "Geometric"
+  },
+  "94590": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Farmhouse",
+    "Primary_Material": "Velvet",
+    "Color": "Beige",
+    "Pattern": "Floral"
+  },
+  "94600": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Mid-Century",
+    "Primary_Material": "Metal",
+    "Color": "White",
+    "Pattern": "Striped"
+  },
+  "94610": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Industrial",
+    "Primary_Material": "Velvet",
+    "Color": "Beige",
+    "Pattern": "Plaid"
+  },
+  "94620": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Farmhouse",
+    "Primary_Material": "Linen",
+    "Color": "Beige",
+    "Pattern": "Striped"
+  },
+  "94630": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Scandinavian",
+    "Primary_Material": "Wood",
+    "Color": "Beige",
+    "Pattern": "Plaid"
+  },
+  "94640": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Modern",
+    "Primary_Material": "Wood",
+    "Color": "Black",
+    "Pattern": "Floral"
+  },
+  "94650": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Mid-Century",
+    "Primary_Material": "Linen",
+    "Color": "White",
+    "Pattern": "Geometric"
+  },
+  "94660": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Traditional",
+    "Primary_Material": "Metal",
+    "Color": "White",
+    "Pattern": "Solid"
+  },
+  "94670": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Mid-Century",
+    "Primary_Material": "Linen",
+    "Color": "Gray",
+    "Pattern": "Striped"
+  },
+  "94680": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Mid-Century",
+    "Primary_Material": "Rattan",
+    "Color": "Black",
+    "Pattern": "Solid"
+  },
+  "94690": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Modern",
+    "Primary_Material": "Linen",
+    "Color": "Gray",
+    "Pattern": "Floral"
+  },
+  "94700": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Traditional",
+    "Primary_Material": "Glass",
+    "Color": "White",
+    "Pattern": "Solid"
+  },
+  "94710": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Farmhouse",
+    "Primary_Material": "Glass",
+    "Color": "Navy",
+    "Pattern": "Floral"
+  },
+  "94720": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Industrial",
+    "Primary_Material": "Glass",
+    "Color": "Navy",
+    "Pattern": "Solid"
+  },
+  "94730": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Modern",
+    "Primary_Material": "Glass",
+    "Color": "White",
+    "Pattern": "Striped"
+  },
+  "94740": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Modern",
+    "Primary_Material": "Rattan",
+    "Color": "White",
+    "Pattern": "Solid"
+  },
+  "94750": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Traditional",
+    "Primary_Material": "Metal",
+    "Color": "Beige",
+    "Pattern": "Plaid"
+  },
+  "94760": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Scandinavian",
+    "Primary_Material": "Rattan",
+    "Color": "Beige",
+    "Pattern": "Striped"
+  },
+  "94770": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Scandinavian",
+    "Primary_Material": "Rattan",
+    "Color": "Gray",
+    "Pattern": "Floral"
+  },
+  "94780": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Farmhouse",
+    "Primary_Material": "Wood",
+    "Color": "Beige",
+    "Pattern": "Floral"
+  },
+  "94790": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Scandinavian",
+    "Primary_Material": "Rattan",
+    "Color": "Beige",
+    "Pattern": "Solid"
+  },
+  "94800": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Modern",
+    "Primary_Material": "Velvet",
+    "Color": "Gray",
+    "Pattern": "Geometric"
+  },
+  "94810": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Scandinavian",
+    "Primary_Material": "Glass",
+    "Color": "Navy",
+    "Pattern": "Solid"
+  },
+  "94820": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Modern",
+    "Primary_Material": "Rattan",
+    "Color": "Emerald",
+    "Pattern": "Plaid"
+  },
+  "94830": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Modern",
+    "Primary_Material": "Glass",
+    "Color": "White",
+    "Pattern": "Striped"
+  },
+  "94840": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Traditional",
+    "Primary_Material": "Velvet",
+    "Color": "Black",
+    "Pattern": "Plaid"
+  },
+  "94850": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Mid-Century",
+    "Primary_Material": "Metal",
+    "Color": "Emerald",
+    "Pattern": "Floral"
+  },
+  "94860": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Traditional",
+    "Primary_Material": "Rattan",
+    "Color": "White",
+    "Pattern": "Geometric"
+  },
+  "94870": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Scandinavian",
+    "Primary_Material": "Rattan",
+    "Color": "Black",
+    "Pattern": "Striped"
+  },
+  "94880": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Mid-Century",
+    "Primary_Material": "Wood",
+    "Color": "Gray",
+    "Pattern": "Striped"
+  },
+  "94890": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Modern",
+    "Primary_Material": "Velvet",
+    "Color": "Emerald",
+    "Pattern": "Solid"
+  },
+  "94900": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Farmhouse",
+    "Primary_Material": "Velvet",
+    "Color": "Beige",
+    "Pattern": "Geometric"
+  },
+  "94910": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Traditional",
+    "Primary_Material": "Rattan",
+    "Color": "Black",
+    "Pattern": "Striped"
+  },
+  "94920": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Industrial",
+    "Primary_Material": "Velvet",
+    "Color": "White",
+    "Pattern": "Solid"
+  },
+  "94930": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Scandinavian",
+    "Primary_Material": "Linen",
+    "Color": "White",
+    "Pattern": "Geometric"
+  },
+  "94940": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Mid-Century",
+    "Primary_Material": "Wood",
+    "Color": "White",
+    "Pattern": "Plaid"
+  },
+  "94950": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Scandinavian",
+    "Primary_Material": "Glass",
+    "Color": "Black",
+    "Pattern": "Geometric"
+  },
+  "94960": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Mid-Century",
+    "Primary_Material": "Wood",
+    "Color": "Emerald",
+    "Pattern": "Floral"
+  },
+  "94970": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Traditional",
+    "Primary_Material": "Wood",
+    "Color": "Emerald",
+    "Pattern": "Geometric"
+  },
+  "94980": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Modern",
+    "Primary_Material": "Wood",
+    "Color": "Navy",
+    "Pattern": "Striped"
+  },
+  "94990": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Mid-Century",
+    "Primary_Material": "Wood",
+    "Color": "Navy",
+    "Pattern": "Floral"
+  },
+  "95000": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Industrial",
+    "Primary_Material": "Linen",
+    "Color": "White",
+    "Pattern": "Floral"
+  },
+  "95010": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Mid-Century",
+    "Primary_Material": "Velvet",
+    "Color": "Beige",
+    "Pattern": "Striped"
+  },
+  "95020": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Modern",
+    "Primary_Material": "Velvet",
+    "Color": "Gray",
+    "Pattern": "Geometric"
+  },
+  "95030": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Scandinavian",
+    "Primary_Material": "Linen",
+    "Color": "Navy",
+    "Pattern": "Striped"
+  },
+  "95040": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Farmhouse",
+    "Primary_Material": "Metal",
+    "Color": "Black",
+    "Pattern": "Striped"
+  },
+  "95050": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Industrial",
+    "Primary_Material": "Velvet",
+    "Color": "White",
+    "Pattern": "Striped"
+  },
+  "95060": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Farmhouse",
+    "Primary_Material": "Linen",
+    "Color": "Gray",
+    "Pattern": "Geometric"
+  },
+  "95070": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Scandinavian",
+    "Primary_Material": "Linen",
+    "Color": "Black",
+    "Pattern": "Floral"
+  },
+  "95080": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Industrial",
+    "Primary_Material": "Metal",
+    "Color": "Black",
+    "Pattern": "Geometric"
+  },
+  "95090": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Scandinavian",
+    "Primary_Material": "Linen",
+    "Color": "Navy",
+    "Pattern": "Solid"
+  },
+  "95100": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Scandinavian",
+    "Primary_Material": "Metal",
+    "Color": "Gray",
+    "Pattern": "Striped"
+  },
+  "95110": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Farmhouse",
+    "Primary_Material": "Metal",
+    "Color": "Navy",
+    "Pattern": "Geometric"
+  },
+  "95120": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Scandinavian",
+    "Primary_Material": "Linen",
+    "Color": "White",
+    "Pattern": "Solid"
+  },
+  "95130": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Industrial",
+    "Primary_Material": "Rattan",
+    "Color": "White",
+    "Pattern": "Striped"
+  },
+  "95140": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Farmhouse",
+    "Primary_Material": "Velvet",
+    "Color": "Black",
+    "Pattern": "Plaid"
+  },
+  "95150": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Traditional",
+    "Primary_Material": "Linen",
+    "Color": "Black",
+    "Pattern": "Plaid"
+  },
+  "95160": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Industrial",
+    "Primary_Material": "Velvet",
+    "Color": "Gray",
+    "Pattern": "Floral"
+  },
+  "95170": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Mid-Century",
+    "Primary_Material": "Velvet",
+    "Color": "White",
+    "Pattern": "Floral"
+  },
+  "95180": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Industrial",
+    "Primary_Material": "Rattan",
+    "Color": "Gray",
+    "Pattern": "Solid"
+  },
+  "95190": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Industrial",
+    "Primary_Material": "Metal",
+    "Color": "Gray",
+    "Pattern": "Floral"
+  },
+  "95200": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Traditional",
+    "Primary_Material": "Rattan",
+    "Color": "Emerald",
+    "Pattern": "Floral"
+  },
+  "95210": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Traditional",
+    "Primary_Material": "Glass",
+    "Color": "Gray",
+    "Pattern": "Solid"
+  },
+  "95220": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Mid-Century",
+    "Primary_Material": "Velvet",
+    "Color": "Navy",
+    "Pattern": "Solid"
+  },
+  "95230": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Industrial",
+    "Primary_Material": "Rattan",
+    "Color": "White",
+    "Pattern": "Plaid"
+  },
+  "95240": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Traditional",
+    "Primary_Material": "Glass",
+    "Color": "Emerald",
+    "Pattern": "Floral"
+  },
+  "95250": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Mid-Century",
+    "Primary_Material": "Glass",
+    "Color": "White",
+    "Pattern": "Plaid"
+  },
+  "95260": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Scandinavian",
+    "Primary_Material": "Metal",
+    "Color": "Navy",
+    "Pattern": "Plaid"
+  },
+  "95270": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Traditional",
+    "Primary_Material": "Glass",
+    "Color": "Emerald",
+    "Pattern": "Solid"
+  },
+  "95280": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Farmhouse",
+    "Primary_Material": "Metal",
+    "Color": "Navy",
+    "Pattern": "Solid"
+  },
+  "95290": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Modern",
+    "Primary_Material": "Metal",
+    "Color": "Gray",
+    "Pattern": "Solid"
+  },
+  "95300": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Scandinavian",
+    "Primary_Material": "Linen",
+    "Color": "Emerald",
+    "Pattern": "Solid"
+  },
+  "95310": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Mid-Century",
+    "Primary_Material": "Glass",
+    "Color": "White",
+    "Pattern": "Plaid"
+  },
+  "95320": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Scandinavian",
+    "Primary_Material": "Glass",
+    "Color": "Beige",
+    "Pattern": "Geometric"
+  },
+  "95330": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Modern",
+    "Primary_Material": "Velvet",
+    "Color": "Emerald",
+    "Pattern": "Solid"
+  },
+  "95340": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Industrial",
+    "Primary_Material": "Linen",
+    "Color": "White",
+    "Pattern": "Solid"
+  },
+  "95350": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Farmhouse",
+    "Primary_Material": "Wood",
+    "Color": "Navy",
+    "Pattern": "Floral"
+  },
+  "95360": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Industrial",
+    "Primary_Material": "Glass",
+    "Color": "White",
+    "Pattern": "Solid"
+  },
+  "95370": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Scandinavian",
+    "Primary_Material": "Glass",
+    "Color": "Beige",
+    "Pattern": "Geometric"
+  },
+  "95380": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Mid-Century",
+    "Primary_Material": "Rattan",
+    "Color": "Navy",
+    "Pattern": "Plaid"
+  },
+  "95390": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Farmhouse",
+    "Primary_Material": "Metal",
+    "Color": "Emerald",
+    "Pattern": "Floral"
+  },
+  "95400": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Farmhouse",
+    "Primary_Material": "Velvet",
+    "Color": "Black",
+    "Pattern": "Solid"
+  },
+  "95410": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Mid-Century",
+    "Primary_Material": "Rattan",
+    "Color": "Beige",
+    "Pattern": "Striped"
+  },
+  "95420": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Mid-Century",
+    "Primary_Material": "Glass",
+    "Color": "Navy",
+    "Pattern": "Plaid"
+  },
+  "95430": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Traditional",
+    "Primary_Material": "Rattan",
+    "Color": "Black",
+    "Pattern": "Plaid"
+  },
+  "95440": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Modern",
+    "Primary_Material": "Velvet",
+    "Color": "Beige",
+    "Pattern": "Solid"
+  },
+  "95450": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Mid-Century",
+    "Primary_Material": "Metal",
+    "Color": "Beige",
+    "Pattern": "Solid"
+  },
+  "95460": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Scandinavian",
+    "Primary_Material": "Velvet",
+    "Color": "Gray",
+    "Pattern": "Plaid"
+  },
+  "95470": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Traditional",
+    "Primary_Material": "Velvet",
+    "Color": "White",
+    "Pattern": "Solid"
+  },
+  "95480": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Scandinavian",
+    "Primary_Material": "Velvet",
+    "Color": "Gray",
+    "Pattern": "Striped"
+  },
+  "95490": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Farmhouse",
+    "Primary_Material": "Velvet",
+    "Color": "Beige",
+    "Pattern": "Geometric"
+  },
+  "95500": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Scandinavian",
+    "Primary_Material": "Wood",
+    "Color": "Gray",
+    "Pattern": "Solid"
+  },
+  "95510": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Modern",
+    "Primary_Material": "Glass",
+    "Color": "Black",
+    "Pattern": "Geometric"
+  },
+  "95520": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Farmhouse",
+    "Primary_Material": "Rattan",
+    "Color": "Navy",
+    "Pattern": "Floral"
+  },
+  "95530": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Farmhouse",
+    "Primary_Material": "Linen",
+    "Color": "Gray",
+    "Pattern": "Plaid"
+  },
+  "95540": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Scandinavian",
+    "Primary_Material": "Glass",
+    "Color": "Emerald",
+    "Pattern": "Striped"
+  },
+  "95550": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Farmhouse",
+    "Primary_Material": "Velvet",
+    "Color": "Emerald",
+    "Pattern": "Striped"
+  },
+  "95560": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Traditional",
+    "Primary_Material": "Metal",
+    "Color": "Black",
+    "Pattern": "Striped"
+  },
+  "95570": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Mid-Century",
+    "Primary_Material": "Linen",
+    "Color": "Emerald",
+    "Pattern": "Geometric"
+  },
+  "95580": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Modern",
+    "Primary_Material": "Rattan",
+    "Color": "Black",
+    "Pattern": "Plaid"
+  },
+  "95590": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Traditional",
+    "Primary_Material": "Linen",
+    "Color": "Black",
+    "Pattern": "Striped"
+  },
+  "95600": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Scandinavian",
+    "Primary_Material": "Rattan",
+    "Color": "Black",
+    "Pattern": "Solid"
+  },
+  "95610": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Scandinavian",
+    "Primary_Material": "Metal",
+    "Color": "Gray",
+    "Pattern": "Striped"
+  },
+  "95620": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Mid-Century",
+    "Primary_Material": "Linen",
+    "Color": "White",
+    "Pattern": "Striped"
+  },
+  "95630": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Industrial",
+    "Primary_Material": "Rattan",
+    "Color": "Gray",
+    "Pattern": "Striped"
+  },
+  "95640": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Mid-Century",
+    "Primary_Material": "Glass",
+    "Color": "Navy",
+    "Pattern": "Striped"
+  },
+  "95650": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Scandinavian",
+    "Primary_Material": "Metal",
+    "Color": "Gray",
+    "Pattern": "Geometric"
+  },
+  "95660": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Farmhouse",
+    "Primary_Material": "Velvet",
+    "Color": "White",
+    "Pattern": "Striped"
+  },
+  "95670": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Farmhouse",
+    "Primary_Material": "Rattan",
+    "Color": "Navy",
+    "Pattern": "Plaid"
+  },
+  "95680": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Farmhouse",
+    "Primary_Material": "Wood",
+    "Color": "Emerald",
+    "Pattern": "Geometric"
+  },
+  "95690": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Farmhouse",
+    "Primary_Material": "Wood",
+    "Color": "White",
+    "Pattern": "Floral"
+  },
+  "95700": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Traditional",
+    "Primary_Material": "Linen",
+    "Color": "Beige",
+    "Pattern": "Striped"
+  },
+  "95710": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Scandinavian",
+    "Primary_Material": "Glass",
+    "Color": "Navy",
+    "Pattern": "Geometric"
+  },
+  "95720": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Farmhouse",
+    "Primary_Material": "Wood",
+    "Color": "Beige",
+    "Pattern": "Striped"
+  },
+  "95730": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Industrial",
+    "Primary_Material": "Velvet",
+    "Color": "Beige",
+    "Pattern": "Solid"
+  },
+  "95740": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Industrial",
+    "Primary_Material": "Velvet",
+    "Color": "Gray",
+    "Pattern": "Striped"
+  },
+  "95750": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Farmhouse",
+    "Primary_Material": "Glass",
+    "Color": "Gray",
+    "Pattern": "Floral"
+  },
+  "95760": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Scandinavian",
+    "Primary_Material": "Wood",
+    "Color": "Emerald",
+    "Pattern": "Striped"
+  },
+  "95770": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Industrial",
+    "Primary_Material": "Wood",
+    "Color": "Gray",
+    "Pattern": "Striped"
+  },
+  "95780": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Traditional",
+    "Primary_Material": "Velvet",
+    "Color": "Beige",
+    "Pattern": "Striped"
+  },
+  "95790": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Traditional",
+    "Primary_Material": "Linen",
+    "Color": "White",
+    "Pattern": "Geometric"
+  },
+  "95800": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Modern",
+    "Primary_Material": "Wood",
+    "Color": "White",
+    "Pattern": "Solid"
+  },
+  "95810": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Modern",
+    "Primary_Material": "Metal",
+    "Color": "Emerald",
+    "Pattern": "Striped"
+  },
+  "95820": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Farmhouse",
+    "Primary_Material": "Linen",
+    "Color": "Emerald",
+    "Pattern": "Striped"
+  },
+  "95830": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Industrial",
+    "Primary_Material": "Wood",
+    "Color": "Navy",
+    "Pattern": "Floral"
+  },
+  "95840": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Farmhouse",
+    "Primary_Material": "Metal",
+    "Color": "Gray",
+    "Pattern": "Floral"
+  },
+  "95850": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Farmhouse",
+    "Primary_Material": "Metal",
+    "Color": "Emerald",
+    "Pattern": "Floral"
+  },
+  "95860": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Farmhouse",
+    "Primary_Material": "Linen",
+    "Color": "Emerald",
+    "Pattern": "Solid"
+  },
+  "95870": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Mid-Century",
+    "Primary_Material": "Wood",
+    "Color": "White",
+    "Pattern": "Plaid"
+  },
+  "95880": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Farmhouse",
+    "Primary_Material": "Velvet",
+    "Color": "Navy",
+    "Pattern": "Striped"
+  },
+  "95890": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Industrial",
+    "Primary_Material": "Velvet",
+    "Color": "White",
+    "Pattern": "Plaid"
+  },
+  "95900": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Scandinavian",
+    "Primary_Material": "Velvet",
+    "Color": "Gray",
+    "Pattern": "Solid"
+  },
+  "95910": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Industrial",
+    "Primary_Material": "Velvet",
+    "Color": "Emerald",
+    "Pattern": "Striped"
+  },
+  "95920": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Mid-Century",
+    "Primary_Material": "Rattan",
+    "Color": "Black",
+    "Pattern": "Solid"
+  },
+  "95930": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Farmhouse",
+    "Primary_Material": "Wood",
+    "Color": "Beige",
+    "Pattern": "Geometric"
+  },
+  "95940": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Mid-Century",
+    "Primary_Material": "Rattan",
+    "Color": "Emerald",
+    "Pattern": "Solid"
+  },
+  "95950": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Mid-Century",
+    "Primary_Material": "Glass",
+    "Color": "Beige",
+    "Pattern": "Solid"
+  },
+  "95960": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Modern",
+    "Primary_Material": "Metal",
+    "Color": "Emerald",
+    "Pattern": "Solid"
+  },
+  "95970": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Modern",
+    "Primary_Material": "Glass",
+    "Color": "White",
+    "Pattern": "Geometric"
+  },
+  "95980": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Traditional",
+    "Primary_Material": "Velvet",
+    "Color": "Navy",
+    "Pattern": "Plaid"
+  },
+  "95990": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Farmhouse",
+    "Primary_Material": "Velvet",
+    "Color": "Navy",
+    "Pattern": "Solid"
+  },
+  "96000": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Mid-Century",
+    "Primary_Material": "Velvet",
+    "Color": "Gray",
+    "Pattern": "Striped"
+  },
+  "96010": {
+    "Furniture_Type": "Dining Table",
+    "Price_Point": "$500 - $1500",
+    "Style": "Traditional",
+    "Primary_Material": "Metal",
+    "Color": "Emerald",
+    "Pattern": "Floral"
+  },
+  "96020": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Traditional",
+    "Primary_Material": "Linen",
+    "Color": "Navy",
+    "Pattern": "Geometric"
+  },
+  "96030": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Farmhouse",
+    "Primary_Material": "Wood",
+    "Color": "Black",
+    "Pattern": "Solid"
+  },
+  "96040": {
+    "Furniture_Type": "Sofa",
+    "Price_Point": "$800 - $2500",
+    "Style": "Scandinavian",
+    "Primary_Material": "Rattan",
+    "Color": "Gray",
+    "Pattern": "Striped"
+  },
+  "96050": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Industrial",
+    "Primary_Material": "Rattan",
+    "Color": "Navy",
+    "Pattern": "Floral"
+  },
+  "96060": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Scandinavian",
+    "Primary_Material": "Rattan",
+    "Color": "Emerald",
+    "Pattern": "Geometric"
+  },
+  "96070": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Farmhouse",
+    "Primary_Material": "Metal",
+    "Color": "White",
+    "Pattern": "Solid"
+  },
+  "96080": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Modern",
+    "Primary_Material": "Metal",
+    "Color": "Beige",
+    "Pattern": "Floral"
+  },
+  "96090": {
+    "Furniture_Type": "Bed Frame",
+    "Price_Point": "$400 - $1800",
+    "Style": "Industrial",
+    "Primary_Material": "Rattan",
+    "Color": "Gray",
+    "Pattern": "Plaid"
+  },
+  "96100": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Modern",
+    "Primary_Material": "Glass",
+    "Color": "Black",
+    "Pattern": "Solid"
+  },
+  "96110": {
+    "Furniture_Type": "Bookshelf",
+    "Price_Point": "$100 - $700",
+    "Style": "Traditional",
+    "Primary_Material": "Wood",
+    "Color": "Navy",
+    "Pattern": "Solid"
+  },
+  "96120": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Scandinavian",
+    "Primary_Material": "Wood",
+    "Color": "White",
+    "Pattern": "Geometric"
+  },
+  "96130": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Farmhouse",
+    "Primary_Material": "Wood",
+    "Color": "Emerald",
+    "Pattern": "Solid"
+  },
+  "96140": {
+    "Furniture_Type": "Accent Chair",
+    "Price_Point": "$100 - $800",
+    "Style": "Modern",
+    "Primary_Material": "Glass",
+    "Color": "Beige",
+    "Pattern": "Geometric"
+  },
+  "96150": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Scandinavian",
+    "Primary_Material": "Glass",
+    "Color": "Navy",
+    "Pattern": "Geometric"
+  },
+  "96160": {
+    "Furniture_Type": "Coffee Table",
+    "Price_Point": "$150 - $600",
+    "Style": "Scandinavian",
+    "Primary_Material": "Wood",
+    "Color": "Emerald",
+    "Pattern": "Geometric"
+  }
+}
