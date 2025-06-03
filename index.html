@@ -56,7 +56,7 @@
 
     Promise.all([
       fetch('bay_area_zip_trends.geojson').then(res => res.json()),
-      fetch('zip_trends.json').then(res => res.json())
+      fetch('zip_trends_california.json').then(res => res.json())
     ])
     .then(([geoData, trendData]) => {
       allFeatures = geoData.features;
@@ -71,11 +71,12 @@
         const trend = trendData[zip];
 
         if (trend) {
-          f.properties.Most_Popular_Style = trend.Most_Popular_Style;
-          f.properties.Most_Popular_Material = trend.Most_Popular_Material;
-          f.properties.Most_Popular_Color = trend.Most_Popular_Color;
-          f.properties.Most_Popular_Furniture = trend.Most_Popular_Furniture;
-          f.properties.Rationale = trend.Rationale;
+          f.properties = {
+            ...f.properties,
+            ...trend,
+            Demographics: trend.Demographics,
+            Rationale: trend.Rationale
+          };
 
           zipSet.add(zip);
           if (trend.Most_Popular_Style) styleSet.add(trend.Most_Popular_Style);
@@ -111,12 +112,22 @@
 
     function onEachFeature(feature, layer) {
       const p = feature.properties;
-      const label = `<b>ZIP:</b> ${p.zip}<br/>
-                     <b>Style:</b> ${p.Most_Popular_Style || 'N/A'}<br/>
-                     <b>Material:</b> ${p.Most_Popular_Material || 'N/A'}<br/>
-                     <b>Color:</b> ${p.Most_Popular_Color || 'N/A'}<br/>
-                     <b>Furniture:</b> ${p.Most_Popular_Furniture || 'N/A'}<br/><br/>
-                     <i>${p.Rationale || 'No rationale available.'}</i>`;
+      const demo = p.Demographics || {};
+
+      const label = `
+        <b>ZIP:</b> ${p.zip}<br/>
+        <b>Style:</b> ${p.Most_Popular_Style || 'N/A'}<br/>
+        <b>Material:</b> ${p.Most_Popular_Material || 'N/A'}<br/>
+        <b>Color:</b> ${p.Most_Popular_Color || 'N/A'}<br/>
+        <b>Furniture:</b> ${p.Most_Popular_Furniture || 'N/A'}<br/><br/>
+        <b>Median Income:</b> $${demo.Median_Household_Income?.toLocaleString() || 'N/A'}<br/>
+        <b>Median Home Value:</b> $${demo.Median_Home_Value?.toLocaleString() || 'N/A'}<br/>
+        <b>Median Age:</b> ${demo.Median_Age || 'N/A'}<br/>
+        <b>Race:</b> ${demo.Racial_Composition || 'N/A'}<br/>
+        <b>Education:</b> ${demo.Education || 'N/A'}<br/><br/>
+        <i>${p.Rationale || ''}</i>
+      `;
+
       layer.bindPopup(label);
     }
 
@@ -147,6 +158,5 @@
       }
     }
   </script>
-
 </body>
 </html>
