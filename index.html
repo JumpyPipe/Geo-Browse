@@ -56,9 +56,11 @@
 
     Promise.all([
       fetch('bay_area_zip_trends.geojson').then(res => res.json()),
-      fetch('zip_trends.json').then(res => res.json())
+      fetch('trends.json').then(res => res.json()),
+      fetch('demographics.json').then(res => res.json()),
+      fetch('housing_attributes.json').then(res => res.json())
     ])
-    .then(([geoData, trendData]) => {
+    .then(([geoData, trends, demographics, housing]) => {
       allFeatures = geoData.features;
 
       const zipSet = new Set();
@@ -68,21 +70,21 @@
 
       allFeatures.forEach(f => {
         const zip = f.properties.zip?.toString().trim();
-        const trend = trendData[zip];
+        const trend = trends[zip] || {};
+        const demo = demographics[zip] || {};
+        const home = housing[zip] || {};
 
-        if (trend) {
-          f.properties = {
-            ...f.properties,
-            ...trend,
-            Demographics: trend.Demographics,
-            Rationale: trend.Rationale
-          };
+        f.properties = {
+          ...f.properties,
+          ...trend,
+          Demographics: demo,
+          Housing: home
+        };
 
-          zipSet.add(zip);
-          if (trend.Most_Popular_Style) styleSet.add(trend.Most_Popular_Style);
-          if (trend.Most_Popular_Material) materialSet.add(trend.Most_Popular_Material);
-          if (trend.Most_Popular_Color) colorSet.add(trend.Most_Popular_Color);
-        }
+        if (trend.Style) styleSet.add(trend.Style);
+        if (trend.Primary_Material) materialSet.add(trend.Primary_Material);
+        if (trend.Color) colorSet.add(trend.Color);
+        zipSet.add(zip);
       });
 
       [...zipSet].sort().forEach(z => zipFilter.innerHTML += `<option value="${z}">${z}</option>`);
@@ -113,21 +115,28 @@
     function onEachFeature(feature, layer) {
       const p = feature.properties;
       const demo = p.Demographics || {};
+      const house = p.Housing || {};
 
       const label = `
         <b>ZIP:</b> ${p.zip}<br/>
-        <b>Style:</b> ${p.Most_Popular_Style || 'N/A'}<br/>
-        <b>Material:</b> ${p.Most_Popular_Material || 'N/A'}<br/>
-        <b>Color:</b> ${p.Most_Popular_Color || 'N/A'}<br/>
-        <b>Furniture:</b> ${p.Most_Popular_Furniture || 'N/A'}<br/><br/>
-        <b>Median Income:</b> $${demo.Median_Household_Income?.toLocaleString() || 'N/A'}<br/>
-        <b>Median Home Value:</b> $${demo.Median_Home_Value?.toLocaleString() || 'N/A'}<br/>
-        <b>Median Age:</b> ${demo.Median_Age || 'N/A'}<br/>
-        <b>Race:</b> ${demo.Racial_Composition || 'N/A'}<br/>
-        <b>Education:</b> ${demo.Education || 'N/A'}<br/><br/>
-        <i>${p.Rationale || ''}</i>
-      `;
+        <b>Style:</b> ${p.Style || 'N/A'}<br/>
+        <b>Material:</b> ${p.Primary_Material || 'N/A'}<br/>
+        <b>Color:</b> ${p.Color || 'N/A'}<br/>
+        <b>Pattern:</b> ${p.Pattern || 'N/A'}<br/>
+        <b>Furniture:</b> ${p.Furniture_Type || 'N/A'}<br/>
+        <b>Price Point:</b> ${p.Price_Point || 'N/A'}<br/><br/>
 
+        <b><u>Demographics</u></b><br/>
+        <b>Median Income:</b> $${demo.Median_Household_Income?.toLocaleString() || 'N/A'}<br/>
+        <b>Median Age:</b> ${demo.Median_Age || 'N/A'}<br/>
+        <b>Avg HH Size:</b> ${demo.Average_Household_Size || 'N/A'}<br/><br/>
+
+        <b><u>Housing</u></b><br/>
+        <b>Type:</b> ${house.Dominant_Home_Type || 'N/A'}<br/>
+        <b>Sq Ft:</b> ${house.Average_Home_Size_SqFt || 'N/A'}<br/>
+        <b>Price:</b> $${house.Median_Home_Price?.toLocaleString() || 'N/A'}<br/>
+        <b>Style:</b> ${house.Architectural_Style || 'N/A'}
+      `;
       layer.bindPopup(label);
     }
 
@@ -142,9 +151,9 @@
       const filtered = allFeatures.filter(f => {
         const p = f.properties;
         const zipMatch = !zipVal || p.zip === zipVal;
-        const styleMatch = !styleVal || p.Most_Popular_Style === styleVal;
-        const materialMatch = !materialVal || p.Most_Popular_Material === materialVal;
-        const colorMatch = !colorVal || p.Most_Popular_Color === colorVal;
+        const styleMatch = !styleVal || p.Style === styleVal;
+        const materialMatch = !materialVal || p.Primary_Material === materialVal;
+        const colorMatch = !colorVal || p.Color === colorVal;
         return zipMatch && styleMatch && materialMatch && colorMatch;
       });
 
