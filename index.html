@@ -4,103 +4,63 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Home Trends Dashboard</title>
-
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-
   <style>
-    :root {
-      --purple: #8a2be2;
-      --bg: #f6f6f6;
-    }
-
     body {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      font-family: sans-serif;
       display: flex;
       flex-direction: row;
-      height: 100vh;
-      overflow: hidden;
     }
 
     #sidebar {
-      width: 320px;
-      background: var(--bg);
+      width: 300px;
+      background-color: #f8f8f8;
       padding: 1rem;
-      box-shadow: 2px 0 5px rgba(0,0,0,0.1);
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
+      border-right: 1px solid #ddd;
+      height: 100vh;
+      overflow-y: auto;
     }
 
     #map {
       flex: 1;
+      height: 100vh;
     }
 
     label {
-      display: flex;
-      flex-direction: column;
-      font-size: 0.9rem;
-      color: #333;
+      display: block;
+      margin-top: 0.5rem;
     }
 
     select {
+      width: 100%;
       padding: 0.4rem;
-      font-size: 0.9rem;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-
-    select:focus {
-      border-color: var(--purple);
-      outline: none;
+      margin-bottom: 0.5rem;
     }
 
     #details {
-      font-size: 0.85rem;
-      line-height: 1.5;
       margin-top: 1rem;
-      white-space: pre-line;
+      font-size: 0.9rem;
+      line-height: 1.4;
     }
 
-    @media (max-width: 768px) {
-      body {
-        flex-direction: column;
-      }
-
-      #sidebar {
-        width: 100%;
-        height: auto;
-        box-shadow: none;
-        overflow-y: auto;
-      }
-
-      #map {
-        height: 65vh;
-      }
+    .highlight {
+      background-color: #eee;
+      padding: 0.5rem;
+      border-radius: 4px;
     }
   </style>
 </head>
 <body>
 
   <div id="sidebar">
-    <label>ZIP Code:
-      <select id="zipFilter"><option value="">View All</option></select>
-    </label>
-    <label>Style:
-      <select id="styleFilter"><option value="">View All</option></select>
-    </label>
-    <label>Material:
-      <select id="materialFilter"><option value="">View All</option></select>
-    </label>
-    <label>Color:
-      <select id="colorFilter"><option value="">View All</option></select>
-    </label>
-    <label>Furniture Type:
-      <select id="furnitureFilter"><option value="">View All</option></select>
-    </label>
-
-    <div id="details"><i>Select a ZIP code to see details.</i></div>
+    <label>ZIP Code: <select id="zipFilter"><option value="">View All</option></select></label>
+    <label>Style: <select id="styleFilter"><option value="">View All</option></select></label>
+    <label>Material: <select id="materialFilter"><option value="">View All</option></select></label>
+    <label>Color: <select id="colorFilter"><option value="">View All</option></select></label>
+    <label>Furniture Type: <select id="furnitureFilter"><option value="">View All</option></select></label>
+    <div id="details" class="highlight">Select a ZIP to view details here</div>
   </div>
 
   <div id="map"></div>
@@ -111,19 +71,29 @@
       attribution: '© OpenStreetMap contributors'
     }).addTo(map);
 
-    const zipFilter = document.getElementById('zipFilter');
-    const styleFilter = document.getElementById('styleFilter');
-    const materialFilter = document.getElementById('materialFilter');
-    const colorFilter = document.getElementById('colorFilter');
-    const furnitureFilter = document.getElementById('furnitureFilter');
-    const detailsBox = document.getElementById('details');
+    const filters = {
+      zip: document.getElementById('zipFilter'),
+      style: document.getElementById('styleFilter'),
+      material: document.getElementById('materialFilter'),
+      color: document.getElementById('colorFilter'),
+      furniture: document.getElementById('furnitureFilter')
+    };
 
+    const detailsBox = document.getElementById('details');
     let allFeatures = [];
     let geojsonLayer;
 
     function styleFeature(feature) {
       return {
-        color: "#8a2be2",
+        color: "#9b30ff",
+        weight: 1,
+        fillOpacity: 0.4
+      };
+    }
+
+    function styleOutline(feature) {
+      return {
+        color: "#9b30ff",
         weight: 1,
         fillOpacity: 0
       };
@@ -135,41 +105,38 @@
       const weather = props.Weather || {};
 
       detailsBox.innerHTML = `
-<b>ZIP:</b> ${props.zip}
-\n<b>Furniture Preference</b>
-Furniture: ${props.Furniture_Type || 'N/A'}
-Style: ${props.Style || 'N/A'}
-Material: ${props.Primary_Material || 'N/A'}
-Color: ${props.Color || 'N/A'}
-Price Point: ${props.Price_Point || 'N/A'}
-Pattern: ${props.Pattern || 'N/A'}
-\n<b>Demographics</b>
-Median Income: $${demo.Median_Household_Income?.toLocaleString() || 'N/A'}
-Median Home Value: $${demo.Median_Home_Value?.toLocaleString() || 'N/A'}
-Median Age: ${demo.Median_Age || 'N/A'}
-Race: ${demo.Racial_Composition || 'N/A'}
-Education: ${demo.Education || 'N/A'}
-\n<b>Housing</b>
-Home Type: ${house.Dominant_Home_Type || 'N/A'}
-Avg Sq Ft: ${house.Average_Home_Size_SqFt || 'N/A'}
-Year Built: ${house.Median_Year_Built || 'N/A'}
-Architectural Style: ${house.Architectural_Style || 'N/A'}
-\n<b>Weather</b>
-Temp: ${weather.TempF || 'N/A'}°F / ${weather.TempC || 'N/A'}°C
-Precipitation: ${weather.Precipitation || 'N/A'}
-\n<i>${props.Rationale || ''}</i>`;
-    }
-
-    function onEachFeature(feature, layer) {
-      layer.on('click', () => showDetails(feature.properties));
+        <b>ZIP:</b> ${props.zip}<br/><br/>
+        <b>Furniture Preference</b><br/>
+        Furniture: ${props.Furniture_Type || 'N/A'}<br/>
+        Style: ${props.Style || 'N/A'}<br/>
+        Material: ${props.Primary_Material || 'N/A'}<br/>
+        Color: ${props.Color || 'N/A'}<br/>
+        Price Point: ${props.Price_Point || 'N/A'}<br/>
+        Pattern: ${props.Pattern || 'N/A'}<br/><br/>
+        <b>Demographics</b><br/>
+        Median Income: $${demo.Median_Household_Income?.toLocaleString() || 'N/A'}<br/>
+        Median Home Value: $${demo.Median_Home_Value?.toLocaleString() || 'N/A'}<br/>
+        Median Age: ${demo.Median_Age || 'N/A'}<br/>
+        Race: ${demo.Racial_Composition || 'N/A'}<br/>
+        Education: ${demo.Education || 'N/A'}<br/><br/>
+        <b>Housing</b><br/>
+        Home Type: ${house.Dominant_Home_Type || 'N/A'}<br/>
+        Avg Sq Ft: ${house.Average_Home_Size_SqFt || 'N/A'}<br/>
+        Year Built: ${house.Median_Year_Built || 'N/A'}<br/>
+        Architectural Style: ${house.Architectural_Style || 'N/A'}<br/><br/>
+        <b>Current Weather</b><br/>
+        Temp: ${weather.TempF || 'N/A'}°F / ${weather.TempC || 'N/A'}°C<br/>
+        Precipitation: ${weather.Precipitation || 'N/A'}<br/><br/>
+        <i>${props.Rationale || ''}</i>
+      `;
     }
 
     function updateMap() {
-      const zipVal = zipFilter.value;
-      const styleVal = styleFilter.value;
-      const materialVal = materialFilter.value;
-      const colorVal = colorFilter.value;
-      const furnitureVal = furnitureFilter.value;
+      const zipVal = filters.zip.value;
+      const styleVal = filters.style.value;
+      const materialVal = filters.material.value;
+      const colorVal = filters.color.value;
+      const furnitureVal = filters.furniture.value;
 
       if (geojsonLayer) geojsonLayer.remove();
 
@@ -183,44 +150,25 @@ Precipitation: ${weather.Precipitation || 'N/A'}
       });
 
       geojsonLayer = L.geoJSON(filtered, {
-        style: f => {
-          const p = f.properties;
-          const isDirectZip = zipVal && p.zip === zipVal;
-          return {
-            color: "#8a2be2",
-            weight: 2,
-            fillOpacity: isDirectZip ? 0.3 : (!zipVal ? 0 : 0.15)
-          };
-        },
-        onEachFeature: onEachFeature
+        style: (zipVal || styleVal || materialVal || colorVal || furnitureVal) ? styleFeature : styleOutline,
+        onEachFeature: (feature, layer) => {
+          layer.on('click', () => showDetails(feature.properties));
+        }
       }).addTo(map);
 
       if (filtered.length > 0) {
         map.fitBounds(geojsonLayer.getBounds());
-        if (zipVal) {
-          const match = filtered.find(f => f.properties.zip === zipVal);
-          if (match) showDetails(match.properties);
-        }
+        if (zipVal && filtered[0]) showDetails(filtered[0].properties);
       }
     }
 
     Promise.all([
-      fetch('bay_area_zip_trends.geojson').then(r => r.json()),
-      fetch('utah_zip_codes.geojson').then(r => r.json()),
-      fetch('arizona_zip_codes.geojson').then(r => r.json()),
-      fetch('nevada_zip_codes.geojson').then(r => r.json()),
-      fetch('oregon_zip_codes.geojson').then(r => r.json()),
-      fetch('washington_zip_codes.geojson').then(r => r.json()),
-      fetch('trends.json').then(r => r.json())
-    ]).then(([bay, utah, arizona, nevada, oregon, washington, trends]) => {
-      const combined = [...bay.features, ...utah.features, ...arizona.features, ...nevada.features, ...oregon.features, ...washington.features];
-
-      allFeatures = combined.map(f => {
-        const zip = f.properties.zip?.toString();
-        const trend = trends[zip];
-        if (trend) f.properties = { ...f.properties, ...trend };
-        return f;
-      });
+      fetch('bay_area_zip_trends.geojson').then(res => res.json()),
+      fetch('trends.json').then(res => res.json()),
+      fetch('demographics.json').then(res => res.json()),
+      fetch('housing.json').then(res => res.json())
+    ]).then(([geoData, trendData, demoData, housingData]) => {
+      allFeatures = geoData.features;
 
       const zipSet = new Set();
       const styleSet = new Set();
@@ -229,26 +177,26 @@ Precipitation: ${weather.Precipitation || 'N/A'}
       const furnitureSet = new Set();
 
       allFeatures.forEach(f => {
-        const p = f.properties;
-        zipSet.add(p.zip);
-        if (p.Style) styleSet.add(p.Style);
-        if (p.Primary_Material) materialSet.add(p.Primary_Material);
-        if (p.Color) colorSet.add(p.Color);
-        if (p.Furniture_Type) furnitureSet.add(p.Furniture_Type);
+        const zip = f.properties.zip?.toString();
+        const trend = trendData[zip] || {};
+        const demo = demoData[zip] || {};
+        const house = housingData[zip] || {};
+
+        f.properties = { ...f.properties, ...trend, Demographics: demo, Housing: house };
+        zipSet.add(zip);
+        if (trend.Style) styleSet.add(trend.Style);
+        if (trend.Primary_Material) materialSet.add(trend.Primary_Material);
+        if (trend.Color) colorSet.add(trend.Color);
+        if (trend.Furniture_Type) furnitureSet.add(trend.Furniture_Type);
       });
 
-      [...zipSet].sort().forEach(z => zipFilter.innerHTML += `<option value="${z}">${z}</option>`);
-      [...styleSet].sort().forEach(s => styleFilter.innerHTML += `<option value="${s}">${s}</option>`);
-      [...materialSet].sort().forEach(m => materialFilter.innerHTML += `<option value="${m}">${m}</option>`);
-      [...colorSet].sort().forEach(c => colorFilter.innerHTML += `<option value="${c}">${c}</option>`);
-      [...furnitureSet].sort().forEach(f => furnitureFilter.innerHTML += `<option value="${f}">${f}</option>`);
+      [...zipSet].sort().forEach(z => filters.zip.innerHTML += `<option value="${z}">${z}</option>`);
+      [...styleSet].sort().forEach(s => filters.style.innerHTML += `<option value="${s}">${s}</option>`);
+      [...materialSet].sort().forEach(m => filters.material.innerHTML += `<option value="${m}">${m}</option>`);
+      [...colorSet].sort().forEach(c => filters.color.innerHTML += `<option value="${c}">${c}</option>`);
+      [...furnitureSet].sort().forEach(f => filters.furniture.innerHTML += `<option value="${f}">${f}</option>`);
 
-      zipFilter.addEventListener('change', updateMap);
-      styleFilter.addEventListener('change', updateMap);
-      materialFilter.addEventListener('change', updateMap);
-      colorFilter.addEventListener('change', updateMap);
-      furnitureFilter.addEventListener('change', updateMap);
-
+      Object.values(filters).forEach(f => f.addEventListener('change', updateMap));
       updateMap();
     });
   </script>
