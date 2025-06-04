@@ -9,16 +9,36 @@
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
   <style>
-    body { margin: 0; font-family: sans-serif; }
-    #filters {
-      padding: 1rem;
-      background: #f8f8f8;
+    body {
+      margin: 0;
+      font-family: sans-serif;
       display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
+      height: 100vh;
     }
-    #map { height: 85vh; }
-    select { padding: 0.4rem; }
+    #sidebar {
+      width: 300px;
+      background: #f4f4f4;
+      padding: 1rem;
+      overflow-y: auto;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    }
+    #filters label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    select {
+      width: 100%;
+      padding: 0.4rem;
+      margin-top: 4px;
+    }
+    #map {
+      flex-grow: 1;
+    }
+    #details {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
     #loadingSpinner {
       position: absolute;
       top: 10px;
@@ -28,27 +48,31 @@
       border-radius: 4px;
       font-weight: bold;
       display: none;
+      z-index: 1000;
     }
   </style>
 </head>
 <body>
 
-<div id="filters">
-  <label>ZIP Code:
-    <select id="zipFilter"><option value="">View All</option></select>
-  </label>
-  <label>Style:
-    <select id="styleFilter"><option value="">View All</option></select>
-  </label>
-  <label>Material:
-    <select id="materialFilter"><option value="">View All</option></select>
-  </label>
-  <label>Color:
-    <select id="colorFilter"><option value="">View All</option></select>
-  </label>
-  <label>Furniture Type:
-    <select id="furnitureFilter"><option value="">View All</option></select>
-  </label>
+<div id="sidebar">
+  <div id="filters">
+    <label>ZIP Code:
+      <select id="zipFilter"><option value="">View All</option></select>
+    </label>
+    <label>Style:
+      <select id="styleFilter"><option value="">View All</option></select>
+    </label>
+    <label>Material:
+      <select id="materialFilter"><option value="">View All</option></select>
+    </label>
+    <label>Color:
+      <select id="colorFilter"><option value="">View All</option></select>
+    </label>
+    <label>Furniture Type:
+      <select id="furnitureFilter"><option value="">View All</option></select>
+    </label>
+  </div>
+  <div id="details"></div>
 </div>
 
 <div id="loadingSpinner">Loading Weather...</div>
@@ -66,6 +90,7 @@
   const colorFilter = document.getElementById('colorFilter');
   const furnitureFilter = document.getElementById('furnitureFilter');
   const loadingSpinner = document.getElementById('loadingSpinner');
+  const detailBox = document.getElementById('details');
 
   let allFeatures = [];
   let geojsonLayer;
@@ -73,7 +98,6 @@
   async function getWeatherData(zip) {
     const apiKey = '7746c66eda7c6242b2e70c4e7f132d62';
     const url = `https://api.openweathermap.org/data/2.5/weather?zip=${zip},US&appid=${apiKey}&units=imperial`;
-
     try {
       const res = await fetch(url);
       const data = await res.json();
@@ -94,46 +118,46 @@
     return {
       color: "#3388ff",
       weight: 1,
+      fillOpacity: 0.0
+    };
+  }
+
+  function highlightFeature(feature) {
+    return {
+      color: "#3388ff",
+      weight: 1,
       fillOpacity: 0.4
     };
   }
 
-  function onEachFeature(feature, layer) {
-    const p = feature.properties;
+  function displayDetails(p, weather) {
     const demo = p.Demographics || {};
     const house = p.Housing || {};
-
-    loadingSpinner.style.display = 'block';
-
-    getWeatherData(p.zip).then(weather => {
-      const label = `
-        <b>ZIP:</b> ${p.zip}<br/>
-        <hr><b>Furniture Preference</b><br/>
-        <b>Furniture:</b> ${p.Furniture_Type || 'N/A'}<br/>
-        <b>Style:</b> ${p.Style || 'N/A'}<br/>
-        <b>Material:</b> ${p.Primary_Material || 'N/A'}<br/>
-        <b>Color:</b> ${p.Color || 'N/A'}<br/>
-        <b>Price Point:</b> ${p.Price_Point || 'N/A'}<br/>
-        <b>Pattern:</b> ${p.Pattern || 'N/A'}<br/>
-        <hr><b>Demographics</b><br/>
-        <b>Median Income:</b> $${demo.Median_Household_Income?.toLocaleString() || 'N/A'}<br/>
-        <b>Median Home Value:</b> $${demo.Median_Home_Value?.toLocaleString() || 'N/A'}<br/>
-        <b>Median Age:</b> ${demo.Median_Age || 'N/A'}<br/>
-        <b>Race:</b> ${demo.Racial_Composition || 'N/A'}<br/>
-        <b>Education:</b> ${demo.Education || 'N/A'}<br/>
-        <hr><b>Housing</b><br/>
-        <b>Home Type:</b> ${house.Dominant_Home_Type || 'N/A'}<br/>
-        <b>Avg Sq Ft:</b> ${house.Average_Home_Size_SqFt || 'N/A'}<br/>
-        <b>Age of Home:</b> ${house.Median_Year_Built || 'N/A'}<br/>
-        <b>Architectural Style:</b> ${house.Architectural_Style || 'N/A'}<br/>
-        <hr><b>Current Weather</b><br/>
-        <b>Temp:</b> ${weather ? `${weather.tempF}°F / ${weather.tempC}°C` : 'N/A'}<br/>
-        <b>Precipitation:</b> ${weather ? weather.precipitation : 'N/A'}<br/>
-        <br/><i>${p.Rationale || ''}</i>
-      `;
-      layer.bindPopup(label);
-      loadingSpinner.style.display = 'none';
-    });
+    detailBox.innerHTML = `
+      <b>ZIP:</b> ${p.zip}<br/><hr>
+      <b>Furniture Preference</b><br/>
+      <b>Furniture:</b> ${p.Furniture_Type || 'N/A'}<br/>
+      <b>Style:</b> ${p.Style || 'N/A'}<br/>
+      <b>Material:</b> ${p.Primary_Material || 'N/A'}<br/>
+      <b>Color:</b> ${p.Color || 'N/A'}<br/>
+      <b>Price Point:</b> ${p.Price_Point || 'N/A'}<br/>
+      <b>Pattern:</b> ${p.Pattern || 'N/A'}<br/><hr>
+      <b>Demographics</b><br/>
+      <b>Median Income:</b> $${demo.Median_Household_Income?.toLocaleString() || 'N/A'}<br/>
+      <b>Median Home Value:</b> $${demo.Median_Home_Value?.toLocaleString() || 'N/A'}<br/>
+      <b>Median Age:</b> ${demo.Median_Age || 'N/A'}<br/>
+      <b>Race:</b> ${demo.Racial_Composition || 'N/A'}<br/>
+      <b>Education:</b> ${demo.Education || 'N/A'}<br/><hr>
+      <b>Housing</b><br/>
+      <b>Home Type:</b> ${house.Dominant_Home_Type || 'N/A'}<br/>
+      <b>Avg Sq Ft:</b> ${house.Average_Home_Size_SqFt || 'N/A'}<br/>
+      <b>Age of Home:</b> ${house.Median_Year_Built || 'N/A'}<br/>
+      <b>Architectural Style:</b> ${house.Architectural_Style || 'N/A'}<br/><hr>
+      <b>Current Weather</b><br/>
+      <b>Temp:</b> ${weather ? `${weather.tempF}°F / ${weather.tempC}°C` : 'N/A'}<br/>
+      <b>Precipitation:</b> ${weather ? weather.precipitation : 'N/A'}<br/><br/>
+      <i>${p.Rationale || ''}</i>
+    `;
   }
 
   function updateMap() {
@@ -155,76 +179,22 @@
     });
 
     geojsonLayer = L.geoJSON(filtered, {
-      style: styleFeature,
-      onEachFeature: onEachFeature
+      style: f => (zipVal || styleVal || materialVal || colorVal || furnitureVal ? highlightFeature(f) : styleFeature(f)),
+      onEachFeature: (feature, layer) => {
+        layer.on('click', () => {
+          loadingSpinner.style.display = 'block';
+          getWeatherData(feature.properties.zip).then(weather => {
+            displayDetails(feature.properties, weather);
+            loadingSpinner.style.display = 'none';
+          });
+        });
+      }
     }).addTo(map);
 
     if (filtered.length > 0) {
       map.fitBounds(geojsonLayer.getBounds());
     }
   }
-
-  Promise.all([
-    fetch('bay_area_zip_trends.geojson').then(res => res.json()),
-    fetch('utah_zip_codes.geojson').then(res => res.json()),
-    fetch('arizona_zip_codes.geojson').then(res => res.json()),
-    fetch('nevada_zip_codes.geojson').then(res => res.json()),
-    fetch('oregon_zip_codes.geojson').then(res => res.json()),
-    fetch('idaho_zip_codes.geojson').then(res => res.json()),
-    fetch('washington_zip_codes.geojson').then(res => res.json()),
-    fetch('trends.json').then(res => res.json()),
-    fetch('demographics.json').then(res => res.json()),
-    fetch('housing.json').then(res => res.json())
-  ]).then(([bayData, utahData, azData, nvData, orData, idData, waData, trendData, demoData, houseData]) => {
-    allFeatures = [
-      ...bayData.features,
-      ...utahData.features,
-      ...azData.features,
-      ...nvData.features,
-      ...orData.features,
-      ...idData.features,
-      ...waData.features
-    ];
-
-    const zipSet = new Set();
-    const styleSet = new Set();
-    const materialSet = new Set();
-    const colorSet = new Set();
-    const furnitureSet = new Set();
-
-    allFeatures.forEach(f => {
-      const zip = f.properties.zip?.toString().trim();
-      const trend = trendData[zip];
-      const demo = demoData[zip];
-      const house = houseData[zip];
-
-      if (trend) Object.assign(f.properties, trend);
-      if (demo) f.properties.Demographics = demo;
-      if (house) f.properties.Housing = house;
-
-      if (trend) {
-        zipSet.add(zip);
-        if (trend.Style) styleSet.add(trend.Style);
-        if (trend.Primary_Material) materialSet.add(trend.Primary_Material);
-        if (trend.Color) colorSet.add(trend.Color);
-        if (trend.Furniture_Type) furnitureSet.add(trend.Furniture_Type);
-      }
-    });
-
-    [...zipSet].sort().forEach(z => zipFilter.innerHTML += `<option value="${z}">${z}</option>`);
-    [...styleSet].sort().forEach(s => styleFilter.innerHTML += `<option value="${s}">${s}</option>`);
-    [...materialSet].sort().forEach(m => materialFilter.innerHTML += `<option value="${m}">${m}</option>`);
-    [...colorSet].sort().forEach(c => colorFilter.innerHTML += `<option value="${c}">${c}</option>`);
-    [...furnitureSet].sort().forEach(f => furnitureFilter.innerHTML += `<option value="${f}">${f}</option>`);
-
-    zipFilter.addEventListener('change', updateMap);
-    styleFilter.addEventListener('change', updateMap);
-    materialFilter.addEventListener('change', updateMap);
-    colorFilter.addEventListener('change', updateMap);
-    furnitureFilter.addEventListener('change', updateMap);
-
-    updateMap();
-  });
 </script>
 </body>
 </html>
