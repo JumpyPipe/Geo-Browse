@@ -3,7 +3,7 @@
 This project visualizes home furnishing trends by ZIP code across the Bay Area using an interactive web map.
 
 ### 🌐 Live Dashboard
-[Click here to view the hosted dashboard](https://jumpypipe.github.io/bay-area-zip-dashboard/)
+[Click here to view the hosted dashboard](https://jumpypipe.github.io/geo-browse/)
 
 ### 🔍 Features
 - Interactive map showing ZIP-level popularity trends
