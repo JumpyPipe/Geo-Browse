@@ -83,6 +83,26 @@
     let allFeatures = [];
     let geojsonLayer;
 
+ async function getWeatherData(zip) {
+    const apiKey = '7746c66eda7c6242b2e70c4e7f132d62';
+    const url = `https://api.openweathermap.org/data/2.5/weather?zip=${zip},US&appid=${apiKey}&units=imperial`;
+
+    try {
+      const res = await fetch(url);
+      const data = await res.json();
+      if (data.cod === 200) {
+        return {
+          tempF: data.main.temp,
+          tempC: ((data.main.temp - 32) * 5 / 9).toFixed(1),
+          precipitation: data.weather[0].main.includes("Rain") ? "Yes" : "No"
+        };
+      }
+    } catch (error) {
+      console.error(`Weather fetch failed for ${zip}:`, error);
+    }
+    return null;
+  }
+    
     function styleFeature(feature) {
       return {
         color: "#9b30ff",
