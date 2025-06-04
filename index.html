@@ -164,6 +164,12 @@
 
     Promise.all([
       fetch('bay_area_zip_trends.geojson').then(res => res.json()),
+      fetch('arizona_zip_codes.geojson').then(res => res.json()),
+      fetch('idaho_zip_codes.geojson').then(res => res.json()),
+      fetch('nevada_zip_codes.geojson').then(res => res.json()),
+      fetch('oregon_zip_codes.geojson').then(res => res.json()),
+      fetch('utah_zip_codes.geojson').then(res => res.json()),
+      fetch('washington_zip_codes.geojson').then(res => res.json()),
       fetch('trends.json').then(res => res.json()),
       fetch('demographics.json').then(res => res.json()),
       fetch('housing.json').then(res => res.json())
