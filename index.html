@@ -192,8 +192,10 @@
       fetch('oregon_zip_codes.geojson').then(r => r.json()),
       fetch('idaho_zip_codes.geojson').then(r => r.json()),
       fetch('washington_zip_codes.geojson').then(r => r.json()),
-      fetch('trends.json').then(r => r.json())
-    ]).then(([bay, ut, nv, az, or, id, wa, trendData]) => {
+      fetch('trends.json').then(r => r.json()),
+      fetch('demographics.json').then(r => r.json()),
+      fetch('housing.json').then(r => r.json())
+    ]).then(([bay, ut, nv, az, or, id, wa, trendData, demoData, housingData]) => {
       allFeatures = [...bay.features, ...ut.features, ...nv.features, ...az.features, ...or.features, ...id.features, ...wa.features];
 
       const zipSet = new Set(), styleSet = new Set(), materialSet = new Set(), colorSet = new Set(), furnitureSet = new Set();
@@ -201,8 +203,24 @@
       allFeatures.forEach(f => {
         const zip = f.properties.zip?.toString().trim();
         const trend = trendData[zip];
-        if (trend) {
+        const demo = demoData[zip];
+        const housing = housingData[zip];
+
+        if (trend || demo || housing) {
           f.properties = { ...f.properties, ...trend };
+          if (demo) {
+            const demoCopy = { ...demo };
+            if (demo.Race_Ethnicity) {
+              const major = Object.entries(demo.Race_Ethnicity)
+                .sort((a, b) => b[1] - a[1])[0][0];
+              demoCopy.Racial_Composition = major;
+            }
+            f.properties.Demographics = demoCopy;
+          }
+          if (housing) f.properties.Housing = housing;
+        }
+
+        if (trend) {
           zipSet.add(zip);
           if (trend.Style) styleSet.add(trend.Style);
           if (trend.Primary_Material) materialSet.add(trend.Primary_Material);
